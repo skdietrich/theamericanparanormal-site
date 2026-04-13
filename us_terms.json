@@ -1,0 +1,747 @@
+[
+  {
+    "entry_id": "usa-spiritualism-0001",
+    "term": "Fox Sisters",
+    "slug": "fox-sisters",
+    "aliases": [
+      "Hydesville rappings"
+    ],
+    "category": "spiritualism",
+    "subcategory": "foundational figures",
+    "short_definition": "The sisters whose Hydesville rappings became the origin story of modern American Spiritualism.",
+    "full_definition": "Kate and Margaret Fox became central to the public birth of American Spiritualism after claims of spirit rappings in Hydesville, New York. Their story helped normalize séance communication as a mass religious and cultural phenomenon in the United States.",
+    "country": "United States",
+    "region_level_1": "New York",
+    "city": "Hydesville",
+    "location_notes": "Linked to the Hydesville cottage and the early spread of séance culture.",
+    "cultural_context": "Nineteenth-century American Spiritualism, reform culture, and public demonstrations of mediumship.",
+    "historical_period": "1848 onward",
+    "first_known_reference": "Hydesville rappings, 1848",
+    "modern_usage": "Still treated as the foundational myth and controversy of Spiritualist history.",
+    "tradition": "American Spiritualism",
+    "phenomenon_type": "mediumship origin account",
+    "entity_type": "human medium",
+    "belief_status": "historical / disputed interpretation",
+    "source_type": "historical accounts and secondary scholarship",
+    "confidence_level": "High for historical importance; low for supernatural interpretation",
+    "disputed": true,
+    "fraud_risk": "High in supernatural claims, low in historical relevance",
+    "american_relevance_score": 10,
+    "tags": [
+      "spiritualism",
+      "origins",
+      "séance history",
+      "American religion"
+    ],
+    "related_terms": [
+      "table-rapping",
+      "mediumship",
+      "séance"
+    ],
+    "see_also": [
+      "Automatic Writing",
+      "Ectoplasm"
+    ],
+    "search_boost_terms": [
+      "Hydesville",
+      "rappings",
+      "spirit rappings"
+    ],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "usa-cryptid-0002",
+    "term": "Goatman",
+    "slug": "goatman",
+    "aliases": [
+      "Old Alton Goatman",
+      "Lake Worth Goatman"
+    ],
+    "category": "cryptid",
+    "subcategory": "humanoid",
+    "short_definition": "A goat-like humanoid figure in American regional legend.",
+    "full_definition": "Goatman refers to several overlapping American legends about a horned or goat-like humanoid tied to bridges, wooded roads, violence, Satanic-panic overlays, and haunted-place tourism. The term functions as both folklore and later paranormal media shorthand.",
+    "country": "United States",
+    "region_level_1": "Texas",
+    "city": "Denton",
+    "location_notes": "Frequently associated with Old Alton Bridge and North Texas legend tripping.",
+    "cultural_context": "Regional monster lore, bridge haunting narratives, and modern paranormal tourism.",
+    "historical_period": "20th century to present",
+    "first_known_reference": "Regional oral legend circulation",
+    "modern_usage": "Widely used in podcasts, paranormal video culture, and local folklore retellings.",
+    "tradition": "American regional folklore",
+    "phenomenon_type": "cryptid encounter claim",
+    "entity_type": "humanoid",
+    "belief_status": "folkloric / disputed",
+    "source_type": "regional folklore and secondary retellings",
+    "confidence_level": "Low",
+    "disputed": true,
+    "fraud_risk": "Moderate",
+    "american_relevance_score": 9,
+    "tags": [
+      "cryptid",
+      "regional folklore",
+      "humanoid",
+      "Texas"
+    ],
+    "related_terms": [
+      "bridge haunting",
+      "Dogman",
+      "monster legend"
+    ],
+    "see_also": [
+      "Old Alton Bridge"
+    ],
+    "search_boost_terms": [
+      "goat man",
+      "Texas goatman",
+      "Denton goatman"
+    ],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "usa-paranormal-0003",
+    "term": "Residual Haunting",
+    "slug": "residual-haunting",
+    "aliases": [
+      "recording haunting",
+      "imprint haunting"
+    ],
+    "category": "paranormal",
+    "subcategory": "haunting theory",
+    "short_definition": "A theory that haunt phenomena replay like an imprint rather than an interactive presence.",
+    "full_definition": "Residual haunting describes the belief that certain environments can somehow retain emotionally intense events and later replay them as sights, sounds, or sensations without intelligence or agency. It is a major interpretive category in modern American haunting discourse.",
+    "country": "United States",
+    "region_level_1": "General",
+    "city": "",
+    "location_notes": "",
+    "cultural_context": "Contemporary paranormal investigation vocabulary and popular haunting theory.",
+    "historical_period": "Late 20th century to present",
+    "first_known_reference": "Popular paranormal literature and TV taxonomy",
+    "modern_usage": "Used constantly in investigations to distinguish passive from responsive phenomena.",
+    "tradition": "Modern paranormal investigation culture",
+    "phenomenon_type": "haunting classification",
+    "entity_type": "place-memory hypothesis",
+    "belief_status": "interpretive theory",
+    "source_type": "popular paranormal literature",
+    "confidence_level": "Low to moderate",
+    "disputed": true,
+    "fraud_risk": "Low",
+    "american_relevance_score": 8,
+    "tags": [
+      "haunting theory",
+      "imprint theory",
+      "ghost lore"
+    ],
+    "related_terms": [
+      "intelligent haunting",
+      "stone tape theory"
+    ],
+    "see_also": [
+      "Place Memory"
+    ],
+    "search_boost_terms": [
+      "recording haunting",
+      "imprint haunting"
+    ],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "usa-investigation-0004",
+    "term": "EVP",
+    "slug": "evp",
+    "aliases": [
+      "Electronic Voice Phenomena"
+    ],
+    "category": "investigative vocabulary",
+    "subcategory": "audio evidence",
+    "short_definition": "Recorded speech-like sounds believed by some investigators to be anomalous or nonhuman.",
+    "full_definition": "Electronic Voice Phenomena refers to faint or unexpected voices captured on recordings and interpreted by some as evidence of nonphysical intelligences. EVP sits at the center of modern American ghost-hunting culture and debates over pareidolia, contamination, and survival research.",
+    "country": "United States",
+    "region_level_1": "General",
+    "city": "",
+    "location_notes": "",
+    "cultural_context": "Ghost-hunting technology, survival research, and audio interpretation disputes.",
+    "historical_period": "Mid-20th century to present",
+    "first_known_reference": "Electronic recording experiments in survival research",
+    "modern_usage": "Core term in paranormal media, field investigations, and DIY ghost-hunting.",
+    "tradition": "Technological paranormal investigation",
+    "phenomenon_type": "audio anomaly",
+    "entity_type": "purported discarnate communication",
+    "belief_status": "contested evidential claim",
+    "source_type": "investigation culture and survival research",
+    "confidence_level": "Mixed",
+    "disputed": true,
+    "fraud_risk": "Moderate",
+    "american_relevance_score": 10,
+    "tags": [
+      "audio",
+      "ghost hunting",
+      "instrumental transcommunication"
+    ],
+    "related_terms": [
+      "ITC",
+      "pareidolia",
+      "spirit box"
+    ],
+    "see_also": [
+      "Direct Voice"
+    ],
+    "search_boost_terms": [
+      "electronic voice phenomena",
+      "ghost voices"
+    ],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "usa-investigation-0005",
+    "term": "Spirit Box",
+    "slug": "spirit-box",
+    "aliases": [
+      "ghost box",
+      "Frank's box"
+    ],
+    "category": "investigative vocabulary",
+    "subcategory": "device",
+    "short_definition": "A radio-sweeping device used to generate audio fragments some interpret as responsive communication.",
+    "full_definition": "A spirit box rapidly scans radio frequencies, producing fragments of broadcast audio that some paranormal investigators interpret as interactive answers from spirits. Critics regard it as especially vulnerable to suggestion, pattern-matching, and overinterpretation.",
+    "country": "United States",
+    "region_level_1": "General",
+    "city": "",
+    "location_notes": "",
+    "cultural_context": "Modern ghost-hunting culture, device-centered investigation, and social-media paranormal performance.",
+    "historical_period": "21st century popular usage",
+    "first_known_reference": "Commercialized ghost-hunting device culture",
+    "modern_usage": "Common in YouTube investigations, TV ghost hunting, and live public events.",
+    "tradition": "Technological paranormal investigation",
+    "phenomenon_type": "audio interaction method",
+    "entity_type": "device-mediated communication claim",
+    "belief_status": "highly disputed",
+    "source_type": "device culture and popular investigation practice",
+    "confidence_level": "Low",
+    "disputed": true,
+    "fraud_risk": "High",
+    "american_relevance_score": 9,
+    "tags": [
+      "ghost hunting",
+      "audio sweep",
+      "device"
+    ],
+    "related_terms": [
+      "EVP",
+      "ITC",
+      "radio communication"
+    ],
+    "see_also": [
+      "Ghost Hunting"
+    ],
+    "search_boost_terms": [
+      "ghost box",
+      "radio sweep"
+    ],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "usa-occult-0006",
+    "term": "Ley Line",
+    "slug": "ley-line",
+    "aliases": [
+      "ley lines",
+      "earth energies"
+    ],
+    "category": "occult",
+    "subcategory": "earth mysteries",
+    "short_definition": "A supposed alignment of sites or landscape features believed to reveal hidden geographies of power.",
+    "full_definition": "Ley lines are hypothesized alignments connecting monuments, sacred sites, or terrain features. In American occult and paranormal usage, the term often expands beyond its British origins into ideas about energy grids, vortex zones, sacred geography, and ritual placement.",
+    "country": "United States",
+    "region_level_1": "General",
+    "city": "",
+    "location_notes": "",
+    "cultural_context": "Earth mysteries, New Age geography, occult mapping, and paranormal tourism.",
+    "historical_period": "20th century American adoption onward",
+    "first_known_reference": "Derived from British ley-line discourse",
+    "modern_usage": "Widely invoked in vortex tourism, dowsing, and occult landscape speculation.",
+    "tradition": "Occult / New Age synthesis",
+    "phenomenon_type": "energy geography claim",
+    "entity_type": "landscape theory",
+    "belief_status": "esoteric interpretation",
+    "source_type": "esoteric literature and popular occult writing",
+    "confidence_level": "Low",
+    "disputed": true,
+    "fraud_risk": "Moderate",
+    "american_relevance_score": 7,
+    "tags": [
+      "earth mysteries",
+      "sacred geography",
+      "energy work"
+    ],
+    "related_terms": [
+      "geomancy",
+      "vortex",
+      "dowsing"
+    ],
+    "see_also": [
+      "Vortex"
+    ],
+    "search_boost_terms": [
+      "ley lines",
+      "earth energy"
+    ],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "usa-cryptid-0007",
+    "term": "Mothman",
+    "slug": "mothman",
+    "aliases": [
+      "Point Pleasant Mothman"
+    ],
+    "category": "cryptid",
+    "subcategory": "winged humanoid",
+    "short_definition": "A winged humanoid associated with Point Pleasant and disaster-omen folklore.",
+    "full_definition": "Mothman is a winged humanoid figure associated with Point Pleasant, West Virginia, and later with omen lore tied to catastrophe. It has become one of the most recognizable American cryptid figures and sits at the intersection of folklore, UFO adjacency, and prophetic-anomaly narratives.",
+    "country": "United States",
+    "region_level_1": "West Virginia",
+    "city": "Point Pleasant",
+    "location_notes": "Closely tied to the Silver Bridge disaster mythos.",
+    "cultural_context": "Appalachian legend, media amplification, and omen narratives.",
+    "historical_period": "1960s onward",
+    "first_known_reference": "Point Pleasant sightings",
+    "modern_usage": "Core term in American cryptid tourism and paranormal branding.",
+    "tradition": "American cryptid lore",
+    "phenomenon_type": "cryptid / omen complex",
+    "entity_type": "winged humanoid",
+    "belief_status": "folkloric / anomalous claim",
+    "source_type": "regional lore, journalism, and secondary books",
+    "confidence_level": "Low",
+    "disputed": true,
+    "fraud_risk": "Moderate",
+    "american_relevance_score": 10,
+    "tags": [
+      "cryptid",
+      "omen",
+      "winged humanoid",
+      "Appalachia"
+    ],
+    "related_terms": [
+      "omen lore",
+      "Men in Black",
+      "bridge disaster"
+    ],
+    "see_also": [
+      "Point Pleasant"
+    ],
+    "search_boost_terms": [
+      "Point Pleasant",
+      "Mothman sightings"
+    ],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "usa-folklore-0008",
+    "term": "Skinwalker",
+    "slug": "skinwalker",
+    "aliases": [
+      "yee naaldlooshii"
+    ],
+    "category": "folklore",
+    "subcategory": "shape-shifting witch figure",
+    "short_definition": "A Navajo witch figure widely distorted in later paranormal media.",
+    "full_definition": "In Navajo tradition, the skinwalker is a taboo witch figure associated with harmful ritual power and shape-shifting. In American paranormal culture, the term is often flattened, sensationalized, and detached from its original cultural and ethical context.",
+    "country": "United States",
+    "region_level_1": "Southwest",
+    "city": "",
+    "location_notes": "Popularly associated with the wider Four Corners region, often irresponsibly.",
+    "cultural_context": "Indigenous tradition, taboo knowledge, and later media distortion.",
+    "historical_period": "Precolonial tradition; modern media distortion ongoing",
+    "first_known_reference": "Traditional Navajo belief context",
+    "modern_usage": "Commonly misused in paranormal television, podcasts, and internet lore.",
+    "tradition": "Navajo tradition / distorted popular usage",
+    "phenomenon_type": "witchcraft figure",
+    "entity_type": "human practitioner in traditional framework",
+    "belief_status": "culture-specific and often misrepresented",
+    "source_type": "traditional belief context and secondary reporting",
+    "confidence_level": "Mixed",
+    "disputed": true,
+    "fraud_risk": "High in pop use",
+    "american_relevance_score": 9,
+    "tags": [
+      "Indigenous tradition",
+      "shape-shifting",
+      "taboo"
+    ],
+    "related_terms": [
+      "witchcraft",
+      "reservation lore",
+      "shape-shifter"
+    ],
+    "see_also": [
+      "Skinwalker Ranch"
+    ],
+    "search_boost_terms": [
+      "yee naaldlooshii",
+      "shape shifter"
+    ],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "usa-occult-0009",
+    "term": "Ceremonial Magic",
+    "slug": "ceremonial-magic",
+    "aliases": [
+      "ritual magic",
+      "high magic"
+    ],
+    "category": "occult",
+    "subcategory": "ritual system",
+    "short_definition": "A structured magical practice using formal ritual, symbolism, and invocation.",
+    "full_definition": "Ceremonial magic refers to ritual systems built on elaborate symbolism, correspondences, invocations, protective forms, and hierarchies of spiritual power. In American occult culture it often overlaps with Golden Dawn, Thelemic, grimoire, and lodge-derived practices.",
+    "country": "United States",
+    "region_level_1": "General",
+    "city": "",
+    "location_notes": "",
+    "cultural_context": "Western esotericism, magical orders, ritual revivalism, and occult study.",
+    "historical_period": "19th century onward in modern usage",
+    "first_known_reference": "Western ritual magic traditions",
+    "modern_usage": "Used across occult orders, solitary practice, and internet esoteric culture.",
+    "tradition": "Western esotericism",
+    "phenomenon_type": "ritual practice",
+    "entity_type": "practice / system",
+    "belief_status": "esoteric practice term",
+    "source_type": "occult literature and practitioner traditions",
+    "confidence_level": "Not applicable",
+    "disputed": false,
+    "fraud_risk": "Moderate",
+    "american_relevance_score": 7,
+    "tags": [
+      "ritual",
+      "esotericism",
+      "invocation"
+    ],
+    "related_terms": [
+      "Golden Dawn",
+      "Thelema",
+      "grimoire"
+    ],
+    "see_also": [
+      "Sigil"
+    ],
+    "search_boost_terms": [
+      "high magic",
+      "ritual magic"
+    ],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "usa-paranormal-0010",
+    "term": "Poltergeist",
+    "slug": "poltergeist",
+    "aliases": [
+      "noisy ghost"
+    ],
+    "category": "paranormal",
+    "subcategory": "disturbance pattern",
+    "short_definition": "A disturbance involving knocks, movement, impacts, and environmental agitation.",
+    "full_definition": "Poltergeist denotes phenomena such as bangs, thrown objects, impacts, movement, and erratic disturbances. In modern paranormal discussion it may be framed either as a spirit disturbance or as recurrent spontaneous psychokinesis focused around a living person.",
+    "country": "United States",
+    "region_level_1": "General",
+    "city": "",
+    "location_notes": "",
+    "cultural_context": "Haunting discourse, parapsychology, and sensational media retellings.",
+    "historical_period": "Longstanding term in modern paranormal usage",
+    "first_known_reference": "European term later normalized in American discourse",
+    "modern_usage": "Used in haunting case files, television, and pop-occult speech.",
+    "tradition": "Parapsychology / haunting culture",
+    "phenomenon_type": "disturbance cluster",
+    "entity_type": "event pattern",
+    "belief_status": "contested classification",
+    "source_type": "parapsychology and popular paranormal writing",
+    "confidence_level": "Mixed",
+    "disputed": true,
+    "fraud_risk": "Moderate",
+    "american_relevance_score": 8,
+    "tags": [
+      "haunting",
+      "object movement",
+      "disturbance"
+    ],
+    "related_terms": [
+      "RSPK",
+      "haunting",
+      "agent focus"
+    ],
+    "see_also": [
+      "Agent Focus"
+    ],
+    "search_boost_terms": [
+      "noisy ghost",
+      "RSPK"
+    ],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "usa-spiritualism-0011",
+    "term": "Table-Rapping",
+    "slug": "table-rapping",
+    "aliases": [
+      "spirit rappings"
+    ],
+    "category": "spiritualism",
+    "subcategory": "séance method",
+    "short_definition": "A séance communication method using knocks or raps as encoded responses.",
+    "full_definition": "Table-rapping refers to the use of knocks, taps, or movement interpreted as spirit communication during séances. It became a defining method of nineteenth-century Spiritualism and a key bridge between domestic ritual, spectacle, and claims of survival evidence.",
+    "country": "United States",
+    "region_level_1": "General",
+    "city": "",
+    "location_notes": "",
+    "cultural_context": "Séance culture, domestic ritual, and Spiritualist communication practices.",
+    "historical_period": "19th century onward",
+    "first_known_reference": "Séance practice within early Spiritualism",
+    "modern_usage": "Often invoked historically rather than in current practice.",
+    "tradition": "American Spiritualism",
+    "phenomenon_type": "communication method",
+    "entity_type": "ritual practice",
+    "belief_status": "historical practice term",
+    "source_type": "historical sources and Spiritualist literature",
+    "confidence_level": "High for historical usage",
+    "disputed": false,
+    "fraud_risk": "Historically significant fraud controversies",
+    "american_relevance_score": 9,
+    "tags": [
+      "séance",
+      "communication",
+      "Victorian survivalism"
+    ],
+    "related_terms": [
+      "Fox Sisters",
+      "automatic writing",
+      "mediumship"
+    ],
+    "see_also": [
+      "Planchette"
+    ],
+    "search_boost_terms": [
+      "spirit rappings",
+      "séance knocks"
+    ],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "usa-investigation-0012",
+    "term": "ITC",
+    "slug": "itc",
+    "aliases": [
+      "Instrumental Transcommunication"
+    ],
+    "category": "investigative vocabulary",
+    "subcategory": "technology-mediated contact",
+    "short_definition": "The attempt to use devices to obtain communication from nonphysical intelligences.",
+    "full_definition": "Instrumental Transcommunication is the broader category for technological attempts to contact or receive communication from nonphysical entities, including audio, video, radio, and image-based methods. It sits near the boundary between survival research, experimental media, and modern occult tech culture.",
+    "country": "United States",
+    "region_level_1": "General",
+    "city": "",
+    "location_notes": "",
+    "cultural_context": "Technological mediation, survival research, and fringe experimentation.",
+    "historical_period": "Late 20th century onward",
+    "first_known_reference": "Electronic contact experiments",
+    "modern_usage": "Often used as an umbrella term above EVP and related methods.",
+    "tradition": "Technological paranormal investigation",
+    "phenomenon_type": "communication framework",
+    "entity_type": "methodological category",
+    "belief_status": "contested evidential claim",
+    "source_type": "survival research and paranormal literature",
+    "confidence_level": "Mixed",
+    "disputed": true,
+    "fraud_risk": "Moderate",
+    "american_relevance_score": 8,
+    "tags": [
+      "technology",
+      "survival research",
+      "audio-video anomalies"
+    ],
+    "related_terms": [
+      "EVP",
+      "spirit box",
+      "video feedback"
+    ],
+    "see_also": [
+      "Direct Radio Voice"
+    ],
+    "search_boost_terms": [
+      "instrumental transcommunication",
+      "tech contact"
+    ],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "usa-cryptid-0013",
+    "term": "Dogman",
+    "slug": "dogman",
+    "aliases": [
+      "Michigan Dogman"
+    ],
+    "category": "cryptid",
+    "subcategory": "canid humanoid",
+    "short_definition": "An upright canine or wolf-like humanoid in North American cryptid lore.",
+    "full_definition": "Dogman refers to reports of a large upright canine or wolf-like humanoid, especially in Michigan and the Midwest. The term blends werewolf folklore, wilderness fear, and modern encounter narratives.",
+    "country": "United States",
+    "region_level_1": "Michigan",
+    "city": "",
+    "location_notes": "",
+    "cultural_context": "Midwestern monster lore and radio-era amplification.",
+    "historical_period": "Late 20th century to present",
+    "first_known_reference": "Modern Michigan legend cycle",
+    "modern_usage": "A major entry in contemporary American cryptid media.",
+    "tradition": "American cryptid lore",
+    "phenomenon_type": "cryptid encounter claim",
+    "entity_type": "canid humanoid",
+    "belief_status": "folkloric / disputed",
+    "source_type": "regional legends and secondary media",
+    "confidence_level": "Low",
+    "disputed": true,
+    "fraud_risk": "Moderate",
+    "american_relevance_score": 8,
+    "tags": [
+      "cryptid",
+      "canid humanoid",
+      "regional monster"
+    ],
+    "related_terms": [
+      "werewolf legend",
+      "Beast of Bray Road",
+      "Goatman"
+    ],
+    "see_also": [
+      "Beast of Bray Road"
+    ],
+    "search_boost_terms": [
+      "Michigan Dogman",
+      "dog man"
+    ],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "usa-paranormal-0014",
+    "term": "Stone Tape Theory",
+    "slug": "stone-tape-theory",
+    "aliases": [
+      "imprinted environment theory"
+    ],
+    "category": "paranormal",
+    "subcategory": "place-memory theory",
+    "short_definition": "The idea that places can record and replay emotionally intense events.",
+    "full_definition": "Stone Tape Theory proposes that environments or materials can somehow store traces of traumatic or emotionally charged events and later replay them as haunt phenomena. The term is common in paranormal explanation systems even where evidence remains weak.",
+    "country": "United States",
+    "region_level_1": "General",
+    "city": "",
+    "location_notes": "",
+    "cultural_context": "Haunting theory and place-memory speculation.",
+    "historical_period": "Late 20th century onward in popular use",
+    "first_known_reference": "Borrowed from British-origin explanatory vocabulary",
+    "modern_usage": "Frequently used in paranormal interpretation to explain repetitive haunt reports.",
+    "tradition": "Modern haunting theory",
+    "phenomenon_type": "environmental memory hypothesis",
+    "entity_type": "theory",
+    "belief_status": "speculative theory",
+    "source_type": "popular paranormal literature",
+    "confidence_level": "Low",
+    "disputed": true,
+    "fraud_risk": "Low",
+    "american_relevance_score": 7,
+    "tags": [
+      "haunting theory",
+      "recording theory",
+      "place memory"
+    ],
+    "related_terms": [
+      "residual haunting",
+      "place memory",
+      "liminal space"
+    ],
+    "see_also": [
+      "Residual Haunting"
+    ],
+    "search_boost_terms": [
+      "stone tape",
+      "recorded haunting"
+    ],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "usa-occult-0015",
+    "term": "Sigil",
+    "slug": "sigil",
+    "aliases": [
+      "charged symbol"
+    ],
+    "category": "occult",
+    "subcategory": "symbolic working",
+    "short_definition": "A symbol used in magical practice to focus intention or encode a force.",
+    "full_definition": "A sigil is a charged symbol used in ritual or magical work to represent an intention, spirit, or force. In modern American occult usage the term spans chaos magic, ceremonial systems, practical spell work, and internet-occult culture.",
+    "country": "United States",
+    "region_level_1": "General",
+    "city": "",
+    "location_notes": "",
+    "cultural_context": "Western occultism, chaos magic, and symbolic ritual technology.",
+    "historical_period": "Modern occult revival to present",
+    "first_known_reference": "Earlier grimoire and magical-symbol traditions",
+    "modern_usage": "Common across books, online occult communities, and personalized magical practice.",
+    "tradition": "Western esotericism",
+    "phenomenon_type": "ritual symbol",
+    "entity_type": "symbolic tool",
+    "belief_status": "esoteric practice term",
+    "source_type": "occult literature and practitioner traditions",
+    "confidence_level": "Not applicable",
+    "disputed": false,
+    "fraud_risk": "Moderate",
+    "american_relevance_score": 7,
+    "tags": [
+      "symbol",
+      "chaos magic",
+      "ritual tool"
+    ],
+    "related_terms": [
+      "servitor",
+      "ceremonial magic",
+      "grimoire"
+    ],
+    "see_also": [
+      "Seal"
+    ],
+    "search_boost_terms": [
+      "charged symbol",
+      "magic symbol"
+    ],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  }
+]

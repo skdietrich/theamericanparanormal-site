@@ -1,0 +1,148 @@
+[
+  {
+    "entry_id": "uk-folklore-0001",
+    "term": "Black Shuck",
+    "slug": "black-shuck",
+    "aliases": [
+      "Old Shuck"
+    ],
+    "category": "folklore",
+    "subcategory": "spectral hound",
+    "short_definition": "A phantom black dog of East Anglian folklore.",
+    "full_definition": "Black Shuck is a spectral black dog in English folklore, particularly in East Anglia. It has been treated as an omen, death-portent, and regional ghost-lore figure, later feeding into broader paranormal and cryptid vocabularies.",
+    "country": "United Kingdom",
+    "region_level_1": "England",
+    "city": "East Anglia",
+    "location_notes": "Especially associated with Norfolk and Suffolk traditions.",
+    "cultural_context": "English ghost lore, omen traditions, and death-portent narratives.",
+    "historical_period": "Early modern to present in folklore retention",
+    "first_known_reference": "Regional folklore tradition",
+    "modern_usage": "Still cited in black-dog lore and paranormal tourism.",
+    "tradition": "English folklore",
+    "phenomenon_type": "omen entity",
+    "entity_type": "spectral hound",
+    "belief_status": "folkloric",
+    "source_type": "folklore and regional studies",
+    "confidence_level": "Low as literal claim; high as folklore",
+    "disputed": false,
+    "fraud_risk": "Low",
+    "american_relevance_score": 5,
+    "tags": [
+      "black dog",
+      "omen",
+      "English folklore"
+    ],
+    "related_terms": [
+      "Barghest",
+      "church grim",
+      "phantom hound"
+    ],
+    "see_also": [
+      "Phantom Black Dog"
+    ],
+    "search_boost_terms": [
+      "Old Shuck",
+      "spectral dog"
+    ],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "uk-psychical-0002",
+    "term": "SPR",
+    "slug": "spr",
+    "aliases": [
+      "Society for Psychical Research"
+    ],
+    "category": "psychical research",
+    "subcategory": "institution",
+    "short_definition": "The British research society central to formal psychical investigation since 1882.",
+    "full_definition": "The Society for Psychical Research, founded in London in 1882, became one of the most important institutions in the history of organized psychical investigation. Its work helped shape the vocabulary of mediumship research, apparitions, telepathy, survival inquiry, and controlled scrutiny of paranormal claims.",
+    "country": "United Kingdom",
+    "region_level_1": "England",
+    "city": "London",
+    "location_notes": "",
+    "cultural_context": "Victorian and modern psychical research, institutionalized inquiry, and survival studies.",
+    "historical_period": "1882 to present",
+    "first_known_reference": "Formal founding in 1882",
+    "modern_usage": "Still invoked as a prestige reference in serious paranormal and survival-research circles.",
+    "tradition": "British psychical research",
+    "phenomenon_type": "institutional framework",
+    "entity_type": "organization",
+    "belief_status": "historically verified institution",
+    "source_type": "institutional and historical sources",
+    "confidence_level": "High",
+    "disputed": false,
+    "fraud_risk": "Low",
+    "american_relevance_score": 8,
+    "tags": [
+      "psychical research",
+      "institution",
+      "mediumship study"
+    ],
+    "related_terms": [
+      "telepathy",
+      "apparition",
+      "cross-correspondences"
+    ],
+    "see_also": [
+      "Proceedings of the SPR"
+    ],
+    "search_boost_terms": [
+      "Society for Psychical Research"
+    ],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  },
+  {
+    "entry_id": "uk-occult-0003",
+    "term": "Thelema",
+    "slug": "thelema",
+    "aliases": [
+      "Do what thou wilt"
+    ],
+    "category": "occult",
+    "subcategory": "esoteric movement",
+    "short_definition": "The religious-philosophical system associated with Aleister Crowley.",
+    "full_definition": "Thelema is the esoteric system articulated by Aleister Crowley, centered on True Will, ritual practice, magical discipline, and a distinctive cosmology. It shaped later occult vocabulary in both the UK and the United States.",
+    "country": "United Kingdom",
+    "region_level_1": "England",
+    "city": "",
+    "location_notes": "",
+    "cultural_context": "Modern occultism, magical orders, and post-Golden Dawn ritual culture.",
+    "historical_period": "20th century onward",
+    "first_known_reference": "Crowleyan literature and practice",
+    "modern_usage": "Foundational term in modern ceremonial and esoteric circles.",
+    "tradition": "Western esotericism",
+    "phenomenon_type": "religio-magical system",
+    "entity_type": "movement",
+    "belief_status": "esoteric system",
+    "source_type": "primary occult texts and secondary scholarship",
+    "confidence_level": "Not applicable",
+    "disputed": false,
+    "fraud_risk": "Moderate",
+    "american_relevance_score": 6,
+    "tags": [
+      "Crowley",
+      "ritual magic",
+      "esotericism"
+    ],
+    "related_terms": [
+      "ceremonial magic",
+      "Golden Dawn",
+      "magick"
+    ],
+    "see_also": [
+      "Book of the Law"
+    ],
+    "search_boost_terms": [
+      "True Will",
+      "Crowleyan"
+    ],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-04-12"
+  }
+]
