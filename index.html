@@ -569,9 +569,18 @@ document.querySelectorAll('details').forEach(detail => {
 
 let glossaryEntries = [];
 const glossaryDataFiles = [
-  'data/us_terms.json',
-  'data/uk_terms.json',
-  'data/world_terms.json'
+  {
+    name: 'us_terms.json',
+    paths: ['./data/us_terms.json', 'data/us_terms.json', './us_terms.json', 'us_terms.json']
+  },
+  {
+    name: 'uk_terms.json',
+    paths: ['./data/uk_terms.json', 'data/uk_terms.json', './uk_terms.json', 'uk_terms.json']
+  },
+  {
+    name: 'world_terms.json',
+    paths: ['./data/world_terms.json', 'data/world_terms.json', './world_terms.json', 'world_terms.json']
+  }
 ];
 
 const els = {
@@ -597,16 +606,25 @@ function fillSelect(el, values, label){
 }
 
 
-async function loadGlossaryEntries(){
-  const payloads = await Promise.all(
-    glossaryDataFiles.map(async (path) => {
+async function fetchJsonWithFallback(fileSpec){
+  const errors = [];
+  for (const path of fileSpec.paths) {
+    try {
       const response = await fetch(path, { cache: 'no-store' });
       if (!response.ok) {
-        throw new Error(`Failed to load ${path} (${response.status})`);
+        errors.push(`${path} (${response.status})`);
+        continue;
       }
-      return response.json();
-    })
-  );
+      return await response.json();
+    } catch (error) {
+      errors.push(`${path} (${error.message})`);
+    }
+  }
+  throw new Error(`Failed to load ${fileSpec.name}. Tried: ${errors.join(', ')}`);
+}
+
+async function loadGlossaryEntries(){
+  const payloads = await Promise.all(glossaryDataFiles.map(fetchJsonWithFallback));
 
   glossaryEntries = payloads.flat().map(entry => ({
     ...entry,
@@ -793,7 +811,10 @@ async function bootstrapGlossary(){
   } catch (error) {
     console.error(error);
     els.count.textContent = '0 results';
-    els.results.innerHTML = `<div class="empty-state">Glossary data could not be loaded. Make sure the <code>data</code> folder stays next to this HTML file when you upload the site to GitHub Pages.</div>`;
+    els.results.innerHTML = `<div class="empty-state">Glossary data could not be loaded. The page tried both the <code>data</code> folder and root-level fallback JSON files. Open your browser console for the exact file path error.</div>`;
+    if (els.starterStats) {
+      els.starterStats.textContent = 'Glossary data failed to load. Check the JSON file paths or the browser console.';
+    }
   }
 }
 
