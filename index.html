@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The American Paranormal | Official Website</title>
+<meta name="description" content="Official website for The American Paranormal by Stephen Dietrich-Kolokouris, PhD — technology, Spiritualism, and the search for proof of life after death." />
+<meta name="keywords" content="The American Paranormal, Stephen Dietrich-Kolokouris, Spiritualism, consciousness, psychical research, EVP, ITC, paranormal history, Cindy Kaza" />
+<meta name="author" content="Stephen Dietrich-Kolokouris, PhD" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<meta property="og:title" content="The American Paranormal | Official Website" />
+<meta property="og:description" content="Technology, Spiritualism, and the Search for Proof of Life After Death." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="The_American_Paranormal_Cover_600dpi.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The American Paranormal | Official Website" />
+<meta name="twitter:description" content="Technology, Spiritualism, and the Search for Proof of Life After Death." />
+<meta name="twitter:image" content="The_American_Paranormal_Cover_600dpi.png" />
+<meta name="theme-color" content="#0b0b0c" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Book",
+  "name":"The American Paranormal",
+  "alternateName":"The American Paranormal: Technology, Spiritualism, and the Search for Proof of Life After Death",
+  "author":{"@type":"Person","name":"Stephen Dietrich-Kolokouris, PhD"},
+  "bookFormat":"https://schema.org/Paperback",
+  "isbn":"9798269454498",
+  "image":"The_American_Paranormal_Cover_600dpi.png",
+  "description":"A dark, modern exploration of American Spiritualism, psychical research, technology, and the search for proof of life after death."
+}
+</script>
+<style>
+:root {
+  --bg:#0b0b0c; --panel:rgba(255,255,255,.045); --line:rgba(214,179,74,.18); --line-strong:rgba(214,179,74,.36);
+  --gold:#d6b34a; --ivory:#f5efe3; --muted:#b4aa98; --muted-2:#8f8573; --shadow:0 18px 60px rgba(0,0,0,.42);
+  --radius:24px; --max:1240px; --nav:82px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{
+  margin:0; font-family:Inter,system-ui,sans-serif; color:var(--ivory); line-height:1.6; overflow-x:hidden;
+  background:
+    radial-gradient(circle at 18% 8%, rgba(214,179,74,.08), transparent 26%),
+    radial-gradient(circle at 84% 14%, rgba(100,22,28,.18), transparent 24%),
+    linear-gradient(180deg,#0c0c0d 0%, #101013 48%, #0b0b0c 100%);
+}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; opacity:.12;
+  background:repeating-linear-gradient(90deg, rgba(255,255,255,.015) 0, rgba(255,255,255,.015) 1px, transparent 1px, transparent 112px);
+  mask-image:linear-gradient(to bottom, rgba(0,0,0,.82), rgba(0,0,0,.08));
+}
+a{color:inherit; text-decoration:none} img,video{display:block; max-width:100%}
+.wrap{width:min(calc(100% - 40px), var(--max)); margin-inline:auto}
+.nav{position:sticky; top:0; z-index:60; height:var(--nav); background:rgba(11,11,12,.74); backdrop-filter:blur(16px); border-bottom:1px solid rgba(255,255,255,.05)}
+.nav-inner{height:100%; display:flex; align-items:center; justify-content:space-between; gap:24px}
+.brand{font-family:Cinzel,serif; color:var(--gold); font-size:.93rem; letter-spacing:.16em; text-transform:uppercase}
+.nav-links{display:flex; gap:22px; flex-wrap:wrap; font-size:.92rem; color:var(--muted)} .nav-links a:hover{color:var(--ivory)}
+.eyebrow{display:inline-flex; align-items:center; gap:12px; color:var(--gold); text-transform:uppercase; letter-spacing:.22em; font-size:.77rem; font-weight:700}
+.eyebrow::before{content:""; width:42px; height:1px; background:linear-gradient(90deg, transparent, var(--gold))}
+.hero{min-height:calc(100dvh - var(--nav)); display:grid; align-items:center; padding:42px 0 72px}
+@supports not (height:100dvh){.hero{min-height:calc(100vh - var(--nav))}}
+.hero-grid{display:grid; grid-template-columns:minmax(300px,430px) 1fr; gap:64px; align-items:center}
+.book-wrap{position:relative; max-width:430px; margin-inline:auto}
+.book-wrap::before{content:""; position:absolute; inset:-28px; z-index:-1; filter:blur(32px); background:radial-gradient(circle at 50% 38%, rgba(214,179,74,.18), transparent 45%), radial-gradient(circle at 50% 64%, rgba(100,22,28,.25), transparent 45%)}
+.book{border:1px solid var(--line-strong); border-radius:28px; overflow:hidden; box-shadow:var(--shadow); background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015))}
+h1{margin:14px 0 16px; font-family:"Cormorant Garamond",serif; font-size:clamp(3rem, 7vw, 6rem); line-height:.94; letter-spacing:-.03em; max-width:10.5ch}
+.sub{font-family:"Cormorant Garamond",serif; font-size:clamp(1.14rem,2.2vw,1.72rem); color:var(--muted); max-width:18ch; line-height:1.28}
+.lede{max-width:64ch; color:#ddd4c6; margin:20px 0 28px; font-size:1.02rem}
+.cta{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:24px}
+.btn{display:inline-block; padding:14px 22px; border-radius:999px; font-size:.82rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; border:none; cursor:pointer; transition:transform .2s ease, background .2s ease, border-color .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(180deg,#e3c160,#bf9428); color:#151108; box-shadow:0 10px 26px rgba(214,179,74,.24)}
+.btn-secondary{background:rgba(255,255,255,.04); border:1px solid var(--line); color:var(--ivory)}
+.btn-ghost{background:transparent; border:1px solid rgba(214,179,74,.34); color:var(--gold)}
+.meta{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px}
+.meta-card{padding:14px; border-radius:16px; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.06)}
+.meta-label{margin-bottom:8px; color:var(--muted-2); font-size:.68rem; text-transform:uppercase; letter-spacing:.16em}
+.quote-band{margin-top:24px; display:grid; grid-template-columns:auto 1fr auto; gap:16px; align-items:center; padding:20px 22px; border-radius:20px; border:1px solid var(--line); box-shadow:var(--shadow); background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02)), linear-gradient(90deg, rgba(100,22,28,.18), rgba(0,0,0,0))}
+.qmark{font-family:"Cormorant Garamond",serif; font-size:3rem; line-height:1; color:var(--gold)} .qsrc{font-size:.82rem; color:var(--muted); text-align:right}
+section{padding:96px 0}
+.head{display:grid; gap:12px; margin-bottom:28px; max-width:780px}
+.head h2{margin:0; font-family:"Cormorant Garamond",serif; font-size:clamp(2rem,4vw,3.35rem); line-height:1.02}
+.head p{margin:0; color:var(--muted); font-size:1.04rem}
+.grid2{display:grid; grid-template-columns:1.08fr .92fr; gap:28px; align-items:start}
+.panel{padding:28px; border-radius:var(--radius); border:1px solid var(--line); box-shadow:var(--shadow); background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02))}
+.soft{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.018))}
+.video{overflow:hidden; border-radius:20px; border:1px solid var(--line); box-shadow:var(--shadow); background:#050505}
+.video video{width:100%; aspect-ratio:16/9; object-fit:cover}
+.detail-list{display:grid; gap:14px; margin-top:18px}
+.detail{padding:16px 18px; border-radius:18px; border:1px solid rgba(255,255,255,.06); background:rgba(255,255,255,.024)}
+.detail strong{display:block; margin-bottom:6px; color:var(--gold); font-size:.92rem; text-transform:uppercase; letter-spacing:.05em}
+.themes{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px}
+.theme{padding:22px; border-radius:20px; border:1px solid var(--line); background:var(--panel); transition:.2s ease}
+.theme:hover{transform:translateY(-3px); background:rgba(255,255,255,.05)}
+.theme h3{margin:0 0 10px; font-family:"Cormorant Garamond",serif; font-size:1.55rem} .theme p{margin:0; color:var(--muted)}
+.excerpt{display:grid; grid-template-columns:1.12fr .88fr; gap:26px; align-items:start}
+.excerpt-box{padding:30px; border-radius:26px; border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02)); box-shadow:var(--shadow)}
+.excerpt-title{margin-bottom:16px; color:var(--gold); font-family:Cinzel,serif; font-size:.78rem; text-transform:uppercase; letter-spacing:.18em}
+.excerpt-box p{margin:0 0 16px; font-family:"Cormorant Garamond",serif; font-size:1.34rem; line-height:1.52; color:#f1e8d9} .excerpt-box p:last-child{margin-bottom:0}
+.side{display:grid; gap:16px}
+.stat{padding:18px; border-radius:20px; border:1px solid rgba(255,255,255,.06); background:rgba(255,255,255,.024)}
+.stat h3{margin:0 0 10px; color:var(--gold); font-size:.92rem; text-transform:uppercase; letter-spacing:.14em}
+.stat strong{display:block; margin-bottom:10px; font-family:"Cormorant Garamond",serif; font-size:1.8rem} .stat p{margin:0; color:var(--muted)}
+.review-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px}
+.review-card{padding:24px; border-radius:22px; border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02)), linear-gradient(180deg, rgba(100,22,28,.12), transparent 55%)}
+.review-card p{margin:0 0 14px; font-family:"Cormorant Garamond",serif; font-size:1.4rem; line-height:1.42} .review-card span{color:var(--muted); font-size:.88rem}
+.author-grid{display:grid; grid-template-columns:.92fr 1.08fr; gap:26px; align-items:start}
+.portrait-panel img{width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:16px}
+.caption{padding-top:16px} .caption strong{display:block; margin-bottom:4px} .caption span{color:var(--muted); font-size:.92rem}
+.collab{display:grid; grid-template-columns:320px 1fr; gap:26px; align-items:center}
+.collab img{width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:16px}
+.other-books{display:grid; grid-template-columns:1fr; gap:18px}
+.faq{display:grid; gap:14px}
+details{padding:18px 20px; border-radius:18px; border:1px solid var(--line); background:rgba(255,255,255,.028)}
+summary{cursor:pointer; list-style:none; font-weight:700} summary::-webkit-details-marker{display:none} details p{margin:14px 0 0; color:var(--muted)}
+.final{padding:34px; border-radius:32px; border:1px solid var(--line); box-shadow:var(--shadow); text-align:center; background:radial-gradient(circle at top center, rgba(214,179,74,.14), transparent 45%), linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02))}
+.final h2{margin:10px 0 12px; font-family:"Cormorant Garamond",serif; font-size:clamp(2rem,4vw,3.4rem); line-height:1} .final p{max-width:58ch; margin:0 auto 22px; color:var(--muted)}
+footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
+.footer-grid{display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; padding-top:26px; border-top:1px solid rgba(255,255,255,.06)}
+.reveal{opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease} .reveal.visible{opacity:1; transform:none}
+
+
+
+.glossary-hero{display:grid; grid-template-columns:1.05fr .95fr; gap:24px; align-items:start}
+.glossary-stats{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:18px}
+.glossary-toolbar{display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:12px; margin:22px 0 18px}
+.glossary-toolbar .field{grid-column:1/-1}
+.field,.select{
+  width:100%; background:rgba(255,255,255,.04); color:var(--ivory); border:1px solid rgba(255,255,255,.08);
+  border-radius:16px; padding:14px 16px; font:inherit; outline:none;
+}
+.field::placeholder{color:#aa9f8d}
+.select option{background:#151518; color:var(--ivory)}
+.glossary-layout{display:grid; grid-template-columns:330px 1fr; gap:22px; align-items:start}
+.glossary-side{position:sticky; top:96px}
+.glossary-results{display:grid; gap:16px}
+.result-card{padding:22px; border-radius:22px; border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02)); box-shadow:var(--shadow)}
+.result-top{display:flex; justify-content:space-between; gap:16px; align-items:flex-start; flex-wrap:wrap; margin-bottom:10px}
+.result-top h3{margin:0; font-family:"Cormorant Garamond",serif; font-size:2rem; line-height:1}
+.badge-row{display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 14px}
+.badge{display:inline-flex; align-items:center; padding:6px 10px; border-radius:999px; font-size:.74rem; letter-spacing:.06em; text-transform:uppercase; border:1px solid rgba(214,179,74,.22); color:var(--gold); background:rgba(214,179,74,.08)}
+.result-meta{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin:14px 0}
+.meta-mini{padding:12px 14px; border-radius:16px; background:rgba(255,255,255,.025); border:1px solid rgba(255,255,255,.06)}
+.meta-mini strong{display:block; font-size:.68rem; color:var(--muted-2); text-transform:uppercase; letter-spacing:.15em; margin-bottom:6px}
+.meta-mini span{color:var(--ivory)}
+.result-text{color:#ddd4c6}
+.side-block{padding:20px; border-radius:20px; border:1px solid var(--line); background:rgba(255,255,255,.03); margin-bottom:16px}
+.side-block h3{margin:0 0 10px; color:var(--gold); font-size:.9rem; text-transform:uppercase; letter-spacing:.15em}
+.side-block p,.side-block li{color:var(--muted); margin:0}
+.side-block ul{margin:0; padding-left:18px; display:grid; gap:8px}
+.count-line{display:flex; justify-content:space-between; gap:16px; align-items:center; color:var(--muted); margin:2px 0 16px}
+.empty-state{padding:26px; border-radius:22px; border:1px dashed rgba(214,179,74,.25); color:var(--muted); text-align:center}
+@media (max-width:1100px){.glossary-hero,.glossary-layout{grid-template-columns:1fr}.glossary-side{position:static}}
+@media (max-width:860px){.glossary-toolbar,.glossary-stats,.result-meta{grid-template-columns:1fr}}
+
+@media (max-width:1100px){.hero-grid,.grid2,.excerpt,.author-grid,.collab{grid-template-columns:1fr} h1{max-width:none}}
+@media (max-width:860px){.themes,.review-grid,.meta{grid-template-columns:1fr} .quote-band{grid-template-columns:1fr; text-align:left} .qsrc{text-align:left} .nav{height:auto} .nav-inner{min-height:var(--nav); padding:14px 0; align-items:flex-start} .nav-links{gap:14px; font-size:.88rem}}
+@media (max-width:640px){.wrap{width:min(calc(100% - 24px), var(--max))} section{padding:72px 0} .panel,.excerpt-box,.final{padding:22px} .hero{padding-top:28px} .excerpt-box p{font-size:1.18rem} .brand{font-size:.82rem}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">The American Paranormal</a>
+    <nav class="nav-links">
+      <a href="#trailer">Trailer</a>
+      <a href="#excerpt">Excerpt</a>
+      <a href="#reviews">SPR</a>
+      <a href="#author">Author</a>
+      <a href="#collaboration">Cindy</a>
+      <a href="#other-books">Other Books</a>
+      <a href="#glossary">Glossary</a>
+      <a href="#buy">Buy</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="book-wrap reveal">
+          <div class="book">
+            <img src="The_American_Paranormal_Cover_600dpi.png" alt="Cover of The American Paranormal by Stephen Dietrich-Kolokouris">
+          </div>
+        </div>
+
+        <div class="reveal">
+          <span class="eyebrow">Official Book Website</span>
+          <h1>The American Paranormal</h1>
+          <div class="sub">Technology, Spiritualism, and the Search for Proof of Life After Death</div>
+          <p class="lede">A dark, modern, research-driven journey through American Spiritualism, psychical investigation, ghost-hunting technology, artificial intelligence, and the unresolved question that refuses to die: whether consciousness survives death.</p>
+
+          <div class="cta">
+            <a class="btn btn-primary" href="https://a.co/d/0gmGH7Vk" target="_blank" rel="noopener noreferrer">Buy the Book</a>
+            <a class="btn btn-secondary" href="#excerpt">Read the Prologue</a>
+            <a class="btn btn-ghost" href="#trailer">Watch the Trailer</a>
+          </div>
+
+          <div class="meta">
+            <div class="meta-card">
+              <div class="meta-label">Author</div>
+              <strong>Stephen Dietrich-Kolokouris, PhD</strong>
+            </div>
+            <div class="meta-card">
+              <div class="meta-label">Formats</div>
+              <strong>Paperback & Hardcover</strong>
+            </div>
+            <div class="meta-card">
+              <div class="meta-label">Positioning</div>
+              <strong>History, Technology, Consciousness</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-band reveal">
+        <div class="qmark">“</div>
+        <div>A very unusual, interesting, and challenging book… a thought-provoking, philosophical journey through the history of Spiritualism from a technological perspective.</div>
+        <div class="qsrc">Society for Psychical Research (SPR)</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trailer">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Featured Media</span>
+        <h2>Watch the official trailer</h2>
+        <p>The page is built around the standards that move books in 2025 and 2026: strong first-frame identity, a visible purchase path, immediate proof of relevance, and a clean route into excerpt, review, and author credibility.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="video reveal">
+          <video controls preload="metadata" poster="The_American_Paranormal_Cover_600dpi.png"><source src="trailer_Use_Website.mp4" type="video/mp4">Your browser does not support embedded video.</video>
+        </div>
+
+        <div class="panel soft reveal">
+          <p>This is the official page for <em>The American Paranormal</em>, positioned as a serious work of contemporary nonfiction rather than paranormal novelty content.</p>
+          <p>The site now follows the strongest conventions visible on major publisher pages for hot new authors and breakout nonfiction: dominant visual identity, fast buy path, concise proof points, review authority, excerpt, author credibility, and outward paths to related work.</p>
+          <div class="detail-list">
+            <div class="detail">
+              <strong>What sets it apart</strong>
+              <span>History, technology, philosophical tension, and a modern American frame.</span>
+            </div>
+            <div class="detail">
+              <strong>What it refuses</strong>
+              <span>Cheap certainty, shallow debunking, and paranormal entertainment without consequences.</span>
+            </div>
+            <div class="detail">
+              <strong>What it asks</strong>
+              <span>What happens if the tools to test survival become powerful enough to change society itself?</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">About the Book</span>
+        <h2>American Spiritualism, machine listening, and the oldest question in human experience</h2>
+        <p>The book moves through the history of Spiritualism, spirit technologies, psychical research, mediumship, skepticism, consciousness inquiry, and the modern belief that technology might one day do what faith and testimony could not: force the question of survival into the realm of proof.</p>
+      </div>
+
+      <div class="themes">
+        <article class="theme reveal"><h3>Spiritualism in America</h3><p>From the Fox sisters forward, the book tracks how American culture democratized the search for contact with the dead.</p></article>
+        <article class="theme reveal"><h3>Ghosts in the Machine</h3><p>Planchettes, radio, recording devices, EVP, and ITC become part of a longer history of technological mediation.</p></article>
+        <article class="theme reveal"><h3>Consciousness After Death</h3><p>The central question is not spectacle. It is whether awareness survives bodily death and what would count as evidence.</p></article>
+        <article class="theme reveal"><h3>Fraud and Ambiguity</h3><p>The book does not evade deception. It confronts fraud, exploitation, wishful thinking, and the limits of proof.</p></article>
+        <article class="theme reveal"><h3>AI and Survival Research</h3><p>Modern tools raise a new possibility: machine-assisted analysis of phenomena once left to testimony, memory, and ritual.</p></article>
+        <article class="theme reveal"><h3>The Ethics of Contact</h3><p>If proof ever comes through technology, who owns access to the dead, and what happens when only the wealthy can afford it?</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="excerpt">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Featured Excerpt</span>
+        <h2>The question that won’t die</h2>
+        <p>The excerpt is handled the way major publisher pages use it: enough to establish voice, authority, and mood — not so much that the page loses pace.</p>
+      </div>
+
+      <div class="excerpt">
+        <div class="excerpt-box reveal">
+          <div class="excerpt-title">From the Prologue</div>
+          <p>The room is dark, as rooms conducting this experiment always are. Six people sit around a table, hands linked, breathing synchronized to the rhythm a researcher establishes through counted intervals. Electronic equipment hums in the corners — EMF detectors, digital voice recorders, cameras with infrared capability, a laptop running software designed to analyze electromagnetic fluctuations in real time.</p>
+          <p>This is not a Victorian séance, though it descends directly from that tradition. This is a controlled investigation conducted in 2023 by a research team affiliated with a major American university, and everything happening here will be documented, measured, and subjected to statistical analysis that previous generations of Spiritualists never imagined.</p>
+          <p>Later, reviewing the data, the team will note the correlations — temperature drop, electromagnetic spike, participant reactions all clustering within a five-second window — but they’ll also note that no single variable exceeded threshold significance when analyzed independently. The pattern is suggestive. The evidence is ambiguous. Which is to say: the experiment succeeded in producing exactly the kind of results that paranormal investigation has produced for over 150 years. Almost enough. Never quite conclusive.</p>
+        </div>
+
+        <div class="side">
+          <div class="stat reveal">
+            <h3>What the excerpt does</h3>
+            <strong>Sets the stakes</strong>
+            <p>It frames the book as modern, empirical, unresolved, and morally consequential.</p>
+          </div>
+          <div class="stat reveal">
+            <h3>What the book explores</h3>
+            <p>How Americans sought to contact the dead using the technologies of their time — from séance tables to machine analysis.</p>
+          </div>
+          <div class="stat reveal">
+            <h3>Why it matters now</h3>
+            <p>Because AI, sensing systems, and contemporary ghost-hunting tools threaten to move this question out of folklore and into infrastructure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">SPR Review</span>
+        <h2>Praised by the Society for Psychical Research</h2>
+        <p>The SPR review positions <em>The American Paranormal</em> as unusual, intellectually ambitious, and philosophically serious — a work that blends history, technology, and the enduring problem of proof.</p>
+      </div>
+
+      <div class="review-grid">
+        <article class="review-card reveal"><p>“A very unusual, interesting, and challenging book…”</p><span>Society for Psychical Research (SPR)</span></article>
+        <article class="review-card reveal"><p>“A modern Gothic scientific and science fiction-based book…”</p><span>Society for Psychical Research (SPR)</span></article>
+        <article class="review-card reveal"><p>“Very much a philosopher’s book for those who engage in these activities…”</p><span>Society for Psychical Research (SPR)</span></article>
+        <article class="review-card reveal"><p>“A thought-provoking, philosophical journey through the history of Spiritualism from a technological perspective…”</p><span>Society for Psychical Research (SPR)</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="author">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">About the Author</span>
+        <h2>Stephen Dietrich-Kolokouris, PhD</h2>
+        <p>Historian, author, and investigator. This page centers <em>The American Paranormal</em> while still giving readers a path to related work.</p>
+      </div>
+
+      <div class="author-grid">
+        <div class="panel portrait-panel reveal">
+          <img src="SDK_Headshot.png" alt="Headshot of Stephen Dietrich-Kolokouris, PhD">
+          <div class="caption">
+            <strong>Stephen Dietrich-Kolokouris, PhD</strong>
+            <span>Historian, author, and investigator</span>
+          </div>
+        </div>
+
+        <div class="panel reveal">
+          <h3 style="margin:0 0 14px;font-family:'Cormorant Garamond',serif;font-size:2rem">A major work built around one question that refuses to die.</h3>
+          <p>Rather than functioning as a generic multi-book catalog, this page is built to foreground the ideas, atmosphere, and public identity of <em>The American Paranormal</em> while still giving readers a path to related work.</p>
+          <p>The message hierarchy follows what is currently effective in book marketing: identify the hook quickly, validate the work, humanize the author, and make purchase frictionless.</p>
+          <p>The tone stays aligned with your credentials and subject matter: dark, premium, controlled, and serious — not gimmicky, overdecorated, or TV-paranormal in tone.</p>
+          <div class="cta" style="margin-top:20px">
+            <a class="btn btn-secondary" href="#faq">Read FAQ</a>
+            <a class="btn btn-ghost" href="https://a.co/d/0gmGH7Vk" target="_blank" rel="noopener noreferrer">Get the Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="collaboration">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Featured Collaboration</span>
+        <h2>Cindy Kaza and the contemporary evidential mediumship conversation</h2>
+        <p>This section acknowledges a real contemporary point of contact between the book’s themes and present-day paranormal culture, without turning the page into a personality profile or drifting away from the book itself.</p>
+      </div>
+
+      <div class="collab">
+        <div class="panel reveal">
+          <img src="CK001.jpg" alt="Portrait of Cindy Kaza">
+          <div class="caption">
+            <strong>Cindy Kaza</strong>
+            <span>Psychic medium, clairvoyant, and featured collaborator</span>
+          </div>
+        </div>
+
+        <div class="panel reveal">
+          <p>Cindy Kaza is a psychic medium and clairvoyant who brings her extraordinary abilities to <em>The American Paranormal</em>. Trained at England’s prestigious Arthur Findlay School of Intuitive Sciences, Cindy is known for her work on Travel Channel’s <em>The Dead Files</em> and <em>The Holzer Files</em>, where she combines mediumship with paranormal investigation.</p>
+          <p>As a clairvoyant, clairaudient, and clairsentient, Cindy provides highly specific evidence during readings designed to reduce skepticism and demonstrate authentic connections with spirits. Her chapter in <em>The American Paranormal</em> explores the intersection of evidential mediumship and paranormal investigation, offering readers documented encounters that bridge the gap between the living and the spirit world.</p>
+
+          <div class="detail-list">
+            <div class="detail">
+              <strong>Featured TV Appearances</strong>
+              <span><em>The Dead Files</em>, <em>The Holzer Files</em>, <em>Paranormal Mysteries</em>, <em>Portals to Hell</em>, <em>Ghost Brothers</em>, <em>The Osbournes: Night of Terror</em></span>
+            </div>
+            <div class="detail">
+              <strong>Visit</strong>
+              <span><a href="https://cindykaza.com/" target="_blank" rel="noopener noreferrer" style="color:var(--gold)">cindykaza.com</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="other-books">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Other Books</span>
+        <h2>Explore related work</h2>
+        <p>Chicago Ripper Crew: Reboot has its own dedicated site and works as a digital companion experience. It belongs here as a clear outward path, but not as a competing brand inside this page.</p>
+      </div>
+
+      <div class="other-books">
+        <div class="panel reveal">
+          <h3 style="margin:0 0 12px;font-family:'Cormorant Garamond',serif;font-size:2rem">Chicago Ripper Crew: Reboot</h3>
+          <p style="margin:0 0 18px;color:var(--muted)">Visit the dedicated companion site for <em>Chicago Ripper Crew: Reboot</em>.</p>
+          <div class="cta" style="margin-bottom:0">
+            <a class="btn btn-secondary" href="https://skdietrich.github.io/RipperCrew/" target="_blank" rel="noopener noreferrer">Visit the Ripper Crew Site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="glossary">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">TAPS Glossary Database</span>
+        <h2>Search the American paranormal, occult, cryptid, and folklore vocabulary archive</h2>
+        <p>This section is the expandable starter architecture for a much larger static GitHub-hosted glossary database: 3,000 American entries, 500 UK entries, and 500 worldwide entries. It is built as a structured research index with rich metadata fields rather than a shallow word list. This version loads its entries from external JSON files, which is the cleanest path for scaling on GitHub Pages.</p>
+      </div>
+
+      <div class="glossary-hero">
+        <div class="panel reveal">
+          <h3 style="margin:0 0 14px;font-family:'Cormorant Garamond',serif;font-size:2rem">What this database tracks</h3>
+          <p class="result-text">Each entry can now carry identity, taxonomy, geography, historical framing, belief-status language, research notes, discoverability terms, and editorial controls. The structure is meant for paranormal history, occult language, cryptids, folklore, Spiritualism, investigative vocabulary, and comparative anomalous-belief research.</p>
+          <div class="glossary-stats">
+            <div class="meta-card">
+              <div class="meta-label">Target U.S. Corpus</div>
+              <strong>3,000 entries</strong>
+            </div>
+            <div class="meta-card">
+              <div class="meta-label">Target UK Corpus</div>
+              <strong>500 entries</strong>
+            </div>
+            <div class="meta-card">
+              <div class="meta-label">Target Global Corpus</div>
+              <strong>500 entries</strong>
+            </div>
+          </div>
+
+          <div class="schema-grid">
+            <div class="meta-card"><div class="meta-label">Identity</div><strong>entry_id, term, slug, aliases</strong></div>
+            <div class="meta-card"><div class="meta-label">Classification</div><strong>category, subcategory, tradition, entity_type</strong></div>
+            <div class="meta-card"><div class="meta-label">Geography</div><strong>country, region_level_1, city, location_notes</strong></div>
+            <div class="meta-card"><div class="meta-label">Content</div><strong>short_definition, full_definition, cultural_context</strong></div>
+            <div class="meta-card"><div class="meta-label">History</div><strong>historical_period, first_known_reference, modern_usage</strong></div>
+            <div class="meta-card"><div class="meta-label">Research</div><strong>belief_status, source_type, confidence_level, disputed</strong></div>
+          </div>
+        </div>
+
+        <div class="panel soft reveal">
+          <h3 style="margin:0 0 14px;font-family:'Cormorant Garamond',serif;font-size:2rem">Expanded field model</h3>
+          <div class="detail-list">
+            <div class="detail"><strong>Core identity</strong><span>entry_id, term, slug, aliases, search_boost_terms</span></div>
+            <div class="detail"><strong>Editorial structure</strong><span>category, subcategory, tradition, phenomenon_type, entity_type</span></div>
+            <div class="detail"><strong>Geographic structure</strong><span>country, region_level_1, city, location_notes</span></div>
+            <div class="detail"><strong>Definition layers</strong><span>short_definition, full_definition, cultural_context, historical_period</span></div>
+            <div class="detail"><strong>Research flags</strong><span>belief_status, source_type, confidence_level, disputed, fraud_risk, american_relevance_score</span></div>
+            <div class="detail"><strong>Navigation fields</strong><span>tags, related_terms, see_also, featured, public_visible, last_updated</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glossary-toolbar reveal">
+        <input id="searchInput" class="field gl-search" type="search" placeholder="Search term, alias, tag, state, city, category, tradition, source type, or definition">
+        <select id="categoryFilter" class="select">
+          <option value="">All categories</option>
+        </select>
+        <select id="countryFilter" class="select">
+          <option value="">All countries</option>
+        </select>
+        <select id="regionFilter" class="select">
+          <option value="">All states / regions</option>
+        </select>
+        <select id="traditionFilter" class="select">
+          <option value="">All traditions</option>
+        </select>
+        <select id="statusFilter" class="select">
+          <option value="">All belief statuses</option>
+        </select>
+        <select id="sortFilter" class="select">
+          <option value="term-asc">Sort: Term A–Z</option>
+          <option value="term-desc">Sort: Term Z–A</option>
+          <option value="country-asc">Sort: Country</option>
+          <option value="category-asc">Sort: Category</option>
+          <option value="score-desc">Sort: American relevance</option>
+        </select>
+      </div>
+
+      <div class="glossary-layout">
+        <aside class="glossary-side reveal">
+          <div class="side-block">
+            <h3>Database Notes</h3>
+            <p id="starterStats">Loading starter entries…</p>
+          </div>
+          <div class="side-block">
+            <h3>What this starter proves</h3>
+            <ul>
+              <li>The site can hold a large structured glossary on GitHub Pages without a backend.</li>
+              <li>The field model supports American, UK, and comparative global vocabulary in one interface.</li>
+              <li>Entries can grow richer over time without breaking the search layer.</li>
+            </ul>
+          </div>
+          <div class="side-block">
+            <h3>Schema direction</h3>
+            <p>This version is intentionally field-heavy so it can mature into a real research index rather than a decorative glossary.</p>
+          </div>
+          <button id="clearFilters" class="btn btn-secondary clear-btn">Clear Filters</button>
+        </aside>
+
+        <div>
+          <div class="result-top reveal" style="margin-bottom:18px">
+            <div>
+              <div class="meta-label">Search Results</div>
+              <strong id="resultCount" style="font-size:1.1rem">0 results</strong>
+            </div>
+          </div>
+          <div id="glossaryResults" class="glossary-results"><div class="empty-state">Loading glossary data…</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="buy">
+    <div class="wrap">
+      <div class="final reveal">
+        <span class="eyebrow">Get the Book</span>
+        <h2>The American Paranormal</h2>
+        <p>Enter through the trailer. Stay for the question. Leave with a book that treats Spiritualism, technology, consciousness, and the afterlife as a live problem — not a solved one.</p>
+        <div class="cta" style="justify-content:center">
+          <a class="btn btn-primary" href="https://a.co/d/0gmGH7Vk" target="_blank" rel="noopener noreferrer">Buy Now</a>
+          <a class="btn btn-secondary" href="#excerpt">Read Excerpt</a>
+          <a class="btn btn-ghost" href="#trailer">Watch Trailer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>© 2026 Stephen Dietrich-Kolokouris. All rights reserved.</div>
+    <div>Official website for <em>The American Paranormal</em>.</div>
+  </div>
+</footer>
+
+
+<script>
+const observer = new IntersectionObserver((entries)=> {
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+document.querySelectorAll('details').forEach(detail => {
+  detail.addEventListener('toggle', () => {
+    if (detail.open) {
+      document.querySelectorAll('details').forEach(other => {
+        if (other !== detail) other.open = false;
+      });
+    }
+  });
+});
+
+let glossaryEntries = [];
+const glossaryDataFiles = [
+  'data/us_terms.json',
+  'data/uk_terms.json',
+  'data/world_terms.json'
+];
+
+const els = {
+  search: document.getElementById('searchInput'),
+  category: document.getElementById('categoryFilter'),
+  country: document.getElementById('countryFilter'),
+  region: document.getElementById('regionFilter'),
+  tradition: document.getElementById('traditionFilter'),
+  status: document.getElementById('statusFilter'),
+  sort: document.getElementById('sortFilter'),
+  results: document.getElementById('glossaryResults'),
+  count: document.getElementById('resultCount'),
+  starterStats: document.getElementById('starterStats'),
+  clear: document.getElementById('clearFilters')
+};
+
+function uniq(values){
+  return [...new Set(values.filter(Boolean))].sort((a,b) => a.localeCompare(b));
+}
+
+function fillSelect(el, values, label){
+  el.innerHTML = `<option value="">${label}</option>` + values.map(value => `<option value="${value}">${value}</option>`).join('');
+}
+
+
+async function loadGlossaryEntries(){
+  const payloads = await Promise.all(
+    glossaryDataFiles.map(async (path) => {
+      const response = await fetch(path, { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error(`Failed to load ${path} (${response.status})`);
+      }
+      return response.json();
+    })
+  );
+
+  glossaryEntries = payloads.flat().map(entry => ({
+    ...entry,
+    aliases: Array.isArray(entry.aliases) ? entry.aliases : [],
+    tags: Array.isArray(entry.tags) ? entry.tags : [],
+    related_terms: Array.isArray(entry.related_terms) ? entry.related_terms : [],
+    see_also: Array.isArray(entry.see_also) ? entry.see_also : [],
+    search_boost_terms: Array.isArray(entry.search_boost_terms) ? entry.search_boost_terms : []
+  }));
+}
+
+function initializeFilters(){
+  fillSelect(els.category, uniq(glossaryEntries.map(e => e.category)), 'All categories');
+  fillSelect(els.country, uniq(glossaryEntries.map(e => e.country)), 'All countries');
+  fillSelect(els.region, uniq(glossaryEntries.map(e => e.region_level_1)), 'All states / regions');
+  fillSelect(els.tradition, uniq(glossaryEntries.map(e => e.tradition)), 'All traditions');
+  fillSelect(els.status, uniq(glossaryEntries.map(e => e.belief_status)), 'All belief statuses');
+  const usCount = glossaryEntries.filter(e => e.country === 'United States').length;
+  const ukCount = glossaryEntries.filter(e => e.country === 'United Kingdom').length;
+  const worldCount = glossaryEntries.length - usCount - ukCount;
+  els.starterStats.textContent = `${glossaryEntries.length} starter entries loaded: ${usCount} U.S., ${ukCount} UK, ${worldCount} global comparative entries. The field model now supports identity, taxonomy, geography, history, belief-status, research notes, and editorial controls.`;
+}
+
+function normalize(value){
+  return (value || '').toString().toLowerCase();
+}
+
+function flatField(value){
+  if (Array.isArray(value)) return value.join(' ');
+  return (value || '').toString();
+}
+
+function entryMatches(entry, term){
+  if (!term) return true;
+  const haystack = [
+    entry.term, entry.slug, entry.category, entry.subcategory, entry.short_definition, entry.full_definition,
+    entry.country, entry.region_level_1, entry.city, entry.location_notes, entry.cultural_context,
+    entry.historical_period, entry.first_known_reference, entry.modern_usage, entry.tradition,
+    entry.phenomenon_type, entry.entity_type, entry.belief_status, entry.source_type,
+    entry.confidence_level, entry.fraud_risk, flatField(entry.aliases), flatField(entry.tags),
+    flatField(entry.related_terms), flatField(entry.see_also), flatField(entry.search_boost_terms)
+  ].join(' ').toLowerCase();
+  return haystack.includes(term);
+}
+
+function sortEntries(entries, mode){
+  const copy = [...entries];
+  copy.sort((a,b) => {
+    if (mode === 'term-desc') return b.term.localeCompare(a.term);
+    if (mode === 'country-asc') return a.country.localeCompare(b.country) || a.term.localeCompare(b.term);
+    if (mode === 'category-asc') return a.category.localeCompare(b.category) || a.term.localeCompare(b.term);
+    if (mode === 'score-desc') return (b.american_relevance_score || 0) - (a.american_relevance_score || 0) || a.term.localeCompare(b.term);
+    return a.term.localeCompare(b.term);
+  });
+  return copy;
+}
+
+function listOrDash(values){
+  return values && values.length ? values.join(', ') : '—';
+}
+
+function renderResults(){
+  const term = normalize(els.search.value.trim());
+  const category = els.category.value;
+  const country = els.country.value;
+  const region = els.region.value;
+  const tradition = els.tradition.value;
+  const status = els.status.value;
+
+  let filtered = glossaryEntries.filter(entry =>
+    entryMatches(entry, term) &&
+    (!category || entry.category === category) &&
+    (!country || entry.country === country) &&
+    (!region || entry.region_level_1 === region) &&
+    (!tradition || entry.tradition === tradition) &&
+    (!status || entry.belief_status === status)
+  );
+
+  filtered = sortEntries(filtered, els.sort.value);
+  els.count.textContent = `${filtered.length} result${filtered.length === 1 ? '' : 's'}`;
+
+  if (!filtered.length){
+    els.results.innerHTML = '<div class="empty-state">No glossary entries match the current search and filter settings.</div>';
+    return;
+  }
+
+  els.results.innerHTML = filtered.map(entry => `
+    <article class="result-card">
+      <div class="result-top">
+        <div>
+          <h3>${entry.term}</h3>
+          <div class="badge-row">
+            <span class="badge">${entry.category}</span>
+            ${entry.subcategory ? `<span class="badge">${entry.subcategory}</span>` : ''}
+            <span class="badge">${entry.country}</span>
+            ${entry.region_level_1 ? `<span class="badge">${entry.region_level_1}</span>` : ''}
+            ${entry.city ? `<span class="badge">${entry.city}</span>` : ''}
+          </div>
+        </div>
+        <div class="meta-label">${entry.entry_id}</div>
+      </div>
+
+      <p class="result-definition"><strong style="color:var(--gold)">Short definition:</strong> ${entry.short_definition || entry.full_definition}</p>
+      <p class="result-text">${entry.full_definition}</p>
+
+      <div class="result-meta">
+        <div class="meta-mini">
+          <strong>Tradition</strong>
+          <span>${entry.tradition || '—'}</span>
+        </div>
+        <div class="meta-mini">
+          <strong>Belief status</strong>
+          <span>${entry.belief_status || '—'}</span>
+        </div>
+        <div class="meta-mini">
+          <strong>American relevance</strong>
+          <span>${entry.american_relevance_score ?? '—'} / 10</span>
+        </div>
+        <div class="meta-mini">
+          <strong>Aliases</strong>
+          <span>${listOrDash(entry.aliases)}</span>
+        </div>
+        <div class="meta-mini">
+          <strong>Tags</strong>
+          <span>${listOrDash(entry.tags)}</span>
+        </div>
+        <div class="meta-mini">
+          <strong>Related terms</strong>
+          <span>${listOrDash(entry.related_terms)}</span>
+        </div>
+      </div>
+
+      <details class="result-details">
+        <summary>View advanced fields</summary>
+        <div class="detail-grid">
+          <div class="detail-card"><strong>Slug</strong><span>${entry.slug || '—'}</span></div>
+          <div class="detail-card"><strong>Phenomenon type</strong><span>${entry.phenomenon_type || '—'}</span></div>
+          <div class="detail-card"><strong>Entity type</strong><span>${entry.entity_type || '—'}</span></div>
+          <div class="detail-card"><strong>Country</strong><span>${entry.country || '—'}</span></div>
+          <div class="detail-card"><strong>State / Region</strong><span>${entry.region_level_1 || '—'}</span></div>
+          <div class="detail-card"><strong>City</strong><span>${entry.city || '—'}</span></div>
+          <div class="detail-card"><strong>Location notes</strong><span>${entry.location_notes || '—'}</span></div>
+          <div class="detail-card"><strong>Cultural context</strong><span>${entry.cultural_context || '—'}</span></div>
+          <div class="detail-card"><strong>Historical period</strong><span>${entry.historical_period || '—'}</span></div>
+          <div class="detail-card"><strong>First known reference</strong><span>${entry.first_known_reference || '—'}</span></div>
+          <div class="detail-card"><strong>Modern usage</strong><span>${entry.modern_usage || '—'}</span></div>
+          <div class="detail-card"><strong>Source type</strong><span>${entry.source_type || '—'}</span></div>
+          <div class="detail-card"><strong>Confidence level</strong><span>${entry.confidence_level || '—'}</span></div>
+          <div class="detail-card"><strong>Disputed</strong><span>${entry.disputed ? 'Yes' : 'No'}</span></div>
+          <div class="detail-card"><strong>Fraud risk</strong><span>${entry.fraud_risk || '—'}</span></div>
+          <div class="detail-card"><strong>See also</strong><span>${listOrDash(entry.see_also)}</span></div>
+          <div class="detail-card"><strong>Search boost terms</strong><span>${listOrDash(entry.search_boost_terms)}</span></div>
+          <div class="detail-card"><strong>Featured</strong><span>${entry.featured ? 'Yes' : 'No'}</span></div>
+          <div class="detail-card"><strong>Public visible</strong><span>${entry.public_visible ? 'Yes' : 'No'}</span></div>
+          <div class="detail-card"><strong>Last updated</strong><span>${entry.last_updated || '—'}</span></div>
+        </div>
+      </details>
+    </article>
+  `).join('');
+}
+
+[els.search, els.category, els.country, els.region, els.tradition, els.status, els.sort].forEach(el => {
+  el.addEventListener('input', renderResults);
+  el.addEventListener('change', renderResults);
+});
+
+els.clear.addEventListener('click', () => {
+  els.search.value = '';
+  els.category.value = '';
+  els.country.value = '';
+  els.region.value = '';
+  els.tradition.value = '';
+  els.status.value = '';
+  els.sort.value = 'term-asc';
+  renderResults();
+});
+
+
+async function bootstrapGlossary(){
+  try {
+    await loadGlossaryEntries();
+    initializeFilters();
+    renderResults();
+  } catch (error) {
+    console.error(error);
+    els.count.textContent = '0 results';
+    els.results.innerHTML = `<div class="empty-state">Glossary data could not be loaded. Make sure the <code>data</code> folder stays next to this HTML file when you upload the site to GitHub Pages.</div>`;
+  }
+}
+
+bootstrapGlossary();
+</script>
+
+</body>
+</html>
