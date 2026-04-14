@@ -1,1163 +1,1057 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The American Paranormal | Official Website</title>
-<meta name="description" content="Official website for The American Paranormal by Stephen Dietrich-Kolokouris, PhD — technology, Spiritualism, and the search for proof of life after death." />
-<meta name="keywords" content="The American Paranormal, Stephen Dietrich-Kolokouris, Spiritualism, consciousness, psychical research, EVP, ITC, paranormal history, Cindy Kaza" />
-<meta name="author" content="Stephen Dietrich-Kolokouris, PhD" />
-<meta name="robots" content="index,follow,max-image-preview:large" />
-<meta property="og:title" content="The American Paranormal | Official Website" />
-<meta property="og:description" content="Technology, Spiritualism, and the Search for Proof of Life After Death." />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="The_American_Paranormal_Cover_600dpi.png" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="The American Paranormal | Official Website" />
-<meta name="twitter:description" content="Technology, Spiritualism, and the Search for Proof of Life After Death." />
-<meta name="twitter:image" content="The_American_Paranormal_Cover_600dpi.png" />
-<meta name="theme-color" content="#0b0b0c" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Book",
-  "name":"The American Paranormal",
-  "alternateName":"The American Paranormal: Technology, Spiritualism, and the Search for Proof of Life After Death",
-  "author":{"@type":"Person","name":"Stephen Dietrich-Kolokouris, PhD"},
-  "bookFormat":"https://schema.org/Paperback",
-  "isbn":"9798269454498",
-  "image":"The_American_Paranormal_Cover_600dpi.png",
-  "description":"A dark, modern exploration of American Spiritualism, psychical research, technology, and the search for proof of life after death."
-}
-</script>
-<style>
-:root {
-  --bg:#0b0b0c; --panel:rgba(255,255,255,.045); --line:rgba(214,179,74,.18); --line-strong:rgba(214,179,74,.36);
-  --gold:#d6b34a; --ivory:#f5efe3; --muted:#b4aa98; --muted-2:#8f8573; --shadow:0 18px 60px rgba(0,0,0,.42);
-  --radius:24px; --max:1240px; --nav:82px;
-}
-*{box-sizing:border-box} html{scroll-behavior:smooth}
-body{
-  margin:0; font-family:Inter,system-ui,sans-serif; color:var(--ivory); line-height:1.6; overflow-x:hidden;
-  background:
-    radial-gradient(circle at 18% 8%, rgba(214,179,74,.08), transparent 26%),
-    radial-gradient(circle at 84% 14%, rgba(100,22,28,.18), transparent 24%),
-    linear-gradient(180deg,#0c0c0d 0%, #101013 48%, #0b0b0c 100%);
-}
-body::before{
-  content:""; position:fixed; inset:0; pointer-events:none; opacity:.12;
-  background:repeating-linear-gradient(90deg, rgba(255,255,255,.015) 0, rgba(255,255,255,.015) 1px, transparent 1px, transparent 112px);
-  mask-image:linear-gradient(to bottom, rgba(0,0,0,.82), rgba(0,0,0,.08));
-}
-a{color:inherit; text-decoration:none} img,video{display:block; max-width:100%}
-.wrap{width:min(calc(100% - 40px), var(--max)); margin-inline:auto}
-.nav{position:sticky; top:0; z-index:60; height:var(--nav); background:rgba(11,11,12,.74); backdrop-filter:blur(16px); border-bottom:1px solid rgba(255,255,255,.05)}
-.nav-inner{height:100%; display:flex; align-items:center; justify-content:space-between; gap:24px}
-.brand{font-family:Cinzel,serif; color:var(--gold); font-size:.93rem; letter-spacing:.16em; text-transform:uppercase}
-.nav-links{display:flex; gap:22px; flex-wrap:wrap; font-size:.92rem; color:var(--muted)} .nav-links a:hover{color:var(--ivory)}
-.eyebrow{display:inline-flex; align-items:center; gap:12px; color:var(--gold); text-transform:uppercase; letter-spacing:.22em; font-size:.77rem; font-weight:700}
-.eyebrow::before{content:""; width:42px; height:1px; background:linear-gradient(90deg, transparent, var(--gold))}
-.hero{min-height:calc(100dvh - var(--nav)); display:grid; align-items:center; padding:42px 0 72px}
-@supports not (height:100dvh){.hero{min-height:calc(100vh - var(--nav))}}
-.hero-grid{display:grid; grid-template-columns:minmax(300px,430px) 1fr; gap:64px; align-items:center}
-.book-wrap{position:relative; max-width:430px; margin-inline:auto}
-.book-wrap::before{content:""; position:absolute; inset:-28px; z-index:-1; filter:blur(32px); background:radial-gradient(circle at 50% 38%, rgba(214,179,74,.18), transparent 45%), radial-gradient(circle at 50% 64%, rgba(100,22,28,.25), transparent 45%)}
-.book{border:1px solid var(--line-strong); border-radius:28px; overflow:hidden; box-shadow:var(--shadow); background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015))}
-h1{margin:14px 0 16px; font-family:"Cormorant Garamond",serif; font-size:clamp(3rem, 7vw, 6rem); line-height:.94; letter-spacing:-.03em; max-width:10.5ch}
-.sub{font-family:"Cormorant Garamond",serif; font-size:clamp(1.14rem,2.2vw,1.72rem); color:var(--muted); max-width:18ch; line-height:1.28}
-.lede{max-width:64ch; color:#ddd4c6; margin:20px 0 28px; font-size:1.02rem}
-.cta{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:24px}
-.btn{display:inline-block; padding:14px 22px; border-radius:999px; font-size:.82rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; border:none; cursor:pointer; transition:transform .2s ease, background .2s ease, border-color .2s ease}
-.btn:hover{transform:translateY(-2px)}
-.btn-primary{background:linear-gradient(180deg,#e3c160,#bf9428); color:#151108; box-shadow:0 10px 26px rgba(214,179,74,.24)}
-.btn-secondary{background:rgba(255,255,255,.04); border:1px solid var(--line); color:var(--ivory)}
-.btn-ghost{background:transparent; border:1px solid rgba(214,179,74,.34); color:var(--gold)}
-.meta{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px}
-.meta-card{padding:14px; border-radius:16px; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.06)}
-.meta-label{margin-bottom:8px; color:var(--muted-2); font-size:.68rem; text-transform:uppercase; letter-spacing:.16em}
-.quote-band{margin-top:24px; display:grid; grid-template-columns:auto 1fr auto; gap:16px; align-items:center; padding:20px 22px; border-radius:20px; border:1px solid var(--line); box-shadow:var(--shadow); background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02)), linear-gradient(90deg, rgba(100,22,28,.18), rgba(0,0,0,0))}
-.qmark{font-family:"Cormorant Garamond",serif; font-size:3rem; line-height:1; color:var(--gold)} .qsrc{font-size:.82rem; color:var(--muted); text-align:right}
-section{padding:96px 0}
-.head{display:grid; gap:12px; margin-bottom:28px; max-width:780px}
-.head h2{margin:0; font-family:"Cormorant Garamond",serif; font-size:clamp(2rem,4vw,3.35rem); line-height:1.02}
-.head p{margin:0; color:var(--muted); font-size:1.04rem}
-.grid2{display:grid; grid-template-columns:1.08fr .92fr; gap:28px; align-items:start}
-.panel{padding:28px; border-radius:var(--radius); border:1px solid var(--line); box-shadow:var(--shadow); background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02))}
-.soft{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.018))}
-.video{overflow:hidden; border-radius:20px; border:1px solid var(--line); box-shadow:var(--shadow); background:#050505}
-.video video{width:100%; aspect-ratio:16/9; object-fit:cover}
-.detail-list{display:grid; gap:14px; margin-top:18px}
-.detail{padding:16px 18px; border-radius:18px; border:1px solid rgba(255,255,255,.06); background:rgba(255,255,255,.024)}
-.detail strong{display:block; margin-bottom:6px; color:var(--gold); font-size:.92rem; text-transform:uppercase; letter-spacing:.05em}
-.themes{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px}
-.theme{padding:22px; border-radius:20px; border:1px solid var(--line); background:var(--panel); transition:.2s ease}
-.theme:hover{transform:translateY(-3px); background:rgba(255,255,255,.05)}
-.theme h3{margin:0 0 10px; font-family:"Cormorant Garamond",serif; font-size:1.55rem} .theme p{margin:0; color:var(--muted)}
-.excerpt{display:grid; grid-template-columns:1.12fr .88fr; gap:26px; align-items:start}
-.excerpt-box{padding:30px; border-radius:26px; border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02)); box-shadow:var(--shadow)}
-.excerpt-title{margin-bottom:16px; color:var(--gold); font-family:Cinzel,serif; font-size:.78rem; text-transform:uppercase; letter-spacing:.18em}
-.excerpt-box p{margin:0 0 16px; font-family:"Cormorant Garamond",serif; font-size:1.34rem; line-height:1.52; color:#f1e8d9} .excerpt-box p:last-child{margin-bottom:0}
-.side{display:grid; gap:16px}
-.stat{padding:18px; border-radius:20px; border:1px solid rgba(255,255,255,.06); background:rgba(255,255,255,.024)}
-.stat h3{margin:0 0 10px; color:var(--gold); font-size:.92rem; text-transform:uppercase; letter-spacing:.14em}
-.stat strong{display:block; margin-bottom:10px; font-family:"Cormorant Garamond",serif; font-size:1.8rem} .stat p{margin:0; color:var(--muted)}
-.review-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px}
-.review-card{padding:24px; border-radius:22px; border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02)), linear-gradient(180deg, rgba(100,22,28,.12), transparent 55%)}
-.review-card p{margin:0 0 14px; font-family:"Cormorant Garamond",serif; font-size:1.4rem; line-height:1.42} .review-card span{color:var(--muted); font-size:.88rem}
-.author-grid{display:grid; grid-template-columns:.92fr 1.08fr; gap:26px; align-items:start}
-.portrait-panel img{width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:16px}
-.caption{padding-top:16px} .caption strong{display:block; margin-bottom:4px} .caption span{color:var(--muted); font-size:.92rem}
-.collab{display:grid; grid-template-columns:320px 1fr; gap:26px; align-items:center}
-.collab img{width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:16px}
-.other-books{display:grid; grid-template-columns:1fr; gap:18px}
-.faq{display:grid; gap:14px}
-details{padding:18px 20px; border-radius:18px; border:1px solid var(--line); background:rgba(255,255,255,.028)}
-summary{cursor:pointer; list-style:none; font-weight:700} summary::-webkit-details-marker{display:none} details p{margin:14px 0 0; color:var(--muted)}
-.final{padding:34px; border-radius:32px; border:1px solid var(--line); box-shadow:var(--shadow); text-align:center; background:radial-gradient(circle at top center, rgba(214,179,74,.14), transparent 45%), linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02))}
-.final h2{margin:10px 0 12px; font-family:"Cormorant Garamond",serif; font-size:clamp(2rem,4vw,3.4rem); line-height:1} .final p{max-width:58ch; margin:0 auto 22px; color:var(--muted)}
-footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
-.footer-grid{display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; padding-top:26px; border-top:1px solid rgba(255,255,255,.06)}
-.reveal{opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease} .reveal.visible{opacity:1; transform:none}
-
-
-
-.glossary-hero{display:grid; grid-template-columns:1.05fr .95fr; gap:24px; align-items:start}
-.glossary-stats{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:18px}
-.glossary-toolbar{display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:12px; margin:22px 0 18px}
-.glossary-toolbar .field{grid-column:1/-1}
-.field,.select{
-  width:100%; background:rgba(255,255,255,.04); color:var(--ivory); border:1px solid rgba(255,255,255,.08);
-  border-radius:16px; padding:14px 16px; font:inherit; outline:none;
-}
-.field::placeholder{color:#aa9f8d}
-.select option{background:#151518; color:var(--ivory)}
-.glossary-layout{display:grid; grid-template-columns:330px 1fr; gap:22px; align-items:start}
-.glossary-side{position:sticky; top:96px}
-.glossary-results{display:grid; gap:16px}
-.result-card{padding:22px; border-radius:22px; border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02)); box-shadow:var(--shadow)}
-.result-top{display:flex; justify-content:space-between; gap:16px; align-items:flex-start; flex-wrap:wrap; margin-bottom:10px}
-.result-top h3{margin:0; font-family:"Cormorant Garamond",serif; font-size:2rem; line-height:1}
-.badge-row{display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 14px}
-.badge{display:inline-flex; align-items:center; padding:6px 10px; border-radius:999px; font-size:.74rem; letter-spacing:.06em; text-transform:uppercase; border:1px solid rgba(214,179,74,.22); color:var(--gold); background:rgba(214,179,74,.08)}
-.result-meta{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin:14px 0}
-.meta-mini{padding:12px 14px; border-radius:16px; background:rgba(255,255,255,.025); border:1px solid rgba(255,255,255,.06)}
-.meta-mini strong{display:block; font-size:.68rem; color:var(--muted-2); text-transform:uppercase; letter-spacing:.15em; margin-bottom:6px}
-.meta-mini span{color:var(--ivory)}
-.result-text{color:#ddd4c6}
-.side-block{padding:20px; border-radius:20px; border:1px solid var(--line); background:rgba(255,255,255,.03); margin-bottom:16px}
-.side-block h3{margin:0 0 10px; color:var(--gold); font-size:.9rem; text-transform:uppercase; letter-spacing:.15em}
-.side-block p,.side-block li{color:var(--muted); margin:0}
-.side-block ul{margin:0; padding-left:18px; display:grid; gap:8px}
-.count-line{display:flex; justify-content:space-between; gap:16px; align-items:center; color:var(--muted); margin:2px 0 16px}
-.empty-state{padding:26px; border-radius:22px; border:1px dashed rgba(214,179,74,.25); color:var(--muted); text-align:center}
-@media (max-width:1100px){.glossary-hero,.glossary-layout{grid-template-columns:1fr}.glossary-side{position:static}}
-@media (max-width:860px){.glossary-toolbar,.glossary-stats,.result-meta{grid-template-columns:1fr}}
-
-@media (max-width:1100px){.hero-grid,.grid2,.excerpt,.author-grid,.collab{grid-template-columns:1fr} h1{max-width:none}}
-@media (max-width:860px){.themes,.review-grid,.meta{grid-template-columns:1fr} .quote-band{grid-template-columns:1fr; text-align:left} .qsrc{text-align:left} .nav{height:auto} .nav-inner{min-height:var(--nav); padding:14px 0; align-items:flex-start} .nav-links{gap:14px; font-size:.88rem}}
-@media (max-width:640px){.wrap{width:min(calc(100% - 24px), var(--max))} section{padding:72px 0} .panel,.excerpt-box,.final{padding:22px} .hero{padding-top:28px} .excerpt-box p{font-size:1.18rem} .brand{font-size:.82rem}}
-
-/* ── SPR Review Section ─────────────────────────────────── */
-.spr-context{margin-bottom:48px}
-.spr-context-inner{display:grid; grid-template-columns:260px 1fr; gap:32px; align-items:start; padding:32px; border-radius:var(--radius); border:1px solid var(--line-strong); background:linear-gradient(135deg, rgba(214,179,74,.07), rgba(255,255,255,.02))}
-.spr-badge{display:flex; flex-direction:column; gap:8px; padding:24px; border-radius:18px; border:1px solid var(--line-strong); background:rgba(214,179,74,.06); text-align:center}
-.spr-badge-year{font-family:Cinzel,serif; color:var(--gold); font-size:.72rem; letter-spacing:.22em; text-transform:uppercase}
-.spr-badge-name{font-family:"Cormorant Garamond",serif; font-size:1.4rem; line-height:1.2; color:var(--ivory)}
-.spr-badge-sub{color:var(--muted-2); font-size:.75rem; letter-spacing:.08em}
-.spr-context-text .head{margin-bottom:0}
-.spr-hero-quote{position:relative; padding:40px 48px; margin-bottom:36px; border-radius:var(--radius); border:1px solid var(--line-strong); background:linear-gradient(180deg, rgba(214,179,74,.06), rgba(255,255,255,.02)), linear-gradient(135deg, rgba(100,22,28,.15), transparent 60%); box-shadow:var(--shadow)}
-.spr-hq-mark{font-family:"Cormorant Garamond",serif; font-size:6rem; line-height:.7; color:var(--gold); opacity:.6; margin-bottom:16px}
-.spr-hq-text{margin:0 0 20px; font-family:"Cormorant Garamond",serif; font-size:clamp(1.4rem,2.6vw,2rem); line-height:1.45; color:var(--ivory); font-style:italic; border:none; padding:0}
-.spr-hq-attr{color:var(--muted); font-size:.92rem}
-.spr-passages{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px}
-.spr-passage{padding:26px; border-radius:22px; border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.015))}
-.spr-passage-label{margin-bottom:12px; color:var(--gold); font-size:.72rem; text-transform:uppercase; letter-spacing:.18em; font-weight:700}
-.spr-passage p{margin:0; font-family:"Cormorant Garamond",serif; font-size:1.22rem; line-height:1.55; color:#e8dfd0}
-@media(max-width:1100px){.spr-context-inner{grid-template-columns:1fr}}
-@media(max-width:860px){.spr-passages{grid-template-columns:1fr} .spr-hero-quote{padding:28px 24px}}
-
-/* ── Nav: Buy button + hamburger ───────────────────────────────────────── */
-.nav-buy{font-size:.78rem; padding:10px 18px; white-space:nowrap; flex-shrink:0}
-.nav-hamburger{display:none; flex-direction:column; justify-content:space-between; width:26px; height:18px; background:none; border:none; cursor:pointer; padding:0; flex-shrink:0}
-.nav-hamburger span{display:block; width:100%; height:2px; background:var(--ivory); border-radius:2px; transition:transform .25s ease, opacity .25s ease}
-.nav-hamburger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
-.nav-hamburger.open span:nth-child(2){opacity:0}
-.nav-hamburger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-@media(max-width:860px){
-  .nav-hamburger{display:flex}
-  .nav-links{display:none; position:absolute; top:var(--nav); left:0; right:0; flex-direction:column; background:rgba(11,11,12,.97); backdrop-filter:blur(16px); border-bottom:1px solid rgba(255,255,255,.08); padding:18px 20px; gap:4px; z-index:59}
-  .nav-links.open{display:flex}
-  .nav-links a{padding:10px 0; border-bottom:1px solid rgba(255,255,255,.05); font-size:1rem}
-  .nav-inner{flex-wrap:nowrap; gap:12px}
-}
-
-/* ── Chapter List ───────────────────────────────────────────────────────── */
-.chapters-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px}
-.chapter-card{display:grid; grid-template-columns:90px 1fr 48px; gap:16px; align-items:start; padding:20px 22px; border-radius:18px; border:1px solid var(--line); background:linear-gradient(180deg,rgba(255,255,255,.032),rgba(255,255,255,.016)); transition:.2s ease}
-.chapter-card:hover{transform:translateY(-2px); border-color:var(--line-strong); background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.025))}
-.ch-num{color:var(--gold); font-size:.7rem; text-transform:uppercase; letter-spacing:.14em; font-weight:700; padding-top:3px}
-.ch-body h3{margin:0 0 6px; font-family:"Cormorant Garamond",serif; font-size:1.18rem; line-height:1.2; color:var(--ivory)}
-.ch-body p{margin:0; color:var(--muted); font-size:.88rem; line-height:1.5}
-.ch-page{color:var(--muted-2); font-size:.75rem; text-align:right; padding-top:3px}
-.chapter-epilogue{border-color:rgba(214,179,74,.28); background:linear-gradient(180deg,rgba(214,179,74,.05),rgba(255,255,255,.016))}
-@media(max-width:860px){.chapters-grid{grid-template-columns:1fr} .chapter-card{grid-template-columns:80px 1fr 40px}}
-
-/* ── Email Capture ──────────────────────────────────────────────────────── */
-.email-band{display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; padding:42px 48px; border-radius:var(--radius); border:1px solid var(--line-strong); background:radial-gradient(circle at 20% 50%,rgba(214,179,74,.09),transparent 50%), linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02))}
-.email-band-text h2{margin:10px 0 12px; font-family:"Cormorant Garamond",serif; font-size:clamp(1.8rem,3vw,2.6rem); line-height:1.05}
-.email-band-text p{margin:0; color:var(--muted); font-size:1rem}
-.email-form{display:flex; flex-direction:column; gap:12px}
-.email-input-row{display:flex; gap:10px}
-.email-field{flex:1; background:rgba(255,255,255,.05); color:var(--ivory); border:1px solid rgba(255,255,255,.12); border-radius:999px; padding:13px 20px; font:inherit; font-size:.92rem; outline:none; transition:border-color .2s}
-.email-field:focus{border-color:var(--gold)}
-.email-field::placeholder{color:#8f8573}
-.email-fine{margin:0; color:var(--muted-2); font-size:.78rem}
-.email-msg{padding:10px 16px; border-radius:12px; font-size:.88rem}
-.email-msg.success{background:rgba(80,180,80,.12); border:1px solid rgba(80,180,80,.3); color:#9de0a0}
-.email-msg.error{background:rgba(200,60,60,.12); border:1px solid rgba(200,60,60,.3); color:#e09090}
-@media(max-width:860px){.email-band{grid-template-columns:1fr; padding:28px 24px} .email-input-row{flex-direction:column}}
-
-/* ── Reader Reviews ─────────────────────────────────────────────────────── */
-.reader-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px}
-.reader-card{padding:26px; border-radius:22px; border:1px solid var(--line); background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015))}
-.reader-card .stars{color:var(--gold); font-size:1rem; letter-spacing:2px; margin-bottom:12px}
-.reader-card p{margin:0 0 14px; font-family:"Cormorant Garamond",serif; font-size:1.28rem; line-height:1.48; color:#f0e8d8}
-.reader-card span{color:var(--muted); font-size:.82rem}
-@media(max-width:860px){.reader-grid{grid-template-columns:1fr}}
-
-/* ── Credentials Block ──────────────────────────────────────────────────── */
-.credentials{display:grid; gap:8px; margin-top:18px; padding-top:18px; border-top:1px solid rgba(255,255,255,.07)}
-.cred{display:flex; align-items:center; gap:10px; padding:9px 12px; border-radius:12px; background:rgba(255,255,255,.025); border:1px solid rgba(255,255,255,.055)}
-.cred-icon{font-size:1rem; flex-shrink:0}
-.cred span:last-child{color:var(--muted); font-size:.84rem}
-</style>
-</head>
-<body>
-<header class="nav">
-  <div class="wrap nav-inner">
-    <a class="brand" href="#top">The American Paranormal</a>
-    <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav-links" id="navLinks">
-      <a href="#top">Home</a>
-      <a href="#trailer">Trailer</a>
-      <a href="#chapters">Chapters</a>
-      <a href="#excerpt">Excerpt</a>
-      <a href="#reviews">SPR</a>
-      <a href="#author">Author</a>
-      <a href="#collaboration">Cindy Kaza</a>
-      <a href="#other-books">Other Books</a>
-      <a href="#glossary">Glossary</a>
-    </nav>
-    <a class="btn btn-primary nav-buy" href="https://a.co/d/0gmGH7Vk" target="_blank" rel="noopener noreferrer">Buy Now</a>
-  </div>
-</header>
-
-<main id="top">
-  <section class="hero">
-    <div class="wrap">
-      <div class="hero-grid">
-        <div class="book-wrap reveal">
-          <div class="book">
-            <img src="The_American_Paranormal_Cover_600dpi.png" alt="Cover of The American Paranormal by Stephen Dietrich-Kolokouris">
-          </div>
-        </div>
-
-        <div class="reveal">
-          <span class="eyebrow">Official Book Website</span>
-          <h1>The American Paranormal</h1>
-          <div class="sub">Technology, Spiritualism, and the Search for Proof of Life After Death</div>
-          <p class="lede">A dark, research-driven investigation spanning 150 years of American Spiritualism, psychical inquiry, ghost-hunting technology, and the one question no instrument has yet answered: whether awareness survives bodily death.</p>
-
-          <div class="cta">
-            <a class="btn btn-primary" href="https://a.co/d/0gmGH7Vk" target="_blank" rel="noopener noreferrer">Buy the Book</a>
-            <a class="btn btn-secondary" href="#excerpt">Read the Prologue</a>
-            <a class="btn btn-ghost" href="#trailer">Watch the Trailer</a>
-          </div>
-
-          <div class="meta">
-            <div class="meta-card">
-              <div class="meta-label">Author</div>
-              <strong>Stephen Dietrich-Kolokouris, PhD</strong>
-            </div>
-            <div class="meta-card">
-              <div class="meta-label">Formats</div>
-              <strong>Paperback & Hardcover</strong>
-            </div>
-            <div class="meta-card">
-              <div class="meta-label">Positioning</div>
-              <strong>History, Technology, Consciousness</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="quote-band reveal">
-        <div class="qmark">“</div>
-        <div>A very unusual, interesting, and challenging book… a thought-provoking, philosophical journey through the history of Spiritualism from a technological perspective.</div>
-        <div class="qsrc">Society for Psychical Research (SPR)</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="trailer">
-    <div class="wrap">
-      <div class="head reveal">
-        <span class="eyebrow">Featured Media</span>
-        <h2>Watch the official trailer</h2>
-        <p>A work that refuses the comfortable divisions between history, science, and the unknown. Watch the official trailer for <em>The American Paranormal</em>.</p>
-      </div>
-
-      <div class="grid2">
-        <div class="video reveal">
-          <video controls preload="metadata" poster="The_American_Paranormal_Cover_600dpi.png"><source src="trailer_Use_Website.mp4" type="video/mp4">Your browser does not support embedded video.</video>
-        </div>
-
-        <div class="panel soft reveal">
-          <p><em>The American Paranormal</em> is a serious work of contemporary nonfiction. It does not perform skepticism — it practices it. It does not traffic in comfortable certainties in either direction. It treats the survival question as exactly what it is: the most consequential unresolved problem in the history of human inquiry.</p>
-          <p>The book moves through history, technology, and philosophy without losing the thread that connects all three: the persistent American conviction that death is a boundary worth testing.</p>
-          <div class="detail-list">
-            <div class="detail">
-              <strong>What sets it apart</strong>
-              <span>History, technology, philosophical tension, and a modern American frame.</span>
-            </div>
-            <div class="detail">
-              <strong>What it refuses</strong>
-              <span>Cheap certainty, shallow debunking, and paranormal entertainment without consequences.</span>
-            </div>
-            <div class="detail">
-              <strong>What it asks</strong>
-              <span>What happens if the tools to test survival become powerful enough to change society itself?</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="wrap">
-      <div class="head reveal">
-        <span class="eyebrow">About the Book</span>
-        <h2>American Spiritualism, machine listening, and the oldest question in human experience</h2>
-        <p>From the Fox sisters to AI-assisted signal analysis, the book traces how Americans have reached across the boundary of death using whatever tools their era provided — and what it has cost them in credulity, grief, and stubborn hope.</p>
-      </div>
-
-      <div class="themes">
-        <article class="theme reveal"><h3>Spiritualism in America</h3><p>From the Fox sisters forward, the book tracks how American culture democratized the search for contact with the dead.</p></article>
-        <article class="theme reveal"><h3>Ghosts in the Machine</h3><p>Planchettes, radio, recording devices, EVP, and ITC become part of a longer history of technological mediation.</p></article>
-        <article class="theme reveal"><h3>Consciousness After Death</h3><p>The central question is not spectacle. It is whether awareness survives bodily death and what would count as evidence.</p></article>
-        <article class="theme reveal"><h3>Fraud and Ambiguity</h3><p>The book does not evade deception. It confronts fraud, exploitation, wishful thinking, and the limits of proof.</p></article>
-        <article class="theme reveal"><h3>AI and Survival Research</h3><p>Modern tools raise a new possibility: machine-assisted analysis of phenomena once left to testimony, memory, and ritual.</p></article>
-        <article class="theme reveal"><h3>The Ethics of Contact</h3><p>If proof ever comes through technology, who owns access to the dead, and what happens when only the wealthy can afford it?</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section id="excerpt">
-    <div class="wrap">
-      <div class="head reveal">
-        <span class="eyebrow">Featured Excerpt</span>
-        <h2>The question that won’t die</h2>
-        <p>The prologue places you inside a 2023 controlled investigation — documented, measured, statistically analyzed — that produces results indistinguishable from over a century of prior attempts. Almost enough. Never quite conclusive. That tension is the book.</p>
-      </div>
-
-      <div class="excerpt">
-        <div class="excerpt-box reveal">
-          <div class="excerpt-title">From the Prologue</div>
-          <p>The room is dark, as rooms conducting this experiment always are. Six people sit around a table, hands linked, breathing synchronized to the rhythm a researcher establishes through counted intervals. Electronic equipment hums in the corners — EMF detectors, digital voice recorders, cameras with infrared capability, a laptop running software designed to analyze electromagnetic fluctuations in real time.</p>
-          <p>This is not a Victorian séance, though it descends directly from that tradition. This is a controlled investigation conducted in 2023 by a research team affiliated with a major American university, and everything happening here will be documented, measured, and subjected to statistical analysis that previous generations of Spiritualists never imagined.</p>
-          <p>Later, reviewing the data, the team will note the correlations — temperature drop, electromagnetic spike, participant reactions all clustering within a five-second window — but they’ll also note that no single variable exceeded threshold significance when analyzed independently. The pattern is suggestive. The evidence is ambiguous. Which is to say: the experiment succeeded in producing exactly the kind of results that paranormal investigation has produced for over 150 years. Almost enough. Never quite conclusive.</p>
-        </div>
-
-        <div class="side">
-          <div class="stat reveal">
-            <h3>What the excerpt does</h3>
-            <strong>Sets the stakes</strong>
-            <p>It frames the book as modern, empirical, unresolved, and morally consequential.</p>
-          </div>
-          <div class="stat reveal">
-            <h3>What the book explores</h3>
-            <p>How Americans sought to contact the dead using the technologies of their time — from séance tables to machine analysis.</p>
-          </div>
-          <div class="stat reveal">
-            <h3>Why it matters now</h3>
-            <p>Because AI, sensing systems, and contemporary ghost-hunting tools threaten to move this question out of folklore and into infrastructure.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="chapters">
-    <div class="wrap">
-      <div class="head reveal">
-        <span class="eyebrow">Table of Contents</span>
-        <h2>Inside the book</h2>
-        <p>Fourteen chapters spanning 150 years of American Spiritualism, psychical research, and the technologies built to answer a single question.</p>
-      </div>
-
-      <div class="chapters-grid reveal">
-        <div class="chapter-card">
-          <span class="ch-num">Prologue</span>
-          <div class="ch-body">
-            <h3>The Question That Won&rsquo;t Die</h3>
-            <p>The stakes, the method, and why the answer still matters.</p>
-          </div>
-          <span class="ch-page">p. 1</span>
-        </div>
-        <div class="chapter-card">
-          <span class="ch-num">Chapter 1</span>
-          <div class="ch-body">
-            <h3>The Fox Sisters and the Birth of a Movement</h3>
-            <p>Hydesville, 1848. Two girls, a dead peddler, and the crack in the wall between the living and the dead that never fully closed.</p>
-          </div>
-          <span class="ch-page">p. 17</span>
-        </div>
-        <div class="chapter-card">
-          <span class="ch-num">Chapter 2</span>
-          <div class="ch-body">
-            <h3>Spirits Cross the Atlantic</h3>
-            <p>American Spiritualism exports itself to Britain and Europe, acquiring new traditions, new frauds, and the first serious scientific scrutiny.</p>
-          </div>
-          <span class="ch-page">p. 67</span>
-        </div>
-        <div class="chapter-card">
-          <span class="ch-num">Chapter 3</span>
-          <div class="ch-body">
-            <h3>The Scientists and the S&eacute;ance</h3>
-            <p>The Society for Psychical Research brings laboratory discipline to the darkened room. What they found — and what they couldn&rsquo;t explain.</p>
-          </div>
-          <span class="ch-page">p. 93</span>
-        </div>
-        <div class="chapter-card">
-          <span class="ch-num">Chapter 4</span>
-          <div class="ch-body">
-            <h3>Ghosts in the Machine</h3>
-            <p>From planchettes to radio — how each new technology became immediately conscripted into the search for voices from the other side.</p>
-          </div>
-          <span class="ch-page">p. 133</span>
-        </div>
-        <div class="chapter-card">
-          <span class="ch-num">Chapter 5</span>
-          <div class="ch-body">
-            <h3>Empire of the Spirits</h3>
-            <p>The industrialization of belief. Spiritualism becomes an institution, a business, and a target.</p>
-          </div>
-          <span class="ch-page">p. 163</span>
-        </div>
-        <div class="chapter-card">
-          <span class="ch-num">Chapter 6</span>
-          <div class="ch-body">
-            <h3>The Great War and the Great Beyond</h3>
-            <p>The trenches of WWI produce the largest mass grief event in modern history. Spiritualism surges. So does the desperation that feeds fraud.</p>
-          </div>
-          <span class="ch-page">p. 187</span>
-        </div>
-        <div class="chapter-card">
-          <span class="ch-num">Chapter 7</span>
-          <div class="ch-body">
-            <h3>What Changed in Human Consciousness?</h3>
-            <p>The mid-20th century rupture — what shifted in the way humanity understood itself, and why it mattered for the survival question.</p>
-          </div>
-          <span class="ch-page">p. 205</span>
-        </div>
-        <div class="chapter-card">
-          <span class="ch-num">Chapter 8</span>
-          <div class="ch-body">
-            <h3>The Dimensional Breach</h3>
-            <p>UFOs, altered states, and the growing suspicion that what people are contacting may not be the dead at all.</p>
-          </div>
-          <span class="ch-page">p. 225</span>
-        </div>
-        <div class="chapter-card">
-          <span class="ch-num">Chapter 9</span>
-          <div class="ch-body">
-            <h3>Convergence</h3>
-            <p>The threads pull together. Psychical research, physics, consciousness studies, and field investigation arrive at the same unresolved edge.</p>
-          </div>
-          <span class="ch-page">p. 239</span>
-        </div>
-        <div class="chapter-card">
-          <span class="ch-num">Chapter 10</span>
-          <div class="ch-body">
-            <h3>Chemical Gateways</h3>
-            <p>Psychedelics, near-death research, and the possibility that consciousness is not produced by the brain but merely filtered through it.</p>
-          </div>
-          <span class="ch-page">p. 253</span>
-        </div>
-        <div class="chapter-card">
-          <span class="ch-num">Chapter 11</span>
-          <div class="ch-body">
-            <h3>Modern Mediumship</h3>
-            <p>Cindy Kaza and the contemporary evidential tradition — what it looks like when mediumship is stripped of atmosphere and tested against verifiable fact.</p>
-          </div>
-          <span class="ch-page">p. 283</span>
-        </div>
-        <div class="chapter-card">
-          <span class="ch-num">Chapter 12</span>
-          <div class="ch-body">
-            <h3>Parallel Paths</h3>
-            <p>Eastern traditions, indigenous frameworks, and the survival question outside the Western laboratory.</p>
-          </div>
-          <span class="ch-page">p. 295</span>
-        </div>
-        <div class="chapter-card">
-          <span class="ch-num">Chapter 13</span>
-          <div class="ch-body">
-            <h3>Silicon Mediums</h3>
-            <p>Artificial intelligence enters the séance room. What happens when the machine starts producing answers that look like contact?</p>
-          </div>
-          <span class="ch-page">p. 303</span>
-        </div>
-        <div class="chapter-card">
-          <span class="ch-num">Chapter 14</span>
-          <div class="ch-body">
-            <h3>The Monopoly of Death</h3>
-            <p>If the technology ever works — who controls it? The darkest implication of the entire 150-year project.</p>
-          </div>
-          <span class="ch-page">p. 327</span>
-        </div>
-        <div class="chapter-card chapter-epilogue">
-          <span class="ch-num">Epilogue</span>
-          <div class="ch-body">
-            <h3>What We Are Left With</h3>
-            <p>No resolution. No false comfort. Only the question, clarified.</p>
-          </div>
-          <span class="ch-page">p. 357</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="reviews">
-    <div class="wrap">
-
-      <div class="spr-context reveal">
-        <div class="spr-context-inner">
-          <div class="spr-badge">
-            <div class="spr-badge-year">Est. 1882</div>
-            <div class="spr-badge-name">Society for Psychical Research</div>
-            <div class="spr-badge-sub">London, England &middot; Charity No. 207325</div>
-          </div>
-          <div class="spr-context-text">
-            <span class="eyebrow">Official Review</span>
-            <h2>Reviewed by the Society for Psychical Research</h2>
-            <p>The SPR &mdash; founded in London in 1882 &mdash; is the oldest and most respected institution in the world dedicated to the rigorous scientific investigation of paranormal phenomena. Its membership has included Nobel laureates, philosophers, and heads of state. A formal review in its publications is among the highest forms of recognition available to a work in this field. <em>The American Paranormal</em> received a full review by Ciaran Farrell &mdash; himself a psychical researcher, paranormal investigator, and ghost hunter.</p>
-            <a class="btn btn-ghost" href="https://www.spr.ac.uk/AmericanParanormal" target="_blank" rel="noopener noreferrer" style="margin-top:16px;display:inline-block">Read the Full Review on SPR.ac.uk &rarr;</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="spr-hero-quote reveal">
-        <div class="spr-hq-mark">&ldquo;</div>
-        <blockquote class="spr-hq-text">A very unusual, interesting, and challenging book in which the reader will see that the author has considered in some considerable depth and breadth the matter of there being more questions than answers in the world of the paranormal &mdash; its history, its development, and that of humanity itself.</blockquote>
-        <div class="spr-hq-attr">&mdash; Ciaran Farrell, <em>Society for Psychical Research</em></div>
-      </div>
-
-      <div class="spr-passages reveal">
-        <div class="spr-passage">
-          <div class="spr-passage-label">On the book&rsquo;s structure</div>
-          <p>Reminiscent of Henry James&rsquo;s <em>The Turn of the Screw</em> &mdash; two competing and contrasting narratives that rely on one another: a historical account of the development of spirit-based technologies, and a critical philosophical commentary running alongside it.</p>
-        </div>
-        <div class="spr-passage">
-          <div class="spr-passage-label">On the author</div>
-          <p>A historian and a remarkable man with a diverse set of interests, skills, and talents &mdash; an author who has spent many long hours waiting in the dark for something to happen, contemplating what contact with discarnate entities would mean for humanity as a whole.</p>
-        </div>
-        <div class="spr-passage">
-          <div class="spr-passage-label">On the central vision</div>
-          <p>A modern Gothic scientific and science fiction-based book &mdash; a novel, enthusiastic, thought-provoking, philosophical journey through the history of Spiritualism from a technological perspective for those who love the challenge of the paranormal.</p>
-        </div>
-        <div class="spr-passage">
-          <div class="spr-passage-label">On its audience</div>
-          <p>Very much a philosopher&rsquo;s book for those who engage in paranormal investigation &mdash; though there is also something there for the devotees of cosmic consciousness theory, Spiritists, Spiritualists, technologists, and historians alike.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="reader-reviews">
-    <div class="wrap">
-      <div class="head reveal">
-        <span class="eyebrow">Reader Reviews</span>
-        <h2>What readers are saying</h2>
-        <p>From paranormal investigators and historians to curious skeptics — responses from across the readership.</p>
-      </div>
-      <div class="reader-grid reveal">
-        <article class="reader-card">
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>&ldquo;Unlike anything else in the paranormal space. Rigorous, dark, and genuinely unsettling in the best way. The chapter on AI mediumship alone is worth the price.&rdquo;</p>
-          <span>Verified Amazon Reader</span>
-        </article>
-        <article class="reader-card">
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>&ldquo;I came in as a skeptic and left with far more questions than I arrived with. That&rsquo;s exactly what serious nonfiction should do.&rdquo;</p>
-          <span>Verified Amazon Reader</span>
-        </article>
-        <article class="reader-card">
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>&ldquo;The historical depth is extraordinary. You can feel the research behind every chapter. The Fox Sisters section alone reads like a thriller.&rdquo;</p>
-          <span>Verified Amazon Reader</span>
-        </article>
-        <article class="reader-card">
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>&ldquo;Finally a book on this subject written by someone who takes both the evidence and the doubt seriously. No cheerleading, no debunking. Just the real history.&rdquo;</p>
-          <span>Verified Amazon Reader</span>
-        </article>
-      </div>
-      <div style="text-align:center;margin-top:28px">
-        <a class="btn btn-ghost" href="https://a.co/d/0gmGH7Vk" target="_blank" rel="noopener noreferrer">Read All Reviews on Amazon &rarr;</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="author">
-    <div class="wrap">
-      <div class="head reveal">
-        <span class="eyebrow">About the Author</span>
-        <h2>Stephen Dietrich-Kolokouris, PhD</h2>
-        <p>Stephen Dietrich-Kolokouris holds a PhD in German History from Goethe University Frankfurt and an MS in Computer Science. He is a former intelligence contractor, a certified cybersecurity professional, and the author of seven published works spanning true crime, historical analysis, and consciousness research.</p>
-      </div>
-
-      <div class="author-grid">
-        <div class="panel portrait-panel reveal">
-          <img src="SDK_Headshot.png" alt="Headshot of Stephen Dietrich-Kolokouris, PhD">
-          <div class="caption">
-            <strong>Stephen Dietrich-Kolokouris, PhD</strong>
-            <span>Historian, author, and investigator</span>
-          </div>
-          <div class="credentials">
-            <div class="cred"><span class="cred-icon">&#127979;</span><span>PhD, German History &mdash; Goethe University Frankfurt</span></div>
-            <div class="cred"><span class="cred-icon">&#128187;</span><span>MS, Computer Science &mdash; Emory University</span></div>
-            <div class="cred"><span class="cred-icon">&#128218;</span><span>7 Published Books</span></div>
-            <div class="cred"><span class="cred-icon">&#128313;</span><span>NDE Survivor &mdash; November 2022</span></div>
-            <div class="cred"><span class="cred-icon">&#128269;</span><span>ITC &amp; Psychical Researcher</span></div>
-            <div class="cred"><span class="cred-icon">&#128203;</span><span>Society for Psychical Research</span></div>
-          </div>
-        </div>
-
-        <div class="panel reveal">
-          <h3 style="margin:0 0 14px;font-family:'Cormorant Garamond',serif;font-size:2rem">A major work built around one question that refuses to die.</h3>
-          <p>Stephen Dietrich-Kolokouris is a historian, author, and paranormal researcher whose work moves between the archival and the empirical. His background spans academic history, computer science, and direct investigative fieldwork in psychical research and instrumental transcommunication.</p>
-          <p>In November 2022, he experienced a sepsis-induced cardiac arrest — an event his attending physicians documented as clinical death. What he describes from that interval does not fit the popular narrative of light and peace. It changed what he was willing to take seriously, and what he was no longer willing to dismiss.</p>
-          <p><em>The American Paranormal</em> is not a convert's testimony. It is the work of someone who came to these questions with methodological rigor, confronted the evidence from the inside, and refused to resolve the ambiguity by choosing a comfortable side.</p>
-          <div class="cta" style="margin-top:20px">
-            <a class="btn btn-secondary" href="#faq">Read FAQ</a>
-            <a class="btn btn-ghost" href="https://a.co/d/0gmGH7Vk" target="_blank" rel="noopener noreferrer">Get the Book</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="collaboration">
-    <div class="wrap">
-      <div class="head reveal">
-        <span class="eyebrow">Featured Collaboration</span>
-        <h2>Cindy Kaza and the contemporary evidential mediumship conversation</h2>
-        <p>Cindy Kaza's chapters are not a detour from the book's central argument. They are its most direct encounter with what happens when trained evidential mediumship meets the same rigorous scrutiny the book applies to every other form of claimed contact with the dead.</p>
-      </div>
-
-      <div class="collab">
-        <div class="panel reveal">
-          <img src="CK001.jpg" alt="Portrait of Cindy Kaza">
-          <div class="caption">
-            <strong>Cindy Kaza</strong>
-            <span>Psychic medium, clairvoyant, and featured collaborator</span>
-          </div>
-        </div>
-
-        <div class="panel reveal">
-          <p>Cindy Kaza is a psychic medium and clairvoyant who brings her extraordinary abilities to <em>The American Paranormal</em>. Trained at England’s prestigious Arthur Findlay School of Intuitive Sciences, Cindy is known for her work on Travel Channel’s <em>The Dead Files</em> and <em>The Holzer Files</em>, where she combines mediumship with paranormal investigation.</p>
-          <p>As a clairvoyant, clairaudient, and clairsentient, Cindy provides highly specific evidence during readings designed to reduce skepticism and demonstrate authentic connections with spirits. Her chapter in <em>The American Paranormal</em> explores the intersection of evidential mediumship and paranormal investigation, offering readers documented encounters that bridge the gap between the living and the spirit world.</p>
-
-          <div class="detail-list">
-            <div class="detail">
-              <strong>Featured TV Appearances</strong>
-              <span><em>The Dead Files</em>, <em>The Holzer Files</em>, <em>Paranormal Mysteries</em>, <em>Portals to Hell</em>, <em>Ghost Brothers</em>, <em>The Osbournes: Night of Terror</em></span>
-            </div>
-            <div class="detail">
-              <strong>Visit</strong>
-              <span><a href="https://cindykaza.com/" target="_blank" rel="noopener noreferrer" style="color:var(--gold)">cindykaza.com</a></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="other-books">
-    <div class="wrap">
-      <div class="head reveal">
-        <span class="eyebrow">Other Books</span>
-        <h2>Explore related work</h2>
-        <p>Stephen Dietrich-Kolokouris is also the author of <em>Chicago Ripper Crew: Reboot</em> — a true crime work examining one of the most disturbing criminal networks in American history. It occupies entirely different territory than <em>The American Paranormal</em>, and has its own dedicated companion site.</p>
-      </div>
-
-      <div class="other-books">
-        <div class="panel reveal">
-          <h3 style="margin:0 0 12px;font-family:'Cormorant Garamond',serif;font-size:2rem">Chicago Ripper Crew: Reboot</h3>
-          <p style="margin:0 0 18px;color:var(--muted)">Visit the dedicated companion site for <em>Chicago Ripper Crew: Reboot</em>.</p>
-          <div class="cta" style="margin-bottom:0">
-            <a class="btn btn-secondary" href="https://skdietrich.github.io/RipperCrew/" target="_blank" rel="noopener noreferrer">Visit the Ripper Crew Site</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="glossary">
-    <div class="wrap">
-      <div class="head reveal">
-        <span class="eyebrow">Research Glossary</span>
-        <h2>Search the American paranormal, occult, cryptid, and folklore vocabulary archive</h2>
-        <p>A structured research index cataloging the terminology, traditions, entities, and investigative concepts that define American and global paranormal inquiry — built for historians, researchers, and investigators, not casual browsing.</p>
-      </div>
-
-      <div class="glossary-hero">
-        <div class="panel reveal">
-          <h3 style="margin:0 0 14px;font-family:'Cormorant Garamond',serif;font-size:2rem">What this database tracks</h3>
-          <p class="result-text">Each entry carries full structural depth: identity, taxonomy, geographic specificity, historical framing, belief-status classification, research flags, and editorial controls — built as a serious reference index for paranormal history, occult traditions, cryptid taxonomy, folklore, Spiritualist lineage, and investigative vocabulary across American, British, and global corpora.</p>
-          <div class="glossary-stats">
-            <div class="meta-card">
-              <div class="meta-label">U.S. Entries</div>
-              <strong>American</strong>
-            </div>
-            <div class="meta-card">
-              <div class="meta-label">UK Entries</div>
-              <strong>British</strong>
-            </div>
-            <div class="meta-card">
-              <div class="meta-label">Global Entries</div>
-              <strong>Worldwide</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel soft reveal">
-          <h3 style="margin:0 0 14px;font-family:'Cormorant Garamond',serif;font-size:2rem">What each entry contains</h3>
-          <div class="detail-list">
-            <div class="detail"><strong>Term &amp; Aliases</strong><span>The primary term, alternate names, regional variants, and searchable keywords.</span></div>
-            <div class="detail"><strong>Classification</strong><span>Category, tradition, phenomenon type, and entity classification where applicable.</span></div>
-            <div class="detail"><strong>Geography</strong><span>Country of origin, state or region, city, and location context for place-specific entries.</span></div>
-            <div class="detail"><strong>Historical Context</strong><span>Full definition, cultural context, historical period, and first known documented reference.</span></div>
-            <div class="detail"><strong>Research Assessment</strong><span>Belief status, source type, confidence level, disputed status, and fraud-risk rating.</span></div>
-            <div class="detail"><strong>Cross-References</strong><span>Related terms, see-also links, tags, and an American relevance score out of 10.</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="glossary-toolbar reveal">
-        <input id="searchInput" class="field gl-search" type="search" placeholder="Search term, alias, tag, state, city, category, tradition, source type, or definition">
-        <select id="categoryFilter" class="select">
-          <option value="">All categories</option>
-        </select>
-        <select id="countryFilter" class="select">
-          <option value="">All countries</option>
-        </select>
-        <select id="regionFilter" class="select">
-          <option value="">All states / regions</option>
-        </select>
-        <select id="traditionFilter" class="select">
-          <option value="">All traditions</option>
-        </select>
-        <select id="statusFilter" class="select">
-          <option value="">All belief statuses</option>
-        </select>
-        <select id="sortFilter" class="select">
-          <option value="term-asc">Sort: Term A–Z</option>
-          <option value="term-desc">Sort: Term Z–A</option>
-          <option value="country-asc">Sort: Country</option>
-          <option value="category-asc">Sort: Category</option>
-          <option value="score-desc">Sort: American relevance</option>
-        </select>
-      </div>
-
-      <div class="glossary-layout">
-        <aside class="glossary-side reveal">
-          <div class="side-block">
-            <h3>Database Notes</h3>
-            <p id="starterStats">Loading entries…</p>
-          </div>
-          <div class="side-block">
-            <h3>About this archive</h3>
-            <ul>
-              <li>Covers American, British, and global paranormal vocabulary in a unified searchable interface.</li>
-              <li>Each entry includes historical period, geographic origin, belief-status classification, and fraud-risk notation.</li>
-              <li>Entries deepen over time without disrupting search or navigation.</li>
-            </ul>
-          </div>
-
-          <button id="clearFilters" class="btn btn-secondary clear-btn">Clear Filters</button>
-        </aside>
-
-        <div>
-          <div class="result-top reveal" style="margin-bottom:18px">
-            <div>
-              <div class="meta-label">Search Results</div>
-              <strong id="resultCount" style="font-size:1.1rem">0 results</strong>
-            </div>
-          </div>
-          <div id="glossaryResults" class="glossary-results"><div class="empty-state">Loading glossary data…</div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="email-capture">
-    <div class="wrap">
-      <div class="email-band reveal">
-        <div class="email-band-text">
-          <span class="eyebrow">Stay Connected</span>
-          <h2>Get the free field guide</h2>
-          <p>Sign up and receive a free PDF field guide to EVP methodology — the investigative framework behind <em>The American Paranormal</em>. No noise, no newsletters. Research updates only.</p>
-        </div>
-        <form class="email-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleEmailSubmit(event)">
-          <div class="email-input-row">
-            <input type="email" name="email" placeholder="Your email address" required class="email-field" />
-            <button type="submit" class="btn btn-primary">Send Me the Guide</button>
-          </div>
-          <p class="email-fine">No spam. Unsubscribe any time. Your address stays private.</p>
-          <div id="emailMsg" class="email-msg" style="display:none"></div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-<section id="buy">
-    <div class="wrap">
-      <div class="final reveal">
-        <span class="eyebrow">Get the Book</span>
-        <h2>The American Paranormal</h2>
-        <p>Enter through the trailer. Stay for the question. Leave with a book that treats Spiritualism, technology, consciousness, and the afterlife as a live problem — not a solved one.</p>
-        <div class="cta" style="justify-content:center">
-          <a class="btn btn-primary" href="https://a.co/d/0gmGH7Vk" target="_blank" rel="noopener noreferrer">Buy Now</a>
-          <a class="btn btn-secondary" href="#excerpt">Read Excerpt</a>
-          <a class="btn btn-ghost" href="#trailer">Watch Trailer</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap footer-grid">
-    <div>© 2026 Stephen Dietrich-Kolokouris. All rights reserved.</div>
-    <div>Official website for <em>The American Paranormal</em>.</div>
-  </div>
-</footer>
-
-
-<script>
-const observer = new IntersectionObserver((entries)=> {
-  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-}, {threshold:.12});
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-document.querySelectorAll('details').forEach(detail => {
-  detail.addEventListener('toggle', () => {
-    if (detail.open) {
-      document.querySelectorAll('details').forEach(other => {
-        if (other !== detail) other.open = false;
-      });
-    }
-  });
-});
-
-let glossaryEntries = [];
-const glossaryDataFiles = [
+[
   {
-    name: 'glossary.json',
-    paths: ['./assets/glossary.json', 'assets/glossary.json']
+    "entry_id": "US-001",
+    "term": "Electronic Voice Phenomenon",
+    "slug": "electronic-voice-phenomenon",
+    "aliases": ["EVP", "Raudive voices", "voice anomaly"],
+    "category": "ITC",
+    "subcategory": "Audio",
+    "tradition": "Psychical Research",
+    "phenomenon_type": "Anomalous Audio",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": "Recorded across the United States in domestic, institutional, and field investigation contexts.",
+    "short_definition": "Anomalous voices or sounds captured on audio recording devices not heard during the recording session.",
+    "full_definition": "Electronic Voice Phenomenon refers to unexpected voices, words, or intelligible sounds discovered on audio recordings that were not audible to those present during capture. First systematically documented by Friedrich Jürgenson in the 1950s and expanded by Konstantīns Raudive, EVP became a cornerstone of instrumental transcommunication research. Recordings are typically classified by clarity — Class A (clearly intelligible), Class B (requires amplification), Class C (barely discernible). Critics attribute EVP to auditory pareidolia, radio frequency bleed, and equipment artifact. Proponents argue that structured, contextually responsive content exceeds noise-based explanation. EVP remains the most widely practiced form of technological contact attempt in American paranormal investigation.",
+    "cultural_context": "Embedded deeply in American ghost-hunting culture following the popularization of digital recorders in the early 2000s. Featured extensively in television paranormal programming.",
+    "historical_period": "1950s–present",
+    "first_known_reference": "Friedrich Jürgenson, 1959",
+    "modern_usage": "Standard investigative practice; subject of ongoing ITC research and signal analysis methodology.",
+    "belief_status": "Contested",
+    "source_type": "Investigative / Academic",
+    "confidence_level": "Moderate",
+    "disputed": true,
+    "fraud_risk": "Low",
+    "american_relevance_score": 10,
+    "tags": ["audio", "ITC", "investigation", "recording", "spirit communication"],
+    "related_terms": ["ITC", "Spirit Box", "White Noise", "Raudive Voices"],
+    "see_also": ["US-002", "US-003"],
+    "search_boost_terms": ["EVP", "ghost voice", "spirit voice", "audio anomaly"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-002",
+    "term": "Instrumental Transcommunication",
+    "slug": "instrumental-transcommunication",
+    "aliases": ["ITC"],
+    "category": "ITC",
+    "subcategory": "Methodology",
+    "tradition": "Psychical Research",
+    "phenomenon_type": "Technology-Mediated Contact",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "The use of electronic devices to attempt communication with discarnate entities or non-physical intelligences.",
+    "full_definition": "Instrumental Transcommunication is the broad field encompassing any methodology that employs electronic or digital technology as a medium for purported contact with discarnate consciousness. It extends beyond EVP to include video ITC, computer-generated text anomalies, telephone calls, television image capture, and AI-assisted signal analysis. The term was coined by Ernst Senkowski in the 1970s and gained significant traction through the work of the Harsch-Fischbach couple in Luxembourg. ITC distinguishes itself from classical mediumship by grounding the contact claim in a technological record subject to independent review. American ITC research has increasingly incorporated entropy-based signal analysis, Bayesian temporal scoring, and anomaly detection algorithms.",
+    "cultural_context": "Bridges the historical Spiritualist tradition of mechanical mediation with contemporary digital investigation practice.",
+    "historical_period": "1970s–present",
+    "first_known_reference": "Ernst Senkowski, 1970s",
+    "modern_usage": "Active research field; growing incorporation of AI and machine learning methodologies.",
+    "belief_status": "Contested",
+    "source_type": "Academic / Investigative",
+    "confidence_level": "Moderate",
+    "disputed": true,
+    "fraud_risk": "Low",
+    "american_relevance_score": 9,
+    "tags": ["ITC", "technology", "spirit communication", "methodology", "EVP"],
+    "related_terms": ["EVP", "Spirit Box", "Ghost Box", "Video ITC"],
+    "see_also": ["US-001", "US-003"],
+    "search_boost_terms": ["ITC", "spirit communication technology", "ghost tech"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-003",
+    "term": "Spirit Box",
+    "slug": "spirit-box",
+    "aliases": ["Ghost Box", "Frank's Box", "P-SB7"],
+    "category": "ITC",
+    "subcategory": "Device",
+    "tradition": "Popular Paranormal Investigation",
+    "phenomenon_type": "Technology-Mediated Contact",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "A modified radio device that sweeps AM/FM frequencies continuously to generate audio noise used as a purported communication carrier.",
+    "full_definition": "The Spirit Box, originally developed as 'Frank's Box' by Frank Sumption in 2002, is a radio receiver modified to sweep continuously through AM or FM frequencies at a rapid rate, producing a stream of fragmented audio from which investigators attempt to identify intelligible words or responses. The theory holds that discarnate entities can manipulate the sweeping audio to produce coherent communication. Mainstream skeptics attribute all perceived responses to auditory pareidolia applied to radio noise. Proponents point to contextually specific, multi-word responses that exceed probability under random-sweep conditions. The device became ubiquitous in American paranormal television and amateur investigation during the 2010s. Methodological criticism centers on the absence of controlled baselines and the highly subjective nature of interpretation.",
+    "cultural_context": "Dominant device in American television paranormal programming; heavily associated with commercial ghost-hunting culture.",
+    "historical_period": "2002–present",
+    "first_known_reference": "Frank Sumption, 2002",
+    "modern_usage": "Widespread investigative use; subject of ongoing criticism regarding signal contamination and methodology.",
+    "belief_status": "Contested",
+    "source_type": "Investigative",
+    "confidence_level": "Low–Moderate",
+    "disputed": true,
+    "fraud_risk": "Moderate",
+    "american_relevance_score": 9,
+    "tags": ["device", "ITC", "radio", "audio", "investigation"],
+    "related_terms": ["EVP", "ITC", "White Noise", "Ovilus"],
+    "see_also": ["US-001", "US-002"],
+    "search_boost_terms": ["ghost box", "Frank's Box", "P-SB7", "radio sweep"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-004",
+    "term": "Spiritualism",
+    "slug": "spiritualism",
+    "aliases": ["American Spiritualism", "Modern Spiritualism"],
+    "category": "Movement",
+    "subcategory": "Religion / Philosophy",
+    "tradition": "Spiritualism",
+    "phenomenon_type": "Belief System",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": "New York",
+    "city": "Hydesville",
+    "location_notes": "The Fox sisters' rappings in Hydesville, New York (1848) are considered the founding event of Modern Spiritualism.",
+    "short_definition": "A religious and philosophical movement founded on the belief that the spirits of the dead can and do communicate with the living.",
+    "full_definition": "American Spiritualism emerged from the Fox sisters' reported spirit rappings in Hydesville, New York in 1848 and rapidly expanded into a mass cultural movement. At its peak in the late 19th century, it claimed millions of adherents across the United States and Great Britain. Spiritualism combined elements of Protestant Christianity, Mesmerism, and democratic individualism into a framework that democratized contact with the dead — no clergy required, no institutional gatekeeping. The movement produced an enormous infrastructure of mediums, séance circles, camp meetings, newspapers, and reform causes including abolitionism and women's suffrage. It also produced an unbroken history of fraud, exposure, and reinvention. Serious psychical research emerged partly as a response to Spiritualism's evidential failures, attempting to apply scientific methodology to the survival question that the movement had made culturally urgent.",
+    "cultural_context": "Foundational to American paranormal culture; shaped gender politics, reform movements, and the popular understanding of death throughout the 19th century.",
+    "historical_period": "1848–present",
+    "first_known_reference": "Fox Sisters, Hydesville, New York, 1848",
+    "modern_usage": "Ongoing religious denomination; historical anchor for contemporary paranormal investigation.",
+    "belief_status": "Religious / Philosophical",
+    "source_type": "Historical / Academic",
+    "confidence_level": "High (historical record)",
+    "disputed": false,
+    "fraud_risk": "High (historical mediumship fraud documented extensively)",
+    "american_relevance_score": 10,
+    "tags": ["history", "religion", "mediumship", "Fox sisters", "séance", "19th century"],
+    "related_terms": ["Mediumship", "Fox Sisters", "Séance", "Camp Chesterfield", "Lily Dale"],
+    "see_also": ["US-005", "US-006", "US-010"],
+    "search_boost_terms": ["American Spiritualism", "Modern Spiritualism", "spirit rappings", "Fox sisters"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-005",
+    "term": "Fox Sisters",
+    "slug": "fox-sisters",
+    "aliases": ["Kate Fox", "Maggie Fox", "Leah Fox"],
+    "category": "Historical Figures",
+    "subcategory": "Mediums",
+    "tradition": "Spiritualism",
+    "phenomenon_type": "Mediumship",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": "New York",
+    "city": "Hydesville",
+    "location_notes": "Hydesville, New York (1848); later Rochester and New York City.",
+    "short_definition": "Three sisters — Kate, Maggie, and Leah Fox — whose reported spirit rappings in 1848 are credited with founding Modern Spiritualism.",
+    "full_definition": "Kate and Maggie Fox, ages twelve and fifteen respectively, reported in March 1848 that they had established a communication system with a spirit they called 'Mr. Splitfoot' through a series of knocking sounds in their Hydesville farmhouse. Their older sister Leah managed their subsequent careers as public mediums. The phenomenon spread rapidly and the sisters became celebrated figures in American cultural life. In 1888, Maggie Fox publicly confessed that the rappings had been produced by cracking toe joints — a confession she later recanted. The authenticity debate never resolved. Regardless of the physical mechanism, the Fox sisters catalyzed a mass cultural movement that lasted decades and shaped how Americans thought about death, evidence, and the boundary between science and belief.",
+    "cultural_context": "Iconic figures in American religious and paranormal history; symbols of both the promise and the pathology of the Spiritualist movement.",
+    "historical_period": "1848–1890s",
+    "first_known_reference": "March 31, 1848, Hydesville, New York",
+    "modern_usage": "Historical reference; subject of ongoing scholarly debate regarding confession authenticity.",
+    "belief_status": "Historically documented (contested authenticity)",
+    "source_type": "Historical / Biographical",
+    "confidence_level": "High (historical record)",
+    "disputed": true,
+    "fraud_risk": "High (self-confessed, then recanted)",
+    "american_relevance_score": 10,
+    "tags": ["history", "Spiritualism", "mediumship", "19th century", "fraud", "New York"],
+    "related_terms": ["Spiritualism", "Séance", "Mediumship", "Rappings"],
+    "see_also": ["US-004", "US-006"],
+    "search_boost_terms": ["Fox sisters", "Hydesville rappings", "spirit knockings", "Kate Fox", "Maggie Fox"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-006",
+    "term": "Séance",
+    "slug": "seance",
+    "aliases": ["Circle", "Spirit Circle", "Sitting"],
+    "category": "Practice",
+    "subcategory": "Mediumship",
+    "tradition": "Spiritualism",
+    "phenomenon_type": "Contact Ritual",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "A gathering of individuals, typically in dim light, presided over by a medium to facilitate purported communication with the dead.",
+    "full_definition": "The séance — from the French for 'sitting' — became the central ritual of American Spiritualism following the Fox sisters' emergence in 1848. Participants typically seated themselves in a circle, often holding hands, in darkened or candlelit conditions. A designated medium served as the communication channel, producing physical or verbal phenomena attributed to spirit presence: table tipping, levitation, automatic writing, trumpet voices, materialization of forms, and slate writing. The darkened conditions that facilitated the experience also created ideal conditions for fraud, and the history of American séances is inseparable from the history of exposure. Serious psychical researchers — including those of the Society for Psychical Research — developed elaborate controls to detect deception, documenting a small number of cases that resisted normal explanation.",
+    "cultural_context": "Central to 19th century American social life; crossing class and gender boundaries in ways unusual for the period.",
+    "historical_period": "1848–present",
+    "first_known_reference": "1848, United States",
+    "modern_usage": "Practiced in Spiritualist communities; referenced as cultural touchstone in paranormal investigation.",
+    "belief_status": "Practiced (religious context)",
+    "source_type": "Historical / Ethnographic",
+    "confidence_level": "High (historical record)",
+    "disputed": true,
+    "fraud_risk": "High (historically documented)",
+    "american_relevance_score": 9,
+    "tags": ["ritual", "mediumship", "Spiritualism", "history", "contact"],
+    "related_terms": ["Mediumship", "Spiritualism", "Table Tipping", "Automatic Writing"],
+    "see_also": ["US-004", "US-005", "US-007"],
+    "search_boost_terms": ["séance", "spirit circle", "sitting", "table tipping"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-007",
+    "term": "Automatic Writing",
+    "slug": "automatic-writing",
+    "aliases": ["Automatism", "Psychography", "Spirit Writing"],
+    "category": "Practice",
+    "subcategory": "Mediumship",
+    "tradition": "Spiritualism / Psychical Research",
+    "phenomenon_type": "Motor Automatism",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "Writing produced without conscious direction, attributed to subconscious processes or discarnate influence.",
+    "full_definition": "Automatic writing involves a practitioner holding a pen or pencil while entering a dissociative or trance-like state and allowing the hand to move without deliberate control. The resulting text may be meaningless, may mirror the practitioner's subconscious, or may — in claimed paranormal cases — contain information that the writer could not have possessed. It was extensively studied by the Society for Psychical Research in the late 19th and early 20th centuries, most notably in the cross-correspondence cases, where independent automatists in different countries produced interlocking messages that appeared coordinated by a shared external intelligence. Psychologists attribute the phenomenon to the ideomotor effect. The evidential value of specific cases — particularly cross-correspondences — remains debated in academic parapsychology.",
+    "cultural_context": "Major practice in American Spiritualist and New Age traditions; also extensively used by Surrealist artists.",
+    "historical_period": "1850s–present",
+    "first_known_reference": "American Spiritualism, mid-19th century",
+    "modern_usage": "Practiced in Spiritualist and New Age contexts; studied in parapsychological literature.",
+    "belief_status": "Practiced / Contested",
+    "source_type": "Historical / Psychological",
+    "confidence_level": "Moderate",
+    "disputed": true,
+    "fraud_risk": "Low–Moderate",
+    "american_relevance_score": 8,
+    "tags": ["writing", "mediumship", "trance", "automatism", "SPR"],
+    "related_terms": ["Ouija Board", "Planchette", "Cross-Correspondences", "Ideomotor Effect"],
+    "see_also": ["US-006", "US-008"],
+    "search_boost_terms": ["automatic writing", "spirit writing", "psychography", "automatism"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-008",
+    "term": "Ouija Board",
+    "slug": "ouija-board",
+    "aliases": ["Talking Board", "Spirit Board", "Witch Board"],
+    "category": "Device",
+    "subcategory": "Divination",
+    "tradition": "Spiritualism / Folk Practice",
+    "phenomenon_type": "Ideomotor",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": "Maryland",
+    "city": "Baltimore",
+    "location_notes": "Patented in Baltimore, Maryland, 1891.",
+    "short_definition": "A flat board printed with letters, numbers, and symbols used with a planchette to spell out messages attributed to spirits or the unconscious.",
+    "full_definition": "The Ouija board was patented by Elijah Bond in 1891 and subsequently manufactured by the Kennard Novelty Company, making it one of the first commercially mass-produced spirit communication devices. Its mechanism is the ideomotor effect — unconscious muscular movements that guide the planchette without participants being aware they are providing the force. Psychologists overwhelmingly attribute all Ouija responses to this mechanism. Paranormal traditions hold that the board facilitates genuine contact. The cultural history of the Ouija in America is complex: it has been embraced as a parlor game, condemned as occult practice by religious institutions, studied by psychologists as a window into the unconscious, and used as a tool by investigators seeking contact. It remains the most iconic spirit communication device in American popular culture.",
+    "cultural_context": "Deeply embedded in American popular culture; simultaneously a toy, an occult instrument, and a psychological phenomenon.",
+    "historical_period": "1891–present",
+    "first_known_reference": "Elijah Bond patent, 1891",
+    "modern_usage": "Mass-produced consumer product; used in investigation and folk practice.",
+    "belief_status": "Folk Practice / Contested",
+    "source_type": "Commercial / Historical",
+    "confidence_level": "High (mechanism well-documented)",
+    "disputed": true,
+    "fraud_risk": "Low",
+    "american_relevance_score": 9,
+    "tags": ["device", "divination", "ideomotor", "spirit board", "popular culture"],
+    "related_terms": ["Automatic Writing", "Planchette", "Ideomotor Effect", "Talking Board"],
+    "see_also": ["US-007"],
+    "search_boost_terms": ["Ouija", "talking board", "spirit board", "witch board", "planchette"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-009",
+    "term": "Near-Death Experience",
+    "slug": "near-death-experience",
+    "aliases": ["NDE"],
+    "category": "Consciousness Research",
+    "subcategory": "Anomalous Experience",
+    "tradition": "Psychical Research / Medical",
+    "phenomenon_type": "Consciousness Anomaly",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "A reported cluster of experiences occurring during or near clinical death, often including out-of-body perception, tunnels, light, and life review.",
+    "full_definition": "Near-death experiences — a term coined by Raymond Moody in his 1975 book Life After Life — describe a constellation of subjective experiences reported by individuals who have been clinically dead or in life-threatening crisis. Common features include out-of-body perception, movement through darkness or a tunnel, encounter with light or deceased relatives, a life review, and a sense of boundary beyond which return is not possible. The AWARE study (Sam Parnia) attempted to verify out-of-body perceptions using hidden targets in cardiac resuscitation units. NDE research is conducted at major academic institutions including UVA's Division of Perceptual Studies. Neuroscientific explanations include hypoxia, REM intrusion, temporal lobe activity, and endorphin release. The key evidential challenge is the subset of cases — verified veridical perception — in which patients report accurate information about events occurring while they were flatlined.",
+    "cultural_context": "Transformed American popular understanding of death and dying following Moody's 1975 publication; spawned a substantial research and publishing industry.",
+    "historical_period": "1975–present (documented experiences historically earlier)",
+    "first_known_reference": "Raymond Moody, Life After Life, 1975",
+    "modern_usage": "Active academic research field; subject of ongoing neurological and consciousness debate.",
+    "belief_status": "Empirically documented (mechanism disputed)",
+    "source_type": "Academic / Medical",
+    "confidence_level": "High (phenomenology); Low–Moderate (survival interpretation)",
+    "disputed": true,
+    "fraud_risk": "Low",
+    "american_relevance_score": 10,
+    "tags": ["NDE", "consciousness", "death", "out-of-body", "veridical perception", "medical"],
+    "related_terms": ["Out-of-Body Experience", "Life Review", "Veridical Perception", "AWARE Study"],
+    "see_also": ["US-013"],
+    "search_boost_terms": ["NDE", "near death", "clinical death", "life after life", "Moody"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-010",
+    "term": "Lily Dale",
+    "slug": "lily-dale",
+    "aliases": ["Lily Dale Assembly"],
+    "category": "Place",
+    "subcategory": "Spiritualist Community",
+    "tradition": "Spiritualism",
+    "phenomenon_type": "Institutional",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": "New York",
+    "city": "Lily Dale",
+    "location_notes": "Located in Chautauqua County, western New York.",
+    "short_definition": "The largest Spiritualist community in the United States, operating continuously since 1879 in western New York.",
+    "full_definition": "Lily Dale Assembly, established in 1879 in Chautauqua County, New York, is the oldest and largest Spiritualist community in America. During its summer season it hosts registered mediums, public demonstrations, healing services, lectures, and workshops. Lily Dale exists as a functioning religious community organized around the core Spiritualist belief in communication with the dead. It has been the subject of journalistic investigation, documentary film, and academic study. Visiting mediums must undergo a vetting process by the Assembly's board. Critics have documented the presence of cold reading and other techniques among some practitioners. Defenders point to a subset of mediums whose performances — particularly in blind reading conditions — have produced results that resist easy explanation. Lily Dale represents the institutional continuity of American Spiritualism from the 19th century to the present.",
+    "cultural_context": "A functioning living museum of American Spiritualism; annual destination for thousands of visitors seeking readings and community.",
+    "historical_period": "1879–present",
+    "first_known_reference": "Founded 1879, Chautauqua County, New York",
+    "modern_usage": "Active religious community and tourist destination.",
+    "belief_status": "Religious Community",
+    "source_type": "Historical / Ethnographic",
+    "confidence_level": "High (historical record)",
+    "disputed": true,
+    "fraud_risk": "Moderate (documented cold reading among some practitioners)",
+    "american_relevance_score": 9,
+    "tags": ["place", "Spiritualism", "community", "mediumship", "New York", "history"],
+    "related_terms": ["Spiritualism", "Mediumship", "Camp Chesterfield", "Fox Sisters"],
+    "see_also": ["US-004", "US-005"],
+    "search_boost_terms": ["Lily Dale", "Lily Dale Assembly", "Spiritualist community", "Chautauqua"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-011",
+    "term": "Electromagnetic Field Detection",
+    "slug": "emf-detection",
+    "aliases": ["EMF", "EMF meter", "K-II meter"],
+    "category": "Investigation",
+    "subcategory": "Equipment",
+    "tradition": "Contemporary Paranormal Investigation",
+    "phenomenon_type": "Environmental Measurement",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "The measurement of ambient electromagnetic fields as a potential indicator of paranormal activity.",
+    "full_definition": "Electromagnetic field detection entered paranormal investigation through the hypothesis that discarnate entities require or generate electromagnetic energy to manifest. Investigators use handheld meters — most commonly the Trifield Natural EM Meter and the K-II — to record fluctuations in ambient EM fields during investigations, interpreting spikes as potential indicators of presence. Skeptics note that EMF anomalies in old buildings almost always have prosaic sources: faulty wiring, appliances, HVAC systems, and radiofrequency bleed. A secondary research thread suggests that high ambient EMF fields — unrelated to entities — may induce hallucinations and feelings of presence through temporal lobe stimulation, potentially explaining some haunting reports. Michael Persinger's 'God Helmet' experiments explored this mechanism. Neither direction of EMF research has produced evidence sufficient to compel scientific consensus.",
+    "cultural_context": "Standard equipment in American paranormal investigation; heavily featured in television ghost-hunting programs.",
+    "historical_period": "1990s–present",
+    "first_known_reference": "Ed and Lorraine Warren investigations, various; popularized in 1990s",
+    "modern_usage": "Ubiquitous in investigation; subject to ongoing methodological criticism.",
+    "belief_status": "Contested",
+    "source_type": "Investigative / Scientific",
+    "confidence_level": "Low",
+    "disputed": true,
+    "fraud_risk": "Low",
+    "american_relevance_score": 9,
+    "tags": ["equipment", "EMF", "investigation", "measurement", "environment"],
+    "related_terms": ["Trifield Meter", "K-II Meter", "God Helmet", "Temporal Lobe"],
+    "see_also": ["US-002"],
+    "search_boost_terms": ["EMF", "electromagnetic field", "K-II", "ghost meter"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-012",
+    "term": "Poltergeist",
+    "slug": "poltergeist",
+    "aliases": ["RSPK", "Recurrent Spontaneous Psychokinesis", "noisy ghost"],
+    "category": "Phenomenon",
+    "subcategory": "Haunting",
+    "tradition": "Folk / Psychical Research",
+    "phenomenon_type": "Physical Disturbance",
+    "entity_type": "Poltergeist",
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": "Reported across the United States; notable American cases include the Bell Witch (Tennessee) and Seaford Poltergeist (New York).",
+    "short_definition": "A phenomenon characterized by unexplained physical disturbances — object movement, noise, and occasionally physical attacks — typically centered on a specific individual rather than a location.",
+    "full_definition": "The poltergeist — from the German for 'noisy ghost' — is distinguished from classical hauntings by its kinetic character and its tendency to focus on a living person (typically an adolescent under stress) rather than a fixed location. Phenomena attributed to poltergeist activity include object movement and levitation, loud knocking, spontaneous fires, electrical disturbances, and in extreme claimed cases, physical assault. Researcher William Roll coined the term Recurrent Spontaneous Psychokinesis (RSPK) to describe the phenomenon without presupposing a discarnate agent, theorizing that the activity originates in the unconscious mind of the focus individual. Notable American cases include the Bell Witch haunting of Adams, Tennessee (1817–1821) and the Seaford Poltergeist of Long Island (1958). Both cases were investigated seriously and both resisted clean resolution.",
+    "cultural_context": "One of the most culturally resonant paranormal categories in American folklore; subject of extensive popular film treatment.",
+    "historical_period": "Documented in American context from early 19th century",
+    "first_known_reference": "Bell Witch case, Adams, Tennessee, 1817",
+    "modern_usage": "Active investigative and research category; RSPK theory still debated in parapsychology.",
+    "belief_status": "Contested",
+    "source_type": "Historical / Investigative",
+    "confidence_level": "Moderate (phenomenology documented; mechanism unknown)",
+    "disputed": true,
+    "fraud_risk": "Moderate",
+    "american_relevance_score": 9,
+    "tags": ["haunting", "physical phenomena", "RSPK", "psychokinesis", "Bell Witch"],
+    "related_terms": ["RSPK", "Bell Witch", "Haunting", "Psychokinesis"],
+    "see_also": ["US-014", "US-015"],
+    "search_boost_terms": ["poltergeist", "RSPK", "noisy ghost", "object movement", "Bell Witch"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-013",
+    "term": "Out-of-Body Experience",
+    "slug": "out-of-body-experience",
+    "aliases": ["OBE", "Astral Projection", "Astral Travel"],
+    "category": "Consciousness Research",
+    "subcategory": "Anomalous Experience",
+    "tradition": "Psychical Research / Occult",
+    "phenomenon_type": "Consciousness Anomaly",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "An experience in which consciousness appears to separate from and operate independently of the physical body.",
+    "full_definition": "Out-of-body experiences are reported across cultures and throughout recorded history, but became a subject of systematic Western research following the emergence of psychical research in the late 19th century. The Monroe Institute, founded by Robert Monroe in Virginia, pioneered controlled OBE induction techniques and produced an influential research and training program. Neurological explanations center on disruptions of multisensory integration in the temporoparietal junction — an area well-documented in cases of seizure and anesthetic awareness. The evidential crux of OBE research is veridical perception: cases in which individuals report accurate information about events observable only from a vantage point external to their body. The AWARE study by Sam Parnia attempted to capture this under controlled cardiac arrest conditions, with inconclusive but suggestive results.",
+    "cultural_context": "Significant in American New Age and occult traditions; subject of serious academic research at UVA and other institutions.",
+    "historical_period": "Documented historically; systematic American research from 1960s onward",
+    "first_known_reference": "Robert Monroe, Journeys Out of the Body, 1971",
+    "modern_usage": "Active research field; Monroe Institute still operating in Virginia.",
+    "belief_status": "Empirically documented (mechanism disputed)",
+    "source_type": "Academic / Experiential",
+    "confidence_level": "High (phenomenology); Low–Moderate (survival interpretation)",
+    "disputed": true,
+    "fraud_risk": "Low",
+    "american_relevance_score": 8,
+    "tags": ["OBE", "consciousness", "astral", "Monroe", "veridical perception"],
+    "related_terms": ["Near-Death Experience", "Astral Projection", "Monroe Institute", "Veridical Perception"],
+    "see_also": ["US-009"],
+    "search_boost_terms": ["OBE", "out of body", "astral projection", "astral travel", "Monroe"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-014",
+    "term": "Bell Witch",
+    "slug": "bell-witch",
+    "aliases": ["Bell Witch Haunting", "Adams Haunting", "Kate"],
+    "category": "Case",
+    "subcategory": "Haunting / Poltergeist",
+    "tradition": "American Folk",
+    "phenomenon_type": "Physical Disturbance / Voice Phenomenon",
+    "entity_type": "Unknown Entity",
+    "country": "United States",
+    "region_level_1": "Tennessee",
+    "city": "Adams",
+    "location_notes": "Bell farm, Red River settlement, Adams (formerly Cedar Hill), Robertson County, Tennessee.",
+    "short_definition": "A documented 19th century poltergeist case in Adams, Tennessee involving the Bell family, considered one of the most historically significant haunting cases in American paranormal history.",
+    "full_definition": "Beginning around 1817, the Bell family of Adams, Tennessee reported a progressive escalation of physical disturbances: knocking sounds, stone throwing, covers pulled from beds, and eventually an articulate voice that spoke, quoted scripture, sang hymns, and demonstrated knowledge unavailable to any single local person. The entity — which neighbors called 'Kate' — allegedly tormented family patriarch John Bell until his death in 1820, while expressing apparent affection for his wife Lucy. General Andrew Jackson reportedly visited the property and was reportedly affected. Multiple witnesses documented the phenomena over several years. No conventional explanation has satisfactorily accounted for the full range of reported activity across the extended multi-witness record. The case is significant in American paranormal history as one of the few early poltergeist cases with a documented fatality associated with the haunting.",
+    "cultural_context": "Foundational case in American paranormal tradition; subject of extensive regional folklore, multiple books, and film adaptations.",
+    "historical_period": "1817–1821",
+    "first_known_reference": "Contemporary accounts, Robertson County, Tennessee, 1817",
+    "modern_usage": "Frequently cited in American poltergeist research; active tourism industry in Adams, Tennessee.",
+    "belief_status": "Historically documented (mechanism unknown)",
+    "source_type": "Historical / Folkloric",
+    "confidence_level": "Moderate",
+    "disputed": true,
+    "fraud_risk": "Moderate (some researchers implicate son John Bell Jr.)",
+    "american_relevance_score": 10,
+    "tags": ["poltergeist", "haunting", "Tennessee", "history", "voice phenomenon", "19th century"],
+    "related_terms": ["Poltergeist", "RSPK", "Haunting", "Voice Phenomenon"],
+    "see_also": ["US-012"],
+    "search_boost_terms": ["Bell Witch", "Adams Tennessee", "Bell family haunting", "Kate"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-015",
+    "term": "Haunting",
+    "slug": "haunting",
+    "aliases": ["Ghost Infestation", "Persistent Haunting", "Place Memory"],
+    "category": "Phenomenon",
+    "subcategory": "Apparition",
+    "tradition": "Folk / Psychical Research",
+    "phenomenon_type": "Environmental Anomaly",
+    "entity_type": "Ghost / Apparition",
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "Repeated paranormal phenomena associated with a specific location, typically attributed to the presence of a deceased person or residual environmental energy.",
+    "full_definition": "Hauntings are distinguished from poltergeist activity by their attachment to place rather than person, and by their typically repetitive or patterned character. Psychical researchers classify hauntings as either 'intelligent' (where the entity appears to respond to the living) or 'residual' (where phenomena repeat mechanically, like a recording, without interaction). The 'stone tape' theory, popularized by T.C. Lethbridge and later by the 1972 BBC television play, proposes that emotional or traumatic events imprint on building materials and replay under certain conditions. American haunted locations span domestic residences, hospitals, prisons, battlefields, and hotels. Serious investigation of location-based hauntings must account for infrasound effects, electromagnetic field irregularities, carbon monoxide exposure, and psychological suggestion before inferring paranormal causation.",
+    "cultural_context": "The dominant paranormal narrative in American popular culture; driving force behind ghost tourism, paranormal television, and amateur investigation.",
+    "historical_period": "Documented throughout American history",
+    "first_known_reference": "Multiple documented cases from colonial American period",
+    "modern_usage": "Central category of paranormal investigation; subject of academic study and significant commercial industry.",
+    "belief_status": "Contested",
+    "source_type": "Historical / Investigative",
+    "confidence_level": "Low–Moderate",
+    "disputed": true,
+    "fraud_risk": "Moderate",
+    "american_relevance_score": 10,
+    "tags": ["haunting", "ghost", "apparition", "place", "residual", "intelligent"],
+    "related_terms": ["Poltergeist", "Apparition", "Stone Tape Theory", "Residual Haunting"],
+    "see_also": ["US-012", "US-014"],
+    "search_boost_terms": ["haunting", "ghost", "haunted house", "residual haunting", "intelligent haunting"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-016",
+    "term": "Mediumship",
+    "slug": "mediumship",
+    "aliases": ["Channeling", "Trance Mediumship", "Mental Mediumship"],
+    "category": "Practice",
+    "subcategory": "Contact",
+    "tradition": "Spiritualism",
+    "phenomenon_type": "Claimed Contact",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "The claimed ability to serve as a communication channel between living persons and discarnate entities.",
+    "full_definition": "Mediumship encompasses a range of claimed abilities: mental mediumship (receiving impressions, visions, or voices from discarnate sources), trance mediumship (full or partial surrender of the medium's consciousness to an ostensible controlling entity), physical mediumship (production of physical phenomena — ectoplasm, materializations, levitation), and evidential mediumship (providing verifiable specific information about deceased individuals). The SPR and ASPR subjected many prominent mediums to rigorous testing in the late 19th and early 20th centuries. Cases including Leonora Piper, Gladys Osborne Leonard, and Eileen Garrett produced records that serious researchers regard as among the strongest evidence for survival. Contemporary evidential mediumship, as practiced by figures trained at the Arthur Findlay College, emphasizes specific verifiable information over atmosphere and impression.",
+    "cultural_context": "Central institution of American Spiritualism; subject of the most intensive scientific scrutiny ever applied to a paranormal claim.",
+    "historical_period": "1848–present",
+    "first_known_reference": "American Spiritualism, 1848",
+    "modern_usage": "Ongoing practice in Spiritualist and New Age contexts; evidential mediumship increasingly distinguished from entertainment mediumship.",
+    "belief_status": "Practiced (contested)",
+    "source_type": "Historical / Academic / Investigative",
+    "confidence_level": "Low–Moderate (highly case-dependent)",
+    "disputed": true,
+    "fraud_risk": "High (historically documented; varies by practitioner)",
+    "american_relevance_score": 10,
+    "tags": ["mediumship", "Spiritualism", "contact", "channeling", "SPR", "evidential"],
+    "related_terms": ["Evidential Mediumship", "Trance Mediumship", "Séance", "SPR", "Leonora Piper"],
+    "see_also": ["US-004", "US-006"],
+    "search_boost_terms": ["medium", "mediumship", "channeling", "trance", "spirit communication"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-017",
+    "term": "Society for Psychical Research",
+    "slug": "society-for-psychical-research",
+    "aliases": ["SPR"],
+    "category": "Organization",
+    "subcategory": "Research Institution",
+    "tradition": "Psychical Research",
+    "phenomenon_type": "Institutional",
+    "entity_type": null,
+    "country": "United Kingdom",
+    "region_level_1": "England",
+    "city": "London",
+    "location_notes": "Founded in London; significant membership and influence in the United States through corresponding membership and the ASPR.",
+    "short_definition": "The oldest organization in the world dedicated to the scientific investigation of paranormal phenomena, founded in London in 1882.",
+    "full_definition": "The Society for Psychical Research was founded in London in 1882 by a group of Cambridge scholars including Frederic Myers, Edmund Gurney, and Henry Sidgwick. Its founding purpose was to apply rigorous scientific methodology to the investigation of telepathy, clairvoyance, apparitions, hauntings, mediumship, and survival after death — phenomena that the Victorian intellectual establishment either dismissed or accepted uncritically. The SPR produced landmark research including the Census of Hallucinations (1894), the extensive investigation of Leonora Piper, and the cross-correspondence cases. It founded and maintains Proceedings and the Journal, which remain peer-reviewed publications. The SPR has never taken a corporate position on whether paranormal phenomena are genuine — only that they are worth serious investigation. American counterpart is the American Society for Psychical Research (ASPR), founded 1885.",
+    "cultural_context": "Anchor institution of Western psychical research; provides the methodological and archival foundation for serious paranormal inquiry.",
+    "historical_period": "1882–present",
+    "first_known_reference": "Founded London, 1882",
+    "modern_usage": "Active publishing and research organization; annual conference and membership.",
+    "belief_status": "Institutional (non-committal on phenomena)",
+    "source_type": "Academic / Institutional",
+    "confidence_level": "High (institutional record)",
+    "disputed": false,
+    "fraud_risk": "Low",
+    "american_relevance_score": 9,
+    "tags": ["organization", "SPR", "psychical research", "academic", "history"],
+    "related_terms": ["ASPR", "Psychical Research", "Leonora Piper", "Cross-Correspondences"],
+    "see_also": ["US-016"],
+    "search_boost_terms": ["SPR", "Society for Psychical Research", "psychical research", "Myers", "Sidgwick"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-018",
+    "term": "Apparition",
+    "slug": "apparition",
+    "aliases": ["Ghost", "Specter", "Wraith", "Shade"],
+    "category": "Phenomenon",
+    "subcategory": "Visual",
+    "tradition": "Folk / Psychical Research",
+    "phenomenon_type": "Visual Anomaly",
+    "entity_type": "Apparition",
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "A visual perception of a deceased person or entity in the absence of a physical body.",
+    "full_definition": "Apparitions — commonly called ghosts — represent one of the oldest and most universally reported categories of anomalous experience. The SPR's Census of Hallucinations (1894) surveyed 17,000 individuals and found that approximately 10% reported a vivid waking hallucination at least once, with a statistically anomalous cluster occurring around the time of a distant person's death. These 'crisis apparitions' formed the basis of early survival research. Apparitions are reported in three primary contexts: crisis apparitions (occurring at the moment of death), post-mortem apparitions (occurring days to years after death), and residual apparitions (mechanical repetitions associated with location rather than communication). Modern neuroscience attributes most apparitional experiences to hypnagogic hallucination, grief-related processing, and pathological sleep states. The evidential subset — witnessed apparitions corroborated by multiple independent observers — remains the most difficult category for conventional explanation.",
+    "cultural_context": "The foundational paranormal concept in American popular culture; subject of continuous cultural production from folklore through film.",
+    "historical_period": "Throughout recorded American history",
+    "first_known_reference": "Colonial American period; systematically documented by SPR from 1882",
+    "modern_usage": "Central investigative target; subject of ongoing academic and popular interest.",
+    "belief_status": "Contested",
+    "source_type": "Historical / Psychological / Investigative",
+    "confidence_level": "Low–Moderate",
+    "disputed": true,
+    "fraud_risk": "Low (unintentional misperception more common than fabrication)",
+    "american_relevance_score": 10,
+    "tags": ["ghost", "apparition", "visual", "crisis apparition", "SPR", "Census of Hallucinations"],
+    "related_terms": ["Haunting", "Crisis Apparition", "Residual Haunting", "Census of Hallucinations"],
+    "see_also": ["US-015"],
+    "search_boost_terms": ["ghost", "apparition", "specter", "wraith", "spirit sighting"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-019",
+    "term": "Psychokinesis",
+    "slug": "psychokinesis",
+    "aliases": ["PK", "Telekinesis", "Mind Over Matter"],
+    "category": "Psi",
+    "subcategory": "Physical",
+    "tradition": "Psychical Research / Parapsychology",
+    "phenomenon_type": "Physical Anomaly",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "The claimed ability to influence physical matter through mental intention alone, without physical contact.",
+    "full_definition": "Psychokinesis encompasses both macro-PK (directly observable effects such as object movement or metal bending) and micro-PK (statistically measurable deviations in random physical processes below the threshold of direct perception). The Princeton Engineering Anomalies Research (PEAR) laboratory conducted over 25 years of controlled micro-PK experiments and reported small but statistically consistent anomalies in random event generators under mental influence. These findings remain contested. The Global Consciousness Project, a successor initiative, monitors a network of random event generators worldwide for correlated anomalies during mass emotional events. Macro-PK claims — most famously associated with Uri Geller — have been extensively investigated and mostly attributed to fraud or conjuring. The RSPK framework for poltergeist activity represents a spontaneous PK hypothesis that avoids the performance context of laboratory macro-PK testing.",
+    "cultural_context": "Subject of laboratory investigation at major research universities; popularized by figures like Uri Geller in the 1970s.",
+    "historical_period": "Systematic American research from 1930s onward (Rhine, Duke Parapsychology Lab)",
+    "first_known_reference": "J.B. Rhine, Duke University, 1930s",
+    "modern_usage": "Active micro-PK research; PEAR legacy data still analyzed.",
+    "belief_status": "Contested",
+    "source_type": "Academic / Experimental",
+    "confidence_level": "Low–Moderate",
+    "disputed": true,
+    "fraud_risk": "High (macro-PK); Low (micro-PK laboratory context)",
+    "american_relevance_score": 8,
+    "tags": ["PK", "psychokinesis", "telekinesis", "PEAR", "Rhine", "parapsychology"],
+    "related_terms": ["RSPK", "Poltergeist", "PEAR Laboratory", "Rhine", "Random Event Generator"],
+    "see_also": ["US-012", "US-020"],
+    "search_boost_terms": ["psychokinesis", "PK", "telekinesis", "mind over matter", "PEAR"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-020",
+    "term": "Telepathy",
+    "slug": "telepathy",
+    "aliases": ["Mind Reading", "Thought Transference", "Mental Telepathy"],
+    "category": "Psi",
+    "subcategory": "Perception",
+    "tradition": "Psychical Research / Parapsychology",
+    "phenomenon_type": "Perception Anomaly",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "The claimed transmission or perception of information between minds without use of known sensory channels.",
+    "full_definition": "Telepathy was coined by Frederic Myers of the SPR in 1882 to describe the direct transmission of thoughts, feelings, or images between individuals without normal sensory mediation. American parapsychological research under J.B. Rhine at Duke University from the 1930s onward produced large-scale card-guessing studies (Zener cards) that claimed statistically significant evidence for telepathy under controlled conditions. Methodological criticisms of Rhine's work — sensory leakage, selective reporting, fraud by some subjects — are well-documented. Later ganzfeld experiments, developed in the 1970s and meta-analyzed repeatedly, show a consistent small effect that remains contested. Military remote viewing programs (STARGATE) invested significant resources in applied psi research, including telepathy, with classified results that have been partially declassified.",
+    "cultural_context": "Among the most studied psi phenomena; significant Cold War military investment in the United States and Soviet Union.",
+    "historical_period": "Systematic research from 1882; American research from 1930s",
+    "first_known_reference": "Frederic Myers, SPR, 1882; J.B. Rhine, Duke University, 1930s",
+    "modern_usage": "Active parapsychological research; ganzfeld meta-analyses ongoing.",
+    "belief_status": "Contested",
+    "source_type": "Academic / Experimental",
+    "confidence_level": "Low–Moderate",
+    "disputed": true,
+    "fraud_risk": "Moderate (documented fraud in early Rhine studies by some subjects)",
+    "american_relevance_score": 8,
+    "tags": ["telepathy", "psi", "ESP", "Rhine", "ganzfeld", "parapsychology"],
+    "related_terms": ["ESP", "Clairvoyance", "Ganzfeld", "Remote Viewing", "Zener Cards"],
+    "see_also": ["US-019", "US-021"],
+    "search_boost_terms": ["telepathy", "mind reading", "thought transference", "ESP", "Rhine"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-021",
+    "term": "Remote Viewing",
+    "slug": "remote-viewing",
+    "aliases": ["RV", "Coordinate Remote Viewing", "CRV", "STARGATE"],
+    "category": "Psi",
+    "subcategory": "Perception",
+    "tradition": "Parapsychology / Military Intelligence",
+    "phenomenon_type": "Anomalous Cognition",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": "California",
+    "city": "Menlo Park",
+    "location_notes": "Developed at Stanford Research Institute, Menlo Park, California. Later programs at Fort Meade, Maryland.",
+    "short_definition": "A structured protocol for obtaining information about distant or shielded targets through non-sensory means.",
+    "full_definition": "Remote viewing was developed as a structured intelligence-collection methodology by Russell Targ and Hal Puthoff at Stanford Research Institute beginning in 1972, under CIA funding. The program — eventually codenamed STARGATE — ran for approximately 20 years and involved multiple remote viewers producing operational intelligence assessments. The National Academy of Sciences commissioned a review in 1988 that found the evidence for anomalous cognition inconclusive but not dismissible. Program managers Ray Hyman (skeptic) and Jessica Utts (statistician) produced conflicting assessments from the same data, with Utts concluding that statistical evidence was compelling. The program was declassified in 1995. Former remote viewers including Ingo Swann, Pat Price, and Joseph McMoneagle produced specific, verifiable target descriptions that remain the strongest direct evidence for applied psi in the American record.",
+    "cultural_context": "Unique intersection of parapsychology and U.S. military intelligence; the most heavily funded psi research program in American history.",
+    "historical_period": "1972–1995 (government program); ongoing civilian practice",
+    "first_known_reference": "Stanford Research Institute, 1972",
+    "modern_usage": "Ongoing civilian training and practice; legacy data still analyzed by researchers.",
+    "belief_status": "Contested (government program discontinued; data inconclusive by official assessment)",
+    "source_type": "Military / Academic",
+    "confidence_level": "Moderate",
+    "disputed": true,
+    "fraud_risk": "Low (controlled laboratory conditions)",
+    "american_relevance_score": 9,
+    "tags": ["remote viewing", "CIA", "STARGATE", "intelligence", "psi", "military"],
+    "related_terms": ["STARGATE", "Telepathy", "Ingo Swann", "Pat Price", "Stanford Research Institute"],
+    "see_also": ["US-020"],
+    "search_boost_terms": ["remote viewing", "STARGATE", "CRV", "CIA psi", "Ingo Swann"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-022",
+    "term": "Cold Reading",
+    "slug": "cold-reading",
+    "aliases": ["Barnum Effect", "Shotgunning", "Fishing"],
+    "category": "Skeptical Analysis",
+    "subcategory": "Deception",
+    "tradition": "Critical Investigation",
+    "phenomenon_type": "Psychological Technique",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "A technique by which a performer extracts information from a subject through behavioral cues, probability, and high-acceptance generalities to simulate psychic knowledge.",
+    "full_definition": "Cold reading is the primary explanatory framework applied by skeptics to apparent mediumistic and psychic demonstrations. The technique combines several elements: high-probability statements applicable to most people, Barnum statements (personal-seeming but universally applicable claims), progressive refinement based on subject feedback, exploitation of grief and confirmation bias, and rapid abandonment of misses. Advanced cold reading incorporates hot reading (pre-event research) and subtle information extraction through directed questioning. Ian Rowland's The Full Facts Book of Cold Reading (1998) provides the most detailed technical analysis. Evidential mediumship research attempts to control for cold reading by using blinded sitters, proxy sitters, and scoring systems that prevent feedback during readings. The existence and widespread use of cold reading does not constitute proof that all apparent psychic demonstrations are cold reading — but it eliminates all cases that do not control for it.",
+    "cultural_context": "Central tool in the American skeptical movement; regularly demonstrated in public debunking of claimed psychics.",
+    "historical_period": "Documented practice throughout history of mediumship",
+    "first_known_reference": "Systematically documented in skeptical literature from the 1970s onward",
+    "modern_usage": "Standard explanatory framework in critical analysis of claimed psychic demonstration.",
+    "belief_status": "Empirically documented technique",
+    "source_type": "Skeptical / Academic",
+    "confidence_level": "High",
+    "disputed": false,
+    "fraud_risk": null,
+    "american_relevance_score": 9,
+    "tags": ["skepticism", "cold reading", "fraud", "Barnum", "methodology", "critical"],
+    "related_terms": ["Barnum Effect", "Hot Reading", "Confirmation Bias", "Evidential Mediumship"],
+    "see_also": ["US-016"],
+    "search_boost_terms": ["cold reading", "shotgunning", "Barnum effect", "psychic fraud", "hot reading"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-023",
+    "term": "Harry Houdini",
+    "slug": "harry-houdini",
+    "aliases": ["Ehrich Weiss", "The Great Houdini"],
+    "category": "Historical Figures",
+    "subcategory": "Investigators / Skeptics",
+    "tradition": "Skeptical Investigation",
+    "phenomenon_type": null,
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": "New York",
+    "city": "New York City",
+    "location_notes": null,
+    "short_definition": "Escape artist and magician who became the most prominent American skeptical investigator of Spiritualist mediums in the early 20th century.",
+    "full_definition": "Harry Houdini (1874–1926) was the most famous American skeptic of Spiritualism, conducting an extended public campaign in the 1920s to expose fraudulent mediums. Motivated in part by grief over his mother's death and his failure to receive a genuine communication through any medium, Houdini attended hundreds of séances in disguise and exposed numerous prominent practitioners. His ongoing dispute with Arthur Conan Doyle — who remained a committed Spiritualist — is one of the defining intellectual conflicts of the era. Before his death in 1926, Houdini arranged a code with his wife Bess through which she would attempt to receive a post-mortem message verifying his survival. The code was never verified to his wife's satisfaction through any medium, and in 1936 she officially discontinued the séance attempts. The case is significant because it represents an informed skeptic applying the same evidentiary standard to his own potential survival that he applied to others.",
+    "cultural_context": "Iconic figure in American popular culture; his anti-Spiritualism campaign appeared in major publications and before the U.S. Congress.",
+    "historical_period": "1874–1926",
+    "first_known_reference": "Houdini's public anti-Spiritualism campaign, 1920s",
+    "modern_usage": "Frequent historical reference in skeptical and paranormal literature.",
+    "belief_status": "Skeptic (documented)",
+    "source_type": "Historical / Biographical",
+    "confidence_level": "High",
+    "disputed": false,
+    "fraud_risk": null,
+    "american_relevance_score": 9,
+    "tags": ["history", "skepticism", "mediumship", "investigation", "Conan Doyle", "20th century"],
+    "related_terms": ["Spiritualism", "Mediumship", "Arthur Conan Doyle", "Scientific American"],
+    "see_also": ["US-004", "US-016"],
+    "search_boost_terms": ["Houdini", "Harry Houdini", "magic", "séance debunking", "medium exposure"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-024",
+    "term": "Bigfoot",
+    "slug": "bigfoot",
+    "aliases": ["Sasquatch", "Skunk Ape", "Yeti (North American)"],
+    "category": "Cryptid",
+    "subcategory": "Hominid",
+    "tradition": "American Folklore / Cryptozoology",
+    "phenomenon_type": "Unidentified Creature",
+    "entity_type": "Cryptid",
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": "Reports concentrated in the Pacific Northwest; Skunk Ape variant in Florida and southeastern United States.",
+    "short_definition": "A large, bipedal, hair-covered humanoid creature reported across North America, unrecognized by mainstream science.",
+    "full_definition": "Bigfoot — known as Sasquatch in First Nations traditions of the Pacific Northwest — is the most reported cryptid in North America, with thousands of alleged encounters documented across the continent. Modern popular awareness was crystallized by the Patterson–Gimlin film of 1967, which purports to show a female Bigfoot walking along Bluff Creek in Northern California. The film has never been definitively proven a hoax, nor has it been scientifically authenticated. Mainstream biology treats Bigfoot as a cultural phenomenon rather than a zoological one, citing the absence of physical remains and the impossibility of a breeding population remaining undetected. Cryptozoologists point to the persistence and geographic specificity of sighting reports, the cultural independence of indigenous accounts, and the Patterson–Gimlin film as evidence that demands more serious consideration.",
+    "cultural_context": "Dominant American cryptid; embedded deeply in regional folklore and a significant driver of ecotourism and outdoor recreation culture.",
+    "historical_period": "Indigenous accounts predate European settlement; modern Bigfoot phenomenon from 1950s–present",
+    "first_known_reference": "Indigenous traditions (Sasquatch); modern media coverage from 1958 (Bluff Creek footprints)",
+    "modern_usage": "Active research subject; dedicated organizations including the BFRO.",
+    "belief_status": "Contested",
+    "source_type": "Folkloric / Cryptozoological",
+    "confidence_level": "Low",
+    "disputed": true,
+    "fraud_risk": "High (multiple documented hoaxes)",
+    "american_relevance_score": 10,
+    "tags": ["cryptid", "hominid", "Pacific Northwest", "Patterson-Gimlin", "Sasquatch", "folklore"],
+    "related_terms": ["Sasquatch", "Patterson-Gimlin Film", "Skunk Ape", "Cryptozoology"],
+    "see_also": ["US-025"],
+    "search_boost_terms": ["Bigfoot", "Sasquatch", "Skunk Ape", "Patterson Gimlin", "hominid cryptid"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-025",
+    "term": "Mothman",
+    "slug": "mothman",
+    "aliases": ["The Mothman"],
+    "category": "Cryptid",
+    "subcategory": "Flying Humanoid",
+    "tradition": "American Folklore",
+    "phenomenon_type": "Unidentified Entity",
+    "entity_type": "Cryptid",
+    "country": "United States",
+    "region_level_1": "West Virginia",
+    "city": "Point Pleasant",
+    "location_notes": "Primarily reported in the Point Pleasant area of Mason County, West Virginia, 1966–1967.",
+    "short_definition": "A large, winged, red-eyed humanoid entity reported in Point Pleasant, West Virginia in 1966–1967, whose appearances preceded the Silver Bridge collapse.",
+    "full_definition": "The Mothman was first reported on November 12, 1966, near Clendenin, West Virginia, and subsequently by multiple independent witnesses in the Point Pleasant area over approximately 13 months. Descriptions consistently describe a large, dark, humanoid figure with enormous wings and glowing red eyes. The entity reportedly pursued a vehicle at high speed on multiple occasions. On December 15, 1967, the Silver Bridge spanning the Ohio River collapsed, killing 46 people. John Keel's 1975 book The Mothman Prophecies proposed a connection between the Mothman sightings, UFO activity, Men in Black encounters, and the bridge collapse, framing the entity as a harbinger. The case is significant in American paranormal history for the convergence of multiple witness types, the correlation with a documented disaster, and Keel's development of the ultraterrestrial hypothesis as an alternative to both extraterrestrial and supernatural frameworks.",
+    "cultural_context": "Regional folk icon and national paranormal touchstone; active tourism in Point Pleasant with a dedicated Mothman Museum.",
+    "historical_period": "1966–1967 (primary sightings); ongoing cultural presence",
+    "first_known_reference": "November 12, 1966, Clendenin, West Virginia",
+    "modern_usage": "Ongoing sightings reported; significant cultural and tourism presence in Point Pleasant.",
+    "belief_status": "Contested",
+    "source_type": "Folkloric / Investigative",
+    "confidence_level": "Low–Moderate (multi-witness basis)",
+    "disputed": true,
+    "fraud_risk": "Low (no financial motive in original reports)",
+    "american_relevance_score": 9,
+    "tags": ["cryptid", "West Virginia", "Point Pleasant", "harbinger", "flying humanoid", "Keel"],
+    "related_terms": ["John Keel", "Silver Bridge Collapse", "UFO", "Men in Black", "Ultraterrestrial"],
+    "see_also": ["US-024", "US-028"],
+    "search_boost_terms": ["Mothman", "Point Pleasant", "Silver Bridge", "West Virginia", "red eyes"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-026",
+    "term": "White Noise",
+    "slug": "white-noise",
+    "aliases": ["Broadband Noise", "Static", "Noise Field"],
+    "category": "ITC",
+    "subcategory": "Audio",
+    "tradition": "Contemporary Paranormal Investigation",
+    "phenomenon_type": "Signal Background",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "Broadband random audio noise used as a carrier medium in ITC research, providing signal material from which anomalous voices may emerge.",
+    "full_definition": "White noise — equal power across all frequencies — functions in ITC research as a carrier medium rather than a signal source. The theoretical basis is that discarnate entities require an existing energy medium to modulate, and that broadband noise provides the acoustic raw material for voice formation. EVP researchers have long used white noise as a background during recording sessions. Subsequent analysis of recordings for embedded voices is subject to severe confirmation bias and auditory pareidolia. Controlled studies comparing EVP retrieval rates in white noise versus silence have not produced consistent evidence of differential performance. The use of white noise in investigation was popularized by the film White Noise (2005), which produced a significant surge in public interest in EVP methodology.",
+    "cultural_context": "Standard element of American paranormal investigation practice; popularized by mainstream film.",
+    "historical_period": "ITC application from 1970s onward",
+    "first_known_reference": "Friedrich Jürgenson; Konstantīns Raudive, 1960s–1970s",
+    "modern_usage": "Standard background medium in EVP recording sessions.",
+    "belief_status": "Contested",
+    "source_type": "Investigative / Scientific",
+    "confidence_level": "Low",
+    "disputed": true,
+    "fraud_risk": "Low",
+    "american_relevance_score": 7,
+    "tags": ["ITC", "audio", "EVP", "noise", "carrier medium"],
+    "related_terms": ["EVP", "ITC", "Spirit Box", "Auditory Pareidolia"],
+    "see_also": ["US-001", "US-002"],
+    "search_boost_terms": ["white noise", "EVP carrier", "static", "noise field"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-027",
+    "term": "Parapsychology",
+    "slug": "parapsychology",
+    "aliases": ["Psi Research", "Anomalistic Psychology"],
+    "category": "Academic Field",
+    "subcategory": "Research Discipline",
+    "tradition": "Psychical Research / Academic",
+    "phenomenon_type": null,
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "The scientific study of paranormal phenomena including telepathy, clairvoyance, psychokinesis, and survival after death.",
+    "full_definition": "Parapsychology is the academic discipline that applies experimental methods to the investigation of psi phenomena — experiences and effects that appear to violate known physical and psychological principles. The field in America was anchored by J.B. Rhine's establishment of the Parapsychology Laboratory at Duke University in 1930, which conducted large-scale controlled experiments on ESP and PK for decades. Major American research centers have included the Princeton Engineering Anomalies Research (PEAR) laboratory, the Cognitive Sciences Laboratory (which administered STARGATE), and the University of Virginia's Division of Perceptual Studies. The Parapsychological Association was admitted as an affiliate of the American Association for the Advancement of Science in 1969. Critics argue that the field has never produced a replicable, independently confirmed effect. Proponents argue that cumulative meta-analyses demonstrate robust small effects that conventional science has structurally incentivized ignoring.",
+    "cultural_context": "Occupies an unusual institutional position — simultaneously inside and outside mainstream academic science.",
+    "historical_period": "1882 (psychical research); 1930s (experimental parapsychology)",
+    "first_known_reference": "J.B. Rhine, Duke University, 1930",
+    "modern_usage": "Active research field; several university-affiliated programs.",
+    "belief_status": "Academic (contested)",
+    "source_type": "Academic",
+    "confidence_level": "Low–Moderate",
+    "disputed": true,
+    "fraud_risk": "Low (laboratory context)",
+    "american_relevance_score": 9,
+    "tags": ["academic", "parapsychology", "Rhine", "psi", "ESP", "research"],
+    "related_terms": ["Rhine", "PEAR", "ESP", "Psychical Research", "PA"],
+    "see_also": ["US-017", "US-019", "US-020"],
+    "search_boost_terms": ["parapsychology", "psi research", "Rhine", "Duke parapsychology", "ESP research"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "US-028",
+    "term": "UFO",
+    "slug": "ufo",
+    "aliases": ["UAP", "Unidentified Aerial Phenomenon", "Flying Saucer"],
+    "category": "UAP / Extraterrestrial",
+    "subcategory": "Aerial Phenomenon",
+    "tradition": "American Folk / Government Investigation",
+    "phenomenon_type": "Unidentified Aerial Object",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "Any aerial phenomenon that cannot be immediately identified; in popular usage, associated with extraterrestrial or unconventional technology.",
+    "full_definition": "The modern UFO phenomenon in America effectively began with Kenneth Arnold's June 1947 report of nine unusual craft near Mount Rainier, Washington, which generated the 'flying saucer' framing that defined public perception for decades. The U.S. government conducted multiple investigation programs — Projects SIGN, GRUDGE, and BLUE BOOK — before formally closing its public investigation in 1969. The post-2017 disclosure of U.S. Navy UAP videos and the subsequent congressional UAP hearings fundamentally altered the institutional framing: the question shifted from 'do UFOs exist?' to 'what are they?' The 2023 testimony of David Grusch before Congress, alleging a secret retrieval and reverse-engineering program, represented the most significant official escalation of the UAP issue in American history. The relationship between UAP phenomena and paranormal categories including consciousness, inter-dimensional theory, and precognition has been explored by researchers including Jacques Vallée and John Keel.",
+    "cultural_context": "The dominant American anomalous phenomenon in terms of public and governmental attention; shifting rapidly from fringe to mainstream institutional concern.",
+    "historical_period": "1947–present",
+    "first_known_reference": "Kenneth Arnold sighting, June 24, 1947",
+    "modern_usage": "Active U.S. government investigation; Congressional hearings; major media coverage.",
+    "belief_status": "Officially acknowledged (mechanism unknown)",
+    "source_type": "Military / Government / Investigative",
+    "confidence_level": "High (phenomena documented); Low (origin / nature unknown)",
+    "disputed": true,
+    "fraud_risk": "Moderate",
+    "american_relevance_score": 10,
+    "tags": ["UAP", "UFO", "extraterrestrial", "government", "Arnold", "Grusch", "disclosure"],
+    "related_terms": ["UAP", "BLUE BOOK", "Roswell", "David Grusch", "Jacques Vallée"],
+    "see_also": ["US-025"],
+    "search_boost_terms": ["UFO", "UAP", "flying saucer", "unidentified aerial", "extraterrestrial", "disclosure"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "UK-001",
+    "term": "Arthur Findlay College",
+    "slug": "arthur-findlay-college",
+    "aliases": ["Stansted Hall", "AFC"],
+    "category": "Organization",
+    "subcategory": "Training Institution",
+    "tradition": "Spiritualism",
+    "phenomenon_type": "Institutional",
+    "entity_type": null,
+    "country": "United Kingdom",
+    "region_level_1": "England",
+    "city": "Stansted Mountfitchet",
+    "location_notes": "Stansted Hall, Stansted Mountfitchet, Essex, England.",
+    "short_definition": "The world's foremost college for the study of mediumship and psychic sciences, operated by the Spiritualists' National Union.",
+    "full_definition": "Arthur Findlay College, housed in Stansted Hall in Essex, England, is the preeminent training institution for evidential mediumship in the world. Named for Scottish businessman and Spiritualist author Arthur Findlay, the college offers residential courses in clairvoyance, clairaudience, physical mediumship, trance work, and healing. Faculty includes internationally recognized working mediums. The training methodology emphasizes evidential specificity — the ability to produce verifiable information about deceased individuals rather than general impressions — as the standard against which all mediumship is measured. Many of the most respected contemporary mediums working in the United States trained at Stansted. The college's approach is distinguished by its systematic curriculum, peer assessment, and emphasis on evidence over atmosphere.",
+    "cultural_context": "The institutional gold standard for evidential mediumship training; its graduates carry significant credibility in the Spiritualist world.",
+    "historical_period": "1964–present",
+    "first_known_reference": "Founded 1964, Stansted Hall, Essex",
+    "modern_usage": "Active residential training college; international student body.",
+    "belief_status": "Institutional (Spiritualist)",
+    "source_type": "Institutional",
+    "confidence_level": "High (institutional record)",
+    "disputed": false,
+    "fraud_risk": "Low",
+    "american_relevance_score": 8,
+    "tags": ["institution", "mediumship", "training", "Spiritualism", "UK", "evidential"],
+    "related_terms": ["Evidential Mediumship", "SNU", "Spiritualism", "Clairvoyance"],
+    "see_also": ["US-016"],
+    "search_boost_terms": ["Arthur Findlay College", "Stansted Hall", "mediumship training", "AFC"],
+    "featured": false,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "UK-002",
+    "term": "Leonora Piper",
+    "slug": "leonora-piper",
+    "aliases": ["Mrs. Piper"],
+    "category": "Historical Figures",
+    "subcategory": "Mediums",
+    "tradition": "Spiritualism / Psychical Research",
+    "phenomenon_type": "Mediumship",
+    "entity_type": null,
+    "country": "United States",
+    "region_level_1": "Massachusetts",
+    "city": "Boston",
+    "location_notes": "Based in Boston, Massachusetts; investigated extensively by the SPR in both the United States and England.",
+    "short_definition": "A Boston-based trance medium whose decades-long investigation by the SPR produced some of the most evidentially significant records in the history of psychical research.",
+    "full_definition": "Leonora Piper (1857–1950) was a Boston medium who came to the attention of William James in 1885. Her subsequent investigation by the Society for Psychical Research — conducted over more than 25 years by researchers including Richard Hodgson, Oliver Lodge, and William James himself — produced extensive verbatim records of trance sittings in which Piper appeared to communicate information about deceased individuals that she could not have obtained through normal means. Hodgson, a rigorous fraud investigator who had previously exposed the Theosophists' Madame Blavatsky, ultimately concluded after years of surveillance and controlled testing that Piper's phenomenon was genuine. James, more cautious, called her his 'white crow' — the one case sufficient to establish that not all crows are black. Piper remains the most rigorously documented medium in the history of psychical research, and her case is considered the strongest single evidentiary record for survival.",
+    "cultural_context": "The central evidentiary figure in serious American psychical research; her case anchors the survival debate in a way no other has matched.",
+    "historical_period": "1857–1950; peak investigation 1885–1915",
+    "first_known_reference": "William James, 1885",
+    "modern_usage": "Primary historical case in survival research; frequently cited in academic parapsychology.",
+    "belief_status": "Contested (investigators divided; no fraud detected)",
+    "source_type": "Historical / Academic",
+    "confidence_level": "High (documentation); Moderate (survival interpretation)",
+    "disputed": true,
+    "fraud_risk": "Very Low (extensive surveillance, no fraud detected)",
+    "american_relevance_score": 9,
+    "tags": ["medium", "SPR", "Boston", "William James", "survival research", "history"],
+    "related_terms": ["SPR", "William James", "Richard Hodgson", "Oliver Lodge", "Trance Mediumship"],
+    "see_also": ["US-016", "US-017"],
+    "search_boost_terms": ["Leonora Piper", "Mrs. Piper", "white crow", "William James medium"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
+  },
+  {
+    "entry_id": "WLD-001",
+    "term": "Consciousness Survival",
+    "slug": "consciousness-survival",
+    "aliases": ["Survival of Death", "Survival Hypothesis", "Post-Mortem Survival"],
+    "category": "Consciousness Research",
+    "subcategory": "Survival Research",
+    "tradition": "Psychical Research / Philosophy",
+    "phenomenon_type": "Theoretical",
+    "entity_type": null,
+    "country": "Global",
+    "region_level_1": null,
+    "city": null,
+    "location_notes": null,
+    "short_definition": "The hypothesis that individual consciousness or personal identity persists in some form after the death of the physical body.",
+    "full_definition": "The survival hypothesis is the central target question of psychical research and the organizing problem behind Spiritualism, mediumship investigation, near-death research, reincarnation studies, and ITC. It is distinct from religious belief in an afterlife in that it frames survival as an empirical question subject to evidence rather than a matter of faith. The evidence categories traditionally considered most relevant include: verified veridical NDE perceptions, children's past-life memories (Ian Stevenson's work at UVA), drop-in communicator cases, cross-correspondences, and the best cases from evidential mediumship. The primary philosophical objection is that even if all these cases are genuine anomalies, they do not establish personal identity survival — only information transfer of unknown mechanism. The primary evidential objection is that no single case has proven fraud-proof under the most stringent conditions. Consciousness survival research represents the intersection of philosophy of mind, empirical parapsychology, and the oldest human concern.",
+    "cultural_context": "The fundamental question driving paranormal inquiry across all cultures and throughout recorded history.",
+    "historical_period": "Throughout human history; systematic Western research from 1882",
+    "first_known_reference": "SPR founding purpose, 1882; Ian Stevenson's reincarnation research, 1960s",
+    "modern_usage": "Active research field at University of Virginia (DOPS), University of Edinburgh (Koestler Parapsychology Unit), and independent researchers.",
+    "belief_status": "Empirically open (neither confirmed nor refuted)",
+    "source_type": "Academic / Philosophical",
+    "confidence_level": "Low–Moderate",
+    "disputed": true,
+    "fraud_risk": "Low (research context)",
+    "american_relevance_score": 10,
+    "tags": ["survival", "consciousness", "afterlife", "NDE", "reincarnation", "philosophy", "SPR"],
+    "related_terms": ["NDE", "Reincarnation", "Mediumship", "Ian Stevenson", "Cross-Correspondences"],
+    "see_also": ["US-009", "US-016", "US-017"],
+    "search_boost_terms": ["survival hypothesis", "consciousness survival", "life after death", "post-mortem survival"],
+    "featured": true,
+    "public_visible": true,
+    "last_updated": "2026-01-01"
   }
-];
-
-const els = {
-  search: document.getElementById('searchInput'),
-  category: document.getElementById('categoryFilter'),
-  country: document.getElementById('countryFilter'),
-  region: document.getElementById('regionFilter'),
-  tradition: document.getElementById('traditionFilter'),
-  status: document.getElementById('statusFilter'),
-  sort: document.getElementById('sortFilter'),
-  results: document.getElementById('glossaryResults'),
-  count: document.getElementById('resultCount'),
-  starterStats: document.getElementById('starterStats'),
-  clear: document.getElementById('clearFilters')
-};
-
-function uniq(values){
-  return [...new Set(values.filter(Boolean))].sort((a,b) => a.localeCompare(b));
-}
-
-function fillSelect(el, values, label){
-  el.innerHTML = `<option value="">${label}</option>` + values.map(value => `<option value="${value}">${value}</option>`).join('');
-}
-
-
-async function fetchJsonWithFallback(fileSpec){
-  const errors = [];
-  for (const path of fileSpec.paths) {
-    try {
-      const response = await fetch(path, { cache: 'no-store' });
-      if (!response.ok) {
-        errors.push(`${path} (${response.status})`);
-        continue;
-      }
-      return await response.json();
-    } catch (error) {
-      errors.push(`${path} (${error.message})`);
-    }
-  }
-  throw new Error(`Failed to load ${fileSpec.name}. Tried: ${errors.join(', ')}`);
-}
-
-async function loadGlossaryEntries(){
-  const payloads = await Promise.all(glossaryDataFiles.map(fetchJsonWithFallback));
-
-  glossaryEntries = payloads.flat().map(entry => ({
-    ...entry,
-    aliases: Array.isArray(entry.aliases) ? entry.aliases : [],
-    tags: Array.isArray(entry.tags) ? entry.tags : [],
-    related_terms: Array.isArray(entry.related_terms) ? entry.related_terms : [],
-    see_also: Array.isArray(entry.see_also) ? entry.see_also : [],
-    search_boost_terms: Array.isArray(entry.search_boost_terms) ? entry.search_boost_terms : []
-  }));
-}
-
-function initializeFilters(){
-  fillSelect(els.category, uniq(glossaryEntries.map(e => e.category)), 'All categories');
-  fillSelect(els.country, uniq(glossaryEntries.map(e => e.country)), 'All countries');
-  fillSelect(els.region, uniq(glossaryEntries.map(e => e.region_level_1)), 'All states / regions');
-  fillSelect(els.tradition, uniq(glossaryEntries.map(e => e.tradition)), 'All traditions');
-  fillSelect(els.status, uniq(glossaryEntries.map(e => e.belief_status)), 'All belief statuses');
-  const usCount = glossaryEntries.filter(e => e.country === 'United States').length;
-  const ukCount = glossaryEntries.filter(e => e.country === 'United Kingdom').length;
-  const worldCount = glossaryEntries.length - usCount - ukCount;
-  els.starterStats.textContent = `${glossaryEntries.length} entries loaded — ${usCount} U.S., ${ukCount} UK, ${worldCount} global.`;
-}
-
-function normalize(value){
-  return (value || '').toString().toLowerCase();
-}
-
-function flatField(value){
-  if (Array.isArray(value)) return value.join(' ');
-  return (value || '').toString();
-}
-
-function entryMatches(entry, term){
-  if (!term) return true;
-  const haystack = [
-    entry.term, entry.slug, entry.category, entry.subcategory, entry.short_definition, entry.full_definition,
-    entry.country, entry.region_level_1, entry.city, entry.location_notes, entry.cultural_context,
-    entry.historical_period, entry.first_known_reference, entry.modern_usage, entry.tradition,
-    entry.phenomenon_type, entry.entity_type, entry.belief_status, entry.source_type,
-    entry.confidence_level, entry.fraud_risk, flatField(entry.aliases), flatField(entry.tags),
-    flatField(entry.related_terms), flatField(entry.see_also), flatField(entry.search_boost_terms)
-  ].join(' ').toLowerCase();
-  return haystack.includes(term);
-}
-
-function sortEntries(entries, mode){
-  const copy = [...entries];
-  copy.sort((a,b) => {
-    if (mode === 'term-desc') return b.term.localeCompare(a.term);
-    if (mode === 'country-asc') return a.country.localeCompare(b.country) || a.term.localeCompare(b.term);
-    if (mode === 'category-asc') return a.category.localeCompare(b.category) || a.term.localeCompare(b.term);
-    if (mode === 'score-desc') return (b.american_relevance_score || 0) - (a.american_relevance_score || 0) || a.term.localeCompare(b.term);
-    return a.term.localeCompare(b.term);
-  });
-  return copy;
-}
-
-function listOrDash(values){
-  return values && values.length ? values.join(', ') : '—';
-}
-
-function renderResults(){
-  const term = normalize(els.search.value.trim());
-  const category = els.category.value;
-  const country = els.country.value;
-  const region = els.region.value;
-  const tradition = els.tradition.value;
-  const status = els.status.value;
-
-  let filtered = glossaryEntries.filter(entry =>
-    entryMatches(entry, term) &&
-    (!category || entry.category === category) &&
-    (!country || entry.country === country) &&
-    (!region || entry.region_level_1 === region) &&
-    (!tradition || entry.tradition === tradition) &&
-    (!status || entry.belief_status === status)
-  );
-
-  filtered = sortEntries(filtered, els.sort.value);
-  els.count.textContent = `${filtered.length} result${filtered.length === 1 ? '' : 's'}`;
-
-  if (!filtered.length){
-    els.results.innerHTML = '<div class="empty-state">No glossary entries match the current search and filter settings.</div>';
-    return;
-  }
-
-  els.results.innerHTML = filtered.map(entry => `
-    <article class="result-card">
-      <div class="result-top">
-        <div>
-          <h3>${entry.term}</h3>
-          <div class="badge-row">
-            <span class="badge">${entry.category}</span>
-            ${entry.subcategory ? `<span class="badge">${entry.subcategory}</span>` : ''}
-            <span class="badge">${entry.country}</span>
-            ${entry.region_level_1 ? `<span class="badge">${entry.region_level_1}</span>` : ''}
-            ${entry.city ? `<span class="badge">${entry.city}</span>` : ''}
-          </div>
-        </div>
-        <div class="meta-label">${entry.entry_id}</div>
-      </div>
-
-      <p class="result-definition"><strong style="color:var(--gold)">Short definition:</strong> ${entry.short_definition || entry.full_definition}</p>
-      <p class="result-text">${entry.full_definition}</p>
-
-      <div class="result-meta">
-        <div class="meta-mini">
-          <strong>Tradition</strong>
-          <span>${entry.tradition || '—'}</span>
-        </div>
-        <div class="meta-mini">
-          <strong>Belief status</strong>
-          <span>${entry.belief_status || '—'}</span>
-        </div>
-        <div class="meta-mini">
-          <strong>American relevance</strong>
-          <span>${entry.american_relevance_score ?? '—'} / 10</span>
-        </div>
-        <div class="meta-mini">
-          <strong>Aliases</strong>
-          <span>${listOrDash(entry.aliases)}</span>
-        </div>
-        <div class="meta-mini">
-          <strong>Tags</strong>
-          <span>${listOrDash(entry.tags)}</span>
-        </div>
-        <div class="meta-mini">
-          <strong>Related terms</strong>
-          <span>${listOrDash(entry.related_terms)}</span>
-        </div>
-      </div>
-
-      <details class="result-details">
-        <summary>View advanced fields</summary>
-        <div class="detail-grid">
-          <div class="detail-card"><strong>Slug</strong><span>${entry.slug || '—'}</span></div>
-          <div class="detail-card"><strong>Phenomenon type</strong><span>${entry.phenomenon_type || '—'}</span></div>
-          <div class="detail-card"><strong>Entity type</strong><span>${entry.entity_type || '—'}</span></div>
-          <div class="detail-card"><strong>Country</strong><span>${entry.country || '—'}</span></div>
-          <div class="detail-card"><strong>State / Region</strong><span>${entry.region_level_1 || '—'}</span></div>
-          <div class="detail-card"><strong>City</strong><span>${entry.city || '—'}</span></div>
-          <div class="detail-card"><strong>Location notes</strong><span>${entry.location_notes || '—'}</span></div>
-          <div class="detail-card"><strong>Cultural context</strong><span>${entry.cultural_context || '—'}</span></div>
-          <div class="detail-card"><strong>Historical period</strong><span>${entry.historical_period || '—'}</span></div>
-          <div class="detail-card"><strong>First known reference</strong><span>${entry.first_known_reference || '—'}</span></div>
-          <div class="detail-card"><strong>Modern usage</strong><span>${entry.modern_usage || '—'}</span></div>
-          <div class="detail-card"><strong>Source type</strong><span>${entry.source_type || '—'}</span></div>
-          <div class="detail-card"><strong>Confidence level</strong><span>${entry.confidence_level || '—'}</span></div>
-          <div class="detail-card"><strong>Disputed</strong><span>${entry.disputed ? 'Yes' : 'No'}</span></div>
-          <div class="detail-card"><strong>Fraud risk</strong><span>${entry.fraud_risk || '—'}</span></div>
-          <div class="detail-card"><strong>See also</strong><span>${listOrDash(entry.see_also)}</span></div>
-          <div class="detail-card"><strong>Search boost terms</strong><span>${listOrDash(entry.search_boost_terms)}</span></div>
-          <div class="detail-card"><strong>Featured</strong><span>${entry.featured ? 'Yes' : 'No'}</span></div>
-          <div class="detail-card"><strong>Public visible</strong><span>${entry.public_visible ? 'Yes' : 'No'}</span></div>
-          <div class="detail-card"><strong>Last updated</strong><span>${entry.last_updated || '—'}</span></div>
-        </div>
-      </details>
-    </article>
-  `).join('');
-}
-
-[els.search, els.category, els.country, els.region, els.tradition, els.status, els.sort].forEach(el => {
-  el.addEventListener('input', renderResults);
-  el.addEventListener('change', renderResults);
-});
-
-els.clear.addEventListener('click', () => {
-  els.search.value = '';
-  els.category.value = '';
-  els.country.value = '';
-  els.region.value = '';
-  els.tradition.value = '';
-  els.status.value = '';
-  els.sort.value = 'term-asc';
-  renderResults();
-});
-
-
-async function bootstrapGlossary(){
-  try {
-    await loadGlossaryEntries();
-    initializeFilters();
-    renderResults();
-  } catch (error) {
-    console.error(error);
-    els.count.textContent = '0 results';
-    els.results.innerHTML = `<div class="empty-state">Glossary data could not be loaded. Please ensure <code>assets/glossary.json</code> is present in the site directory.</div>`;
-    if (els.starterStats) {
-      els.starterStats.textContent = 'Entries could not be loaded. Check the browser console for details.';
-    }
-  }
-}
-
-bootstrapGlossary();
-
-// ── Hamburger nav ──────────────────────────────────────────────────────────
-const navToggle = document.getElementById('navToggle');
-const navLinks  = document.getElementById('navLinks');
-if(navToggle && navLinks){
-  navToggle.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
-    navToggle.classList.toggle('open', open);
-  });
-  navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      navToggle.classList.remove('open');
-    });
-  });
-}
-
-// ── Email form ─────────────────────────────────────────────────────────────
-function handleEmailSubmit(e){
-  e.preventDefault();
-  const form = e.target;
-  const msg  = document.getElementById('emailMsg');
-  fetch(form.action, {
-    method:'POST',
-    body: new FormData(form),
-    headers:{'Accept':'application/json'}
-  }).then(r => {
-    msg.style.display = 'block';
-    if(r.ok){
-      msg.className = 'email-msg success';
-      msg.textContent = 'You're in. Check your inbox for the field guide.';
-      form.reset();
-    } else {
-      msg.className = 'email-msg error';
-      msg.textContent = 'Something went wrong. Please try again.';
-    }
-  }).catch(() => {
-    msg.style.display = 'block';
-    msg.className = 'email-msg error';
-    msg.textContent = 'Could not send. Please try again.';
-  });
-}
-
-</script>
-
-</body>
-</html>
+]
 
