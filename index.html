@@ -178,22 +178,82 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
 .spr-passage p{margin:0; font-family:"Cormorant Garamond",serif; font-size:1.22rem; line-height:1.55; color:#e8dfd0}
 @media(max-width:1100px){.spr-context-inner{grid-template-columns:1fr}}
 @media(max-width:860px){.spr-passages{grid-template-columns:1fr} .spr-hero-quote{padding:28px 24px}}
+
+/* ── Nav: Buy button + hamburger ───────────────────────────────────────── */
+.nav-buy{font-size:.78rem; padding:10px 18px; white-space:nowrap; flex-shrink:0}
+.nav-hamburger{display:none; flex-direction:column; justify-content:space-between; width:26px; height:18px; background:none; border:none; cursor:pointer; padding:0; flex-shrink:0}
+.nav-hamburger span{display:block; width:100%; height:2px; background:var(--ivory); border-radius:2px; transition:transform .25s ease, opacity .25s ease}
+.nav-hamburger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.nav-hamburger.open span:nth-child(2){opacity:0}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+@media(max-width:860px){
+  .nav-hamburger{display:flex}
+  .nav-links{display:none; position:absolute; top:var(--nav); left:0; right:0; flex-direction:column; background:rgba(11,11,12,.97); backdrop-filter:blur(16px); border-bottom:1px solid rgba(255,255,255,.08); padding:18px 20px; gap:4px; z-index:59}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:10px 0; border-bottom:1px solid rgba(255,255,255,.05); font-size:1rem}
+  .nav-inner{flex-wrap:nowrap; gap:12px}
+}
+
+/* ── Chapter List ───────────────────────────────────────────────────────── */
+.chapters-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px}
+.chapter-card{display:grid; grid-template-columns:90px 1fr 48px; gap:16px; align-items:start; padding:20px 22px; border-radius:18px; border:1px solid var(--line); background:linear-gradient(180deg,rgba(255,255,255,.032),rgba(255,255,255,.016)); transition:.2s ease}
+.chapter-card:hover{transform:translateY(-2px); border-color:var(--line-strong); background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.025))}
+.ch-num{color:var(--gold); font-size:.7rem; text-transform:uppercase; letter-spacing:.14em; font-weight:700; padding-top:3px}
+.ch-body h3{margin:0 0 6px; font-family:"Cormorant Garamond",serif; font-size:1.18rem; line-height:1.2; color:var(--ivory)}
+.ch-body p{margin:0; color:var(--muted); font-size:.88rem; line-height:1.5}
+.ch-page{color:var(--muted-2); font-size:.75rem; text-align:right; padding-top:3px}
+.chapter-epilogue{border-color:rgba(214,179,74,.28); background:linear-gradient(180deg,rgba(214,179,74,.05),rgba(255,255,255,.016))}
+@media(max-width:860px){.chapters-grid{grid-template-columns:1fr} .chapter-card{grid-template-columns:80px 1fr 40px}}
+
+/* ── Email Capture ──────────────────────────────────────────────────────── */
+.email-band{display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; padding:42px 48px; border-radius:var(--radius); border:1px solid var(--line-strong); background:radial-gradient(circle at 20% 50%,rgba(214,179,74,.09),transparent 50%), linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02))}
+.email-band-text h2{margin:10px 0 12px; font-family:"Cormorant Garamond",serif; font-size:clamp(1.8rem,3vw,2.6rem); line-height:1.05}
+.email-band-text p{margin:0; color:var(--muted); font-size:1rem}
+.email-form{display:flex; flex-direction:column; gap:12px}
+.email-input-row{display:flex; gap:10px}
+.email-field{flex:1; background:rgba(255,255,255,.05); color:var(--ivory); border:1px solid rgba(255,255,255,.12); border-radius:999px; padding:13px 20px; font:inherit; font-size:.92rem; outline:none; transition:border-color .2s}
+.email-field:focus{border-color:var(--gold)}
+.email-field::placeholder{color:#8f8573}
+.email-fine{margin:0; color:var(--muted-2); font-size:.78rem}
+.email-msg{padding:10px 16px; border-radius:12px; font-size:.88rem}
+.email-msg.success{background:rgba(80,180,80,.12); border:1px solid rgba(80,180,80,.3); color:#9de0a0}
+.email-msg.error{background:rgba(200,60,60,.12); border:1px solid rgba(200,60,60,.3); color:#e09090}
+@media(max-width:860px){.email-band{grid-template-columns:1fr; padding:28px 24px} .email-input-row{flex-direction:column}}
+
+/* ── Reader Reviews ─────────────────────────────────────────────────────── */
+.reader-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px}
+.reader-card{padding:26px; border-radius:22px; border:1px solid var(--line); background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015))}
+.reader-card .stars{color:var(--gold); font-size:1rem; letter-spacing:2px; margin-bottom:12px}
+.reader-card p{margin:0 0 14px; font-family:"Cormorant Garamond",serif; font-size:1.28rem; line-height:1.48; color:#f0e8d8}
+.reader-card span{color:var(--muted); font-size:.82rem}
+@media(max-width:860px){.reader-grid{grid-template-columns:1fr}}
+
+/* ── Credentials Block ──────────────────────────────────────────────────── */
+.credentials{display:grid; gap:8px; margin-top:18px; padding-top:18px; border-top:1px solid rgba(255,255,255,.07)}
+.cred{display:flex; align-items:center; gap:10px; padding:9px 12px; border-radius:12px; background:rgba(255,255,255,.025); border:1px solid rgba(255,255,255,.055)}
+.cred-icon{font-size:1rem; flex-shrink:0}
+.cred span:last-child{color:var(--muted); font-size:.84rem}
 </style>
 </head>
 <body>
 <header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="#top">The American Paranormal</a>
-    <nav class="nav-links">
+    <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#top">Home</a>
       <a href="#trailer">Trailer</a>
+      <a href="#chapters">Chapters</a>
       <a href="#excerpt">Excerpt</a>
       <a href="#reviews">SPR</a>
       <a href="#author">Author</a>
       <a href="#collaboration">Cindy Kaza</a>
       <a href="#other-books">Other Books</a>
       <a href="#glossary">Glossary</a>
-      <a href="#buy">Buy</a>
     </nav>
+    <a class="btn btn-primary nav-buy" href="https://a.co/d/0gmGH7Vk" target="_blank" rel="noopener noreferrer">Buy Now</a>
   </div>
 </header>
 
@@ -333,6 +393,148 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
     </div>
   </section>
 
+
+  <section id="chapters">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Table of Contents</span>
+        <h2>Inside the book</h2>
+        <p>Fourteen chapters spanning 150 years of American Spiritualism, psychical research, and the technologies built to answer a single question.</p>
+      </div>
+
+      <div class="chapters-grid reveal">
+        <div class="chapter-card">
+          <span class="ch-num">Prologue</span>
+          <div class="ch-body">
+            <h3>The Question That Won&rsquo;t Die</h3>
+            <p>The stakes, the method, and why the answer still matters.</p>
+          </div>
+          <span class="ch-page">p. 1</span>
+        </div>
+        <div class="chapter-card">
+          <span class="ch-num">Chapter 1</span>
+          <div class="ch-body">
+            <h3>The Fox Sisters and the Birth of a Movement</h3>
+            <p>Hydesville, 1848. Two girls, a dead peddler, and the crack in the wall between the living and the dead that never fully closed.</p>
+          </div>
+          <span class="ch-page">p. 17</span>
+        </div>
+        <div class="chapter-card">
+          <span class="ch-num">Chapter 2</span>
+          <div class="ch-body">
+            <h3>Spirits Cross the Atlantic</h3>
+            <p>American Spiritualism exports itself to Britain and Europe, acquiring new traditions, new frauds, and the first serious scientific scrutiny.</p>
+          </div>
+          <span class="ch-page">p. 67</span>
+        </div>
+        <div class="chapter-card">
+          <span class="ch-num">Chapter 3</span>
+          <div class="ch-body">
+            <h3>The Scientists and the S&eacute;ance</h3>
+            <p>The Society for Psychical Research brings laboratory discipline to the darkened room. What they found — and what they couldn&rsquo;t explain.</p>
+          </div>
+          <span class="ch-page">p. 93</span>
+        </div>
+        <div class="chapter-card">
+          <span class="ch-num">Chapter 4</span>
+          <div class="ch-body">
+            <h3>Ghosts in the Machine</h3>
+            <p>From planchettes to radio — how each new technology became immediately conscripted into the search for voices from the other side.</p>
+          </div>
+          <span class="ch-page">p. 133</span>
+        </div>
+        <div class="chapter-card">
+          <span class="ch-num">Chapter 5</span>
+          <div class="ch-body">
+            <h3>Empire of the Spirits</h3>
+            <p>The industrialization of belief. Spiritualism becomes an institution, a business, and a target.</p>
+          </div>
+          <span class="ch-page">p. 163</span>
+        </div>
+        <div class="chapter-card">
+          <span class="ch-num">Chapter 6</span>
+          <div class="ch-body">
+            <h3>The Great War and the Great Beyond</h3>
+            <p>The trenches of WWI produce the largest mass grief event in modern history. Spiritualism surges. So does the desperation that feeds fraud.</p>
+          </div>
+          <span class="ch-page">p. 187</span>
+        </div>
+        <div class="chapter-card">
+          <span class="ch-num">Chapter 7</span>
+          <div class="ch-body">
+            <h3>What Changed in Human Consciousness?</h3>
+            <p>The mid-20th century rupture — what shifted in the way humanity understood itself, and why it mattered for the survival question.</p>
+          </div>
+          <span class="ch-page">p. 205</span>
+        </div>
+        <div class="chapter-card">
+          <span class="ch-num">Chapter 8</span>
+          <div class="ch-body">
+            <h3>The Dimensional Breach</h3>
+            <p>UFOs, altered states, and the growing suspicion that what people are contacting may not be the dead at all.</p>
+          </div>
+          <span class="ch-page">p. 225</span>
+        </div>
+        <div class="chapter-card">
+          <span class="ch-num">Chapter 9</span>
+          <div class="ch-body">
+            <h3>Convergence</h3>
+            <p>The threads pull together. Psychical research, physics, consciousness studies, and field investigation arrive at the same unresolved edge.</p>
+          </div>
+          <span class="ch-page">p. 239</span>
+        </div>
+        <div class="chapter-card">
+          <span class="ch-num">Chapter 10</span>
+          <div class="ch-body">
+            <h3>Chemical Gateways</h3>
+            <p>Psychedelics, near-death research, and the possibility that consciousness is not produced by the brain but merely filtered through it.</p>
+          </div>
+          <span class="ch-page">p. 253</span>
+        </div>
+        <div class="chapter-card">
+          <span class="ch-num">Chapter 11</span>
+          <div class="ch-body">
+            <h3>Modern Mediumship</h3>
+            <p>Cindy Kaza and the contemporary evidential tradition — what it looks like when mediumship is stripped of atmosphere and tested against verifiable fact.</p>
+          </div>
+          <span class="ch-page">p. 283</span>
+        </div>
+        <div class="chapter-card">
+          <span class="ch-num">Chapter 12</span>
+          <div class="ch-body">
+            <h3>Parallel Paths</h3>
+            <p>Eastern traditions, indigenous frameworks, and the survival question outside the Western laboratory.</p>
+          </div>
+          <span class="ch-page">p. 295</span>
+        </div>
+        <div class="chapter-card">
+          <span class="ch-num">Chapter 13</span>
+          <div class="ch-body">
+            <h3>Silicon Mediums</h3>
+            <p>Artificial intelligence enters the séance room. What happens when the machine starts producing answers that look like contact?</p>
+          </div>
+          <span class="ch-page">p. 303</span>
+        </div>
+        <div class="chapter-card">
+          <span class="ch-num">Chapter 14</span>
+          <div class="ch-body">
+            <h3>The Monopoly of Death</h3>
+            <p>If the technology ever works — who controls it? The darkest implication of the entire 150-year project.</p>
+          </div>
+          <span class="ch-page">p. 327</span>
+        </div>
+        <div class="chapter-card chapter-epilogue">
+          <span class="ch-num">Epilogue</span>
+          <div class="ch-body">
+            <h3>What We Are Left With</h3>
+            <p>No resolution. No false comfort. Only the question, clarified.</p>
+          </div>
+          <span class="ch-page">p. 357</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="reviews">
     <div class="wrap">
 
@@ -380,6 +582,41 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
     </div>
   </section>
 
+  <section id="reader-reviews">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Reader Reviews</span>
+        <h2>What readers are saying</h2>
+        <p>From paranormal investigators and historians to curious skeptics — responses from across the readership.</p>
+      </div>
+      <div class="reader-grid reveal">
+        <article class="reader-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>&ldquo;Unlike anything else in the paranormal space. Rigorous, dark, and genuinely unsettling in the best way. The chapter on AI mediumship alone is worth the price.&rdquo;</p>
+          <span>Verified Amazon Reader</span>
+        </article>
+        <article class="reader-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>&ldquo;I came in as a skeptic and left with far more questions than I arrived with. That&rsquo;s exactly what serious nonfiction should do.&rdquo;</p>
+          <span>Verified Amazon Reader</span>
+        </article>
+        <article class="reader-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>&ldquo;The historical depth is extraordinary. You can feel the research behind every chapter. The Fox Sisters section alone reads like a thriller.&rdquo;</p>
+          <span>Verified Amazon Reader</span>
+        </article>
+        <article class="reader-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>&ldquo;Finally a book on this subject written by someone who takes both the evidence and the doubt seriously. No cheerleading, no debunking. Just the real history.&rdquo;</p>
+          <span>Verified Amazon Reader</span>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:28px">
+        <a class="btn btn-ghost" href="https://a.co/d/0gmGH7Vk" target="_blank" rel="noopener noreferrer">Read All Reviews on Amazon &rarr;</a>
+      </div>
+    </div>
+  </section>
+
   <section id="author">
     <div class="wrap">
       <div class="head reveal">
@@ -394,6 +631,14 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
           <div class="caption">
             <strong>Stephen Dietrich-Kolokouris, PhD</strong>
             <span>Historian, author, and investigator</span>
+          </div>
+          <div class="credentials">
+            <div class="cred"><span class="cred-icon">&#127979;</span><span>PhD, German History &mdash; Goethe University Frankfurt</span></div>
+            <div class="cred"><span class="cred-icon">&#128187;</span><span>MS, Computer Science &mdash; Emory University</span></div>
+            <div class="cred"><span class="cred-icon">&#128218;</span><span>7 Published Books</span></div>
+            <div class="cred"><span class="cred-icon">&#128313;</span><span>NDE Survivor &mdash; November 2022</span></div>
+            <div class="cred"><span class="cred-icon">&#128269;</span><span>ITC &amp; Psychical Researcher</span></div>
+            <div class="cred"><span class="cred-icon">&#128203;</span><span>Society for Psychical Research</span></div>
           </div>
         </div>
 
@@ -565,6 +810,26 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
       </div>
     </div>
   </section>
+  <section id="email-capture">
+    <div class="wrap">
+      <div class="email-band reveal">
+        <div class="email-band-text">
+          <span class="eyebrow">Stay Connected</span>
+          <h2>Get the free field guide</h2>
+          <p>Sign up and receive a free PDF field guide to EVP methodology — the investigative framework behind <em>The American Paranormal</em>. No noise, no newsletters. Research updates only.</p>
+        </div>
+        <form class="email-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleEmailSubmit(event)">
+          <div class="email-input-row">
+            <input type="email" name="email" placeholder="Your email address" required class="email-field" />
+            <button type="submit" class="btn btn-primary">Send Me the Guide</button>
+          </div>
+          <p class="email-fine">No spam. Unsubscribe any time. Your address stays private.</p>
+          <div id="emailMsg" class="email-msg" style="display:none"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
 <section id="buy">
     <div class="wrap">
       <div class="final reveal">
@@ -848,7 +1113,51 @@ async function bootstrapGlossary(){
 }
 
 bootstrapGlossary();
+
+// ── Hamburger nav ──────────────────────────────────────────────────────────
+const navToggle = document.getElementById('navToggle');
+const navLinks  = document.getElementById('navLinks');
+if(navToggle && navLinks){
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('open');
+    });
+  });
+}
+
+// ── Email form ─────────────────────────────────────────────────────────────
+function handleEmailSubmit(e){
+  e.preventDefault();
+  const form = e.target;
+  const msg  = document.getElementById('emailMsg');
+  fetch(form.action, {
+    method:'POST',
+    body: new FormData(form),
+    headers:{'Accept':'application/json'}
+  }).then(r => {
+    msg.style.display = 'block';
+    if(r.ok){
+      msg.className = 'email-msg success';
+      msg.textContent = 'You're in. Check your inbox for the field guide.';
+      form.reset();
+    } else {
+      msg.className = 'email-msg error';
+      msg.textContent = 'Something went wrong. Please try again.';
+    }
+  }).catch(() => {
+    msg.style.display = 'block';
+    msg.className = 'email-msg error';
+    msg.textContent = 'Could not send. Please try again.';
+  });
+}
+
 </script>
 
 </body>
 </html>
+
