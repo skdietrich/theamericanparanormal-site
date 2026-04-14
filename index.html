@@ -159,6 +159,25 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
 @media (max-width:1100px){.hero-grid,.grid2,.excerpt,.author-grid,.collab{grid-template-columns:1fr} h1{max-width:none}}
 @media (max-width:860px){.themes,.review-grid,.meta{grid-template-columns:1fr} .quote-band{grid-template-columns:1fr; text-align:left} .qsrc{text-align:left} .nav{height:auto} .nav-inner{min-height:var(--nav); padding:14px 0; align-items:flex-start} .nav-links{gap:14px; font-size:.88rem}}
 @media (max-width:640px){.wrap{width:min(calc(100% - 24px), var(--max))} section{padding:72px 0} .panel,.excerpt-box,.final{padding:22px} .hero{padding-top:28px} .excerpt-box p{font-size:1.18rem} .brand{font-size:.82rem}}
+
+/* ── SPR Review Section ─────────────────────────────────── */
+.spr-context{margin-bottom:48px}
+.spr-context-inner{display:grid; grid-template-columns:260px 1fr; gap:32px; align-items:start; padding:32px; border-radius:var(--radius); border:1px solid var(--line-strong); background:linear-gradient(135deg, rgba(214,179,74,.07), rgba(255,255,255,.02))}
+.spr-badge{display:flex; flex-direction:column; gap:8px; padding:24px; border-radius:18px; border:1px solid var(--line-strong); background:rgba(214,179,74,.06); text-align:center}
+.spr-badge-year{font-family:Cinzel,serif; color:var(--gold); font-size:.72rem; letter-spacing:.22em; text-transform:uppercase}
+.spr-badge-name{font-family:"Cormorant Garamond",serif; font-size:1.4rem; line-height:1.2; color:var(--ivory)}
+.spr-badge-sub{color:var(--muted-2); font-size:.75rem; letter-spacing:.08em}
+.spr-context-text .head{margin-bottom:0}
+.spr-hero-quote{position:relative; padding:40px 48px; margin-bottom:36px; border-radius:var(--radius); border:1px solid var(--line-strong); background:linear-gradient(180deg, rgba(214,179,74,.06), rgba(255,255,255,.02)), linear-gradient(135deg, rgba(100,22,28,.15), transparent 60%); box-shadow:var(--shadow)}
+.spr-hq-mark{font-family:"Cormorant Garamond",serif; font-size:6rem; line-height:.7; color:var(--gold); opacity:.6; margin-bottom:16px}
+.spr-hq-text{margin:0 0 20px; font-family:"Cormorant Garamond",serif; font-size:clamp(1.4rem,2.6vw,2rem); line-height:1.45; color:var(--ivory); font-style:italic; border:none; padding:0}
+.spr-hq-attr{color:var(--muted); font-size:.92rem}
+.spr-passages{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px}
+.spr-passage{padding:26px; border-radius:22px; border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.015))}
+.spr-passage-label{margin-bottom:12px; color:var(--gold); font-size:.72rem; text-transform:uppercase; letter-spacing:.18em; font-weight:700}
+.spr-passage p{margin:0; font-family:"Cormorant Garamond",serif; font-size:1.22rem; line-height:1.55; color:#e8dfd0}
+@media(max-width:1100px){.spr-context-inner{grid-template-columns:1fr}}
+@media(max-width:860px){.spr-passages{grid-template-columns:1fr} .spr-hero-quote{padding:28px 24px}}
 </style>
 </head>
 <body>
@@ -316,18 +335,48 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
 
   <section id="reviews">
     <div class="wrap">
-      <div class="head reveal">
-        <span class="eyebrow">SPR Review</span>
-        <h2>Praised by the Society for Psychical Research</h2>
-        <p>The Society for Psychical Research — the oldest institution in the world dedicated to the rigorous scientific study of paranormal phenomena — reviewed <em>The American Paranormal</em> and recognized its rare combination of historical depth, technological framing, and sustained philosophical seriousness.</p>
+
+      <div class="spr-context reveal">
+        <div class="spr-context-inner">
+          <div class="spr-badge">
+            <div class="spr-badge-year">Est. 1882</div>
+            <div class="spr-badge-name">Society for Psychical Research</div>
+            <div class="spr-badge-sub">London, England &middot; Charity No. 207325</div>
+          </div>
+          <div class="spr-context-text">
+            <span class="eyebrow">Official Review</span>
+            <h2>Reviewed by the Society for Psychical Research</h2>
+            <p>The SPR &mdash; founded in London in 1882 &mdash; is the oldest and most respected institution in the world dedicated to the rigorous scientific investigation of paranormal phenomena. Its membership has included Nobel laureates, philosophers, and heads of state. A formal review in its publications is among the highest forms of recognition available to a work in this field. <em>The American Paranormal</em> received a full review by Ciaran Farrell &mdash; himself a psychical researcher, paranormal investigator, and ghost hunter.</p>
+            <a class="btn btn-ghost" href="https://www.spr.ac.uk/AmericanParanormal" target="_blank" rel="noopener noreferrer" style="margin-top:16px;display:inline-block">Read the Full Review on SPR.ac.uk &rarr;</a>
+          </div>
+        </div>
       </div>
 
-      <div class="review-grid">
-        <article class="review-card reveal"><p>“A very unusual, interesting, and challenging book…”</p><span>Society for Psychical Research (SPR)</span></article>
-        <article class="review-card reveal"><p>“A modern Gothic scientific and science fiction-based book…”</p><span>Society for Psychical Research (SPR)</span></article>
-        <article class="review-card reveal"><p>“Very much a philosopher’s book for those who engage in these activities…”</p><span>Society for Psychical Research (SPR)</span></article>
-        <article class="review-card reveal"><p>“A thought-provoking, philosophical journey through the history of Spiritualism from a technological perspective…”</p><span>Society for Psychical Research (SPR)</span></article>
+      <div class="spr-hero-quote reveal">
+        <div class="spr-hq-mark">&ldquo;</div>
+        <blockquote class="spr-hq-text">A very unusual, interesting, and challenging book in which the reader will see that the author has considered in some considerable depth and breadth the matter of there being more questions than answers in the world of the paranormal &mdash; its history, its development, and that of humanity itself.</blockquote>
+        <div class="spr-hq-attr">&mdash; Ciaran Farrell, <em>Society for Psychical Research</em></div>
       </div>
+
+      <div class="spr-passages reveal">
+        <div class="spr-passage">
+          <div class="spr-passage-label">On the book&rsquo;s structure</div>
+          <p>Reminiscent of Henry James&rsquo;s <em>The Turn of the Screw</em> &mdash; two competing and contrasting narratives that rely on one another: a historical account of the development of spirit-based technologies, and a critical philosophical commentary running alongside it.</p>
+        </div>
+        <div class="spr-passage">
+          <div class="spr-passage-label">On the author</div>
+          <p>A historian and a remarkable man with a diverse set of interests, skills, and talents &mdash; an author who has spent many long hours waiting in the dark for something to happen, contemplating what contact with discarnate entities would mean for humanity as a whole.</p>
+        </div>
+        <div class="spr-passage">
+          <div class="spr-passage-label">On the central vision</div>
+          <p>A modern Gothic scientific and science fiction-based book &mdash; a novel, enthusiastic, thought-provoking, philosophical journey through the history of Spiritualism from a technological perspective for those who love the challenge of the paranormal.</p>
+        </div>
+        <div class="spr-passage">
+          <div class="spr-passage-label">On its audience</div>
+          <p>Very much a philosopher&rsquo;s book for those who engage in paranormal investigation &mdash; though there is also something there for the devotees of cosmic consciousness theory, Spiritists, Spiritualists, technologists, and historians alike.</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -570,16 +619,8 @@ document.querySelectorAll('details').forEach(detail => {
 let glossaryEntries = [];
 const glossaryDataFiles = [
   {
-    name: 'us_terms.json',
-    paths: ['./data/us_terms.json', 'data/us_terms.json', './us_terms.json', 'us_terms.json']
-  },
-  {
-    name: 'uk_terms.json',
-    paths: ['./data/uk_terms.json', 'data/uk_terms.json', './uk_terms.json', 'uk_terms.json']
-  },
-  {
-    name: 'world_terms.json',
-    paths: ['./data/world_terms.json', 'data/world_terms.json', './world_terms.json', 'world_terms.json']
+    name: 'glossary.json',
+    paths: ['./assets/glossary.json', 'assets/glossary.json']
   }
 ];
 
@@ -811,7 +852,7 @@ async function bootstrapGlossary(){
   } catch (error) {
     console.error(error);
     els.count.textContent = '0 results';
-    els.results.innerHTML = `<div class="empty-state">Glossary data could not be loaded. The page tried both the <code>data</code> folder and root-level fallback JSON files. Open your browser console for the exact file path error.</div>`;
+    els.results.innerHTML = `<div class="empty-state">Glossary data could not be loaded. The page expects <code>assets/glossary.json</code> in the same directory as <code>index.html</code>. Open your browser console for the exact error.</div>`;
     if (els.starterStats) {
       els.starterStats.textContent = 'Glossary data failed to load. Check the JSON file paths or the browser console.';
     }
