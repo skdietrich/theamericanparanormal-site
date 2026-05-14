@@ -149,7 +149,7 @@ img,video{display:block; max-width:100%}
 .status-text{font-family:"Share Tech Mono",monospace; font-size:.68rem; color:#7ecfaa; letter-spacing:.08em}
 
 /* ── SECTIONS ─────────────────────────────────────────────────────── */
-section{padding:96px 0}
+section{padding:96px 0; scroll-margin-top:var(--nav)}
 .head{display:grid; gap:12px; margin-bottom:48px; max-width:700px}
 .head h2{margin:0; font-family:"Cormorant Garamond",serif; font-size:clamp(2rem,4vw,3.2rem); line-height:1.04}
 .head p{margin:0; color:var(--muted); font-size:1.04rem}
@@ -284,22 +284,74 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
 .compare-table .old::before{content:"✗ "; opacity:.7}
 
 /* ── RESPONSIVE ───────────────────────────────────────────────────── */
+
+/* Hamburger */
+.nav-hamburger{display:none; flex-direction:column; justify-content:space-between; width:26px; height:18px; background:none; border:none; cursor:pointer; padding:0; flex-shrink:0; z-index:70}
+.nav-hamburger span{display:block; width:100%; height:2px; background:var(--ivory); border-radius:2px; transition:transform .25s ease, opacity .25s ease}
+.nav-hamburger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.nav-hamburger.open span:nth-child(2){opacity:0}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
 @media(max-width:1100px){
   .what-grid,.protocol-grid{grid-template-columns:1fr}
   .hero-signal{display:none}
   .hero-content{max-width:100%}
+  .how-it-works > .wrap > div[style*="grid-template-columns"]{display:block}
 }
 @media(max-width:860px){
+  .nav-hamburger{display:flex}
+  .nav-links{
+    display:none; position:absolute; top:var(--nav); left:0; right:0;
+    flex-direction:column; background:rgba(11,11,12,.97);
+    backdrop-filter:blur(20px); border-bottom:1px solid rgba(0,200,224,.15);
+    padding:16px 20px; gap:0; z-index:59;
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:12px 0; border-bottom:1px solid rgba(255,255,255,.05); font-size:1rem; color:var(--ivory)}
+  .nav-links a:last-child{border-bottom:none}
+  .nav-inner{flex-wrap:nowrap; gap:12px; position:relative}
+  /* Hide the CTA button in nav on mobile — signup is in page */
+  .nav > .wrap > .nav-inner > .btn-cyan{display:none}
+
   .features-grid{grid-template-columns:1fr 1fr}
   .stats-row,.beta-perks,.audience-grid{grid-template-columns:1fr}
-  section{padding:72px 0}
-  .signup-box{padding:36px 24px}
+  section{padding:64px 0}
+  .signup-box{padding:32px 20px}
+  .hero{padding:40px 0 60px; min-height:auto}
+  .hero-title{font-size:clamp(2.2rem,8vw,3.6rem)}
+  .hero-lede{font-size:.98rem}
+  .hero-cta{flex-direction:column; align-items:flex-start; gap:10px}
+  .hero-cta .btn{width:100%; text-align:center; padding:15px 20px}
+  .logo-mark img{width:min(280px, 80vw)}
+  .protocol-grid{grid-template-columns:1fr}
+  .signup-form{flex-direction:column}
+  .signup-input{min-width:unset; max-width:100%; width:100%}
+  .signup-form .btn-cyan{width:100%; text-align:center}
+  /* Compare table scrollable on mobile */
+  .panel-cyan{overflow-x:auto; -webkit-overflow-scrolling:touch}
+  .compare-table{min-width:520px}
+  /* Pipeline two-col becomes single */
+  #how-it-works .wrap > div{grid-template-columns:1fr !important; display:block !important}
+  #how-it-works .wrap > div > div + div{margin-top:48px}
 }
 @media(max-width:640px){
-  .wrap{width:min(calc(100% - 24px), var(--max))}
+  .wrap{width:min(calc(100% - 20px), var(--max))}
   .features-grid{grid-template-columns:1fr}
   .kpi-grid{grid-template-columns:1fr 1fr}
-  .nav-links{display:none}
+  .stats-row{grid-template-columns:1fr 1fr}
+  .beta-perks{grid-template-columns:1fr}
+  .audience-grid{grid-template-columns:1fr}
+  .footer-grid{flex-direction:column; gap:28px}
+  .science-note{padding:18px 16px}
+  .signup-box{padding:28px 16px}
+  .head h2{font-size:clamp(1.7rem,6vw,2.4rem)}
+  .itc-console .kpi-grid{grid-template-columns:1fr 1fr}
+  /* Nav logo smaller */
+  .nav-inner img{height:36px !important}
+}
+@media(min-width:861px){
+  /* Ensure desktop nav CTA is visible */
+  .nav > .wrap > .nav-inner > .btn-cyan{display:inline-block}
 }
 </style>
 </head>
@@ -308,22 +360,26 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
 <!-- ── NAV ──────────────────────────────────────────────────────────── -->
 <header class="nav">
   <div class="wrap nav-inner">
-    <div style="display:flex; align-items:center; gap:14px">
+    <div style="display:flex; align-items:center; gap:14px; flex-shrink:0">
       <a href="/itc-threshold" style="display:block; line-height:0">
-        <img src="ITC-NameCom-Official_Logo.png" alt="ITC Threshold Project" style="height:44px; width:auto; filter:drop-shadow(0 0 8px rgba(0,200,224,.4))" />
+        <img src="ITC-NameCom-Official_Logo.png" alt="ITC Threshold Project" style="height:44px; width:auto; filter:drop-shadow(0 0 8px rgba(0,200,224,.4))" loading="eager" />
       </a>
-      <div>
-        <a class="brand" href="/" style="font-size:.76rem">The American Paranormal</a>
-      </div>
+      <a class="brand" href="/" style="font-size:.76rem">The American Paranormal</a>
     </div>
-    <nav class="nav-links">
+    <nav class="nav-links" id="navLinks">
       <a href="#what-it-is">What It Is</a>
       <a href="#how-it-works">How It Works</a>
       <a href="#who">Who It's For</a>
       <a href="#protocol">Field Protocol</a>
       <a href="#signup">Beta Access</a>
+      <a href="/" style="color:var(--gold)">← Main Site</a>
     </nav>
-    <a class="btn btn-cyan" href="#signup">Free Beta Signup</a>
+    <div style="display:flex; align-items:center; gap:12px; flex-shrink:0">
+      <a class="btn btn-cyan" href="#signup" style="white-space:nowrap">Free Beta Signup</a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -336,7 +392,7 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
     <div class="hero-content reveal">
 
       <div class="logo-mark">
-        <img src="ITC-NameCom-Official_Logo.png" alt="The ITC Threshold Project — Statistical Defensibility for the Noetic Frontier" />
+        <img src="ITC-NameCom-Official_Logo.png" alt="The ITC Threshold Project — Statistical Defensibility for the Noetic Frontier" loading="lazy" />
       </div>
 
       <span class="eyebrow eyebrow-cyan">Free Beta Program · The American Paranormal</span>
@@ -800,7 +856,7 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
     <div class="signup-box reveal">
       <div style="display:flex; justify-content:center; margin-bottom:18px">
         <div class="logo-mark" style="margin-bottom:0">
-          <img src="ITC-NameCom-Official_Logo.png" alt="The ITC Threshold Project" />
+          <img src="ITC-NameCom-Official_Logo.png" alt="The ITC Threshold Project" loading="lazy" />
         </div>
       </div>
 
@@ -808,15 +864,11 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
       <h2>Join the Threshold Project Beta</h2>
       <p class="sub">Get free access to ITC NAMECOM FieldOps, field protocol documentation, and updates as the software develops. No cost. No subscription. No data sent anywhere.</p>
 
-      <form id="betaForm" action="https://formspree.io/f/placeholder" method="POST" onsubmit="handleBetaSubmit(event)" style="display:contents">
-        <div class="signup-form">
-          <input class="signup-input" type="text" name="name" placeholder="Your name" required />
-          <input class="signup-input" type="email" name="email" placeholder="Your email address" required />
-          <button class="btn btn-cyan" type="submit" style="padding:14px 32px">Request Beta Access</button>
-        </div>
-        <input type="hidden" name="source" value="ITC Threshold Project Beta Signup" />
-        <input type="hidden" name="_subject" value="New ITC Threshold Project Beta Signup" />
-      </form>
+      <div class="signup-form">
+        <input class="signup-input" type="text" id="betaName" placeholder="Your name" required autocomplete="name" />
+        <input class="signup-input" type="email" id="betaEmail" placeholder="Your email address" required autocomplete="email" />
+        <button class="btn btn-cyan" type="button" onclick="handleBetaSubmit()" style="padding:14px 32px; white-space:nowrap">Request Beta Access</button>
+      </div>
 
       <div id="betaMsg" class="signup-msg"></div>
 
@@ -988,41 +1040,56 @@ if(canvas){
   tick();
 }
 
-// ── Beta signup form ──────────────────────────────────────────────
-function handleBetaSubmit(e){
-  e.preventDefault();
-  const form = e.target;
+// ── Hamburger menu ────────────────────────────────────────────────
+const ham = document.getElementById('navHamburger');
+const nav = document.getElementById('navLinks');
+if(ham && nav){
+  ham.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    ham.classList.toggle('open', open);
+    ham.setAttribute('aria-expanded', open);
+  });
+  // Close menu on link click
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    ham.classList.remove('open');
+    ham.setAttribute('aria-expanded', false);
+  }));
+}
+
+// ── Beta signup ───────────────────────────────────────────────────
+function handleBetaSubmit(){
+  const nameEl = document.getElementById('betaName');
+  const emailEl = document.getElementById('betaEmail');
   const msg = document.getElementById('betaMsg');
 
-  // If no real formspree endpoint is configured, show placeholder success
-  const action = form.action;
-  if(action.includes('placeholder')){
+  const name = nameEl ? nameEl.value.trim() : '';
+  const email = emailEl ? emailEl.value.trim() : '';
+
+  if(!name || !email){
     msg.style.display = 'block';
-    msg.className = 'signup-msg success';
-    msg.textContent = "You're on the list. We'll send your beta access link to that address.";
-    form.reset();
+    msg.className = 'signup-msg error';
+    msg.textContent = 'Please enter both your name and email address.';
+    return;
+  }
+  const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if(!emailRe.test(email)){
+    msg.style.display = 'block';
+    msg.className = 'signup-msg error';
+    msg.textContent = 'Please enter a valid email address.';
     return;
   }
 
-  fetch(form.action, {
-    method:'POST',
-    body: new FormData(form),
-    headers:{'Accept':'application/json'}
-  }).then(r=>{
-    msg.style.display='block';
-    if(r.ok){
-      msg.className='signup-msg success';
-      msg.textContent="You're on the list. We'll send your beta access link to that address.";
-      form.reset();
-    } else {
-      msg.className='signup-msg error';
-      msg.textContent='Something went wrong. Please try again or email us directly.';
-    }
-  }).catch(()=>{
-    msg.style.display='block';
-    msg.className='signup-msg error';
-    msg.textContent='Could not send. Please try again.';
-  });
+  // Send via mailto as functional fallback (replace with Formspree/backend endpoint)
+  const subject = encodeURIComponent('ITC Threshold Project Beta Signup');
+  const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nSource: ITC Threshold Project Beta Signup Page');
+  window.location.href = 'mailto:info@theamericanparanormal.com?subject=' + subject + '&body=' + body;
+
+  msg.style.display = 'block';
+  msg.className = 'signup-msg success';
+  msg.textContent = "Your email client should open now. Send that message to complete your signup — we'll get back to you within 24 hours with beta access.";
+  if(nameEl) nameEl.value = '';
+  if(emailEl) emailEl.value = '';
 }
 </script>
 

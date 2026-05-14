@@ -920,14 +920,14 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
           <h2>Get the free field guide</h2>
           <p>Sign up and receive a free PDF field guide to EVP methodology — the investigative framework behind <em>The American Paranormal</em>. No noise, no newsletters. Research updates only.</p>
         </div>
-        <form class="email-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleEmailSubmit(event)">
+        <div class="email-form">
           <div class="email-input-row">
-            <input type="email" name="email" placeholder="Your email address" required class="email-field" />
-            <button type="submit" class="btn btn-primary">Send Me the Guide</button>
+            <input type="email" id="emailInput" placeholder="Your email address" required class="email-field" autocomplete="email" />
+            <button type="button" class="btn btn-primary" onclick="handleEmailSubmit()">Send Me the Guide</button>
           </div>
           <p class="email-fine">No spam. Unsubscribe any time. Your address stays private.</p>
           <div id="emailMsg" class="email-msg" style="display:none"></div>
-        </form>
+        </div>
       </div>
     </div>
   </section>
@@ -1374,29 +1374,27 @@ if(navToggle && navLinks){
 
 
 // ── Email form ─────────────────────────────────────────────────────────────
-function handleEmailSubmit(e){
-  e.preventDefault();
-  const form = e.target;
-  const msg  = document.getElementById('emailMsg');
-  fetch(form.action, {
-    method:'POST',
-    body: new FormData(form),
-    headers:{'Accept':'application/json'}
-  }).then(r => {
-    msg.style.display = 'block';
-    if(r.ok){
-      msg.className = 'email-msg success';
-      msg.textContent = "You're in. Check your inbox for the field guide.";
-      form.reset();
-    } else {
-      msg.className = 'email-msg error';
-      msg.textContent = 'Something went wrong. Please try again.';
-    }
-  }).catch(() => {
-    msg.style.display = 'block';
-    msg.className = 'email-msg error';
-    msg.textContent = 'Could not send. Please try again.';
-  });
+function handleEmailSubmit(){
+  const emailEl = document.getElementById('emailInput');
+  const msg = document.getElementById('emailMsg');
+  const email = emailEl ? emailEl.value.trim() : '';
+  const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if(!email || !emailRe.test(email)){
+    msg.style.display='block';
+    msg.className='email-msg error';
+    msg.textContent='Please enter a valid email address.';
+    return;
+  }
+
+  const subject = encodeURIComponent('EVP Field Guide Request');
+  const body = encodeURIComponent('Please send me the free EVP field guide.\n\nEmail: ' + email);
+  window.location.href = 'mailto:info@theamericanparanormal.com?subject=' + subject + '&body=' + body;
+
+  msg.style.display='block';
+  msg.className='email-msg success';
+  msg.textContent="Your email client should open — send that message and we'll get the guide to you within 24 hours.";
+  if(emailEl) emailEl.value='';
 }
 
 </script>
