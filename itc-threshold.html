@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>The ITC Threshold Project | Free Beta Access | The American Paranormal</title>
+<meta name="description" content="The ITC Threshold Project — a free beta program for paranormal investigators. ITC NAMECOM FieldOps is a rigorous, local anomaly-monitoring and entropy stream analysis tool for controlled paranormal field investigation. Sign up for free beta access." />
+<meta name="author" content="Stephen Dietrich-Kolokouris, PhD" />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://www.theamericanparanormal.com/itc-threshold" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="The ITC Threshold Project | Free Beta Access" />
+<meta property="og:description" content="Rigorous, statistically-grounded ITC field monitoring software. Free beta access for serious paranormal investigators." />
+<meta property="og:url" content="https://www.theamericanparanormal.com/itc-threshold" />
+<meta property="og:image" content="https://www.theamericanparanormal.com/ITC-NameCom-Official_Logo.png" />
+<meta property="og:image:alt" content="The ITC Threshold Project — Statistical Defensibility for the Noetic Frontier" />
+
+<meta name="theme-color" content="#0b0b0c" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+<style>
+:root {
+  --bg:#0b0b0c;
+  --panel:rgba(255,255,255,.045);
+  --line:rgba(214,179,74,.18);
+  --line-strong:rgba(214,179,74,.36);
+  --gold:#d6b34a;
+  --ivory:#f5efe3;
+  --muted:#b4aa98;
+  --muted-2:#8f8573;
+  --shadow:0 18px 60px rgba(0,0,0,.42);
+  --radius:24px;
+  --max:1240px;
+  --nav:82px;
+  /* ITC accent palette */
+  --cyan:#00c8e0;
+  --cyan-dim:rgba(0,200,224,.18);
+  --cyan-line:rgba(0,200,224,.28);
+  --red-dim:rgba(200,40,40,.18);
+  --amber:#e8a020;
+  --amber-dim:rgba(232,160,32,.18);
+}
+
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+
+body{
+  margin:0; font-family:Inter,system-ui,sans-serif; color:var(--ivory);
+  line-height:1.6; overflow-x:hidden;
+  background:
+    radial-gradient(circle at 18% 8%, rgba(0,200,224,.06), transparent 28%),
+    radial-gradient(circle at 84% 14%, rgba(100,22,28,.18), transparent 24%),
+    radial-gradient(circle at 50% 70%, rgba(214,179,74,.05), transparent 35%),
+    linear-gradient(180deg,#0c0c0d 0%, #101013 48%, #0b0b0c 100%);
+}
+
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; opacity:.10;
+  background:repeating-linear-gradient(90deg, rgba(0,200,224,.012) 0, rgba(0,200,224,.012) 1px, transparent 1px, transparent 112px);
+  mask-image:linear-gradient(to bottom, rgba(0,0,0,.82), rgba(0,0,0,.05));
+}
+
+a{color:inherit; text-decoration:none}
+img,video{display:block; max-width:100%}
+.wrap{width:min(calc(100% - 40px), var(--max)); margin-inline:auto}
+
+/* ── NAV ─────────────────────────────────────────────────────────── */
+.nav{position:sticky; top:0; z-index:60; height:var(--nav); background:rgba(11,11,12,.78); backdrop-filter:blur(16px); border-bottom:1px solid rgba(255,255,255,.05)}
+.nav-inner{height:100%; display:flex; align-items:center; justify-content:space-between; gap:24px}
+.brand{font-family:Cinzel,serif; color:var(--gold); font-size:.88rem; letter-spacing:.16em; text-transform:uppercase}
+.brand-sub{font-family:Cinzel,serif; color:var(--cyan); font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; opacity:.8}
+.nav-links{display:flex; gap:22px; flex-wrap:wrap; font-size:.92rem; color:var(--muted)}
+.nav-links a:hover{color:var(--ivory)}
+.btn{display:inline-block; padding:14px 22px; border-radius:999px; font-size:.82rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; border:none; cursor:pointer; transition:transform .2s ease, background .2s ease, box-shadow .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(180deg,#e3c160,#bf9428); color:#151108; box-shadow:0 10px 26px rgba(214,179,74,.24)}
+.btn-cyan{background:linear-gradient(180deg,#00d8f5,#0098b8); color:#04141a; box-shadow:0 10px 26px rgba(0,200,224,.28); font-weight:800}
+.btn-ghost{background:transparent; border:1px solid var(--cyan-line); color:var(--cyan)}
+.btn-ghost:hover{background:var(--cyan-dim)}
+
+/* ── EYEBROW ─────────────────────────────────────────────────────── */
+.eyebrow{display:inline-flex; align-items:center; gap:12px; color:var(--gold); text-transform:uppercase; letter-spacing:.22em; font-size:.77rem; font-weight:700}
+.eyebrow::before{content:""; width:42px; height:1px; background:linear-gradient(90deg, transparent, var(--gold))}
+.eyebrow-cyan{color:var(--cyan)}
+.eyebrow-cyan::before{background:linear-gradient(90deg, transparent, var(--cyan))}
+
+/* ── HERO ────────────────────────────────────────────────────────── */
+.hero{min-height:calc(100dvh - var(--nav)); display:grid; align-items:center; padding:60px 0 80px; position:relative; overflow:hidden}
+
+.hero-bg{position:absolute; inset:0; pointer-events:none; z-index:0}
+.hero-bg::after{
+  content:""; position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 70% 60% at 60% 40%, rgba(0,200,224,.07), transparent 60%),
+    radial-gradient(ellipse 50% 50% at 20% 80%, rgba(214,179,74,.06), transparent 55%);
+}
+
+/* Scanning line animation */
+.scan-line{
+  position:absolute; left:0; right:0; height:1px;
+  background:linear-gradient(90deg, transparent 0%, rgba(0,200,224,.4) 40%, rgba(0,200,224,.6) 50%, rgba(0,200,224,.4) 60%, transparent 100%);
+  animation:scan 6s linear infinite; opacity:.5;
+}
+@keyframes scan{0%{top:-2px} 100%{top:100%}}
+
+.hero-content{position:relative; z-index:1; max-width:760px}
+.hero-title{margin:14px 0 18px; font-family:"Cormorant Garamond",serif; font-size:clamp(2.8rem, 7vw, 5.6rem); line-height:.92; letter-spacing:-.02em}
+.hero-title .word-itc{font-family:Cinzel,serif; color:var(--cyan); font-size:clamp(1.6rem, 4vw, 3rem); display:block; letter-spacing:.22em; margin-bottom:6px}
+.hero-title .word-threshold{display:block}
+.hero-title .word-project{color:var(--gold); font-style:italic}
+
+.hero-lede{max-width:58ch; color:#ddd4c6; margin:0 0 32px; font-size:1.06rem; line-height:1.65}
+.hero-cta{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:36px}
+
+/* Signal display widget */
+.hero-signal{
+  position:absolute; right:0; top:50%; transform:translateY(-50%);
+  width:min(420px, 40%);
+  padding:24px; border-radius:24px;
+  border:1px solid var(--cyan-line);
+  background:linear-gradient(180deg, rgba(0,20,28,.82), rgba(0,10,18,.9));
+  box-shadow:0 0 60px rgba(0,200,224,.1), inset 0 0 40px rgba(0,0,0,.4);
+  z-index:1;
+}
+.console-header{display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; padding-bottom:12px; border-bottom:1px solid rgba(0,200,224,.15)}
+.console-title{font-family:"Share Tech Mono",monospace; font-size:.72rem; color:var(--cyan); letter-spacing:.12em; text-transform:uppercase}
+.console-badges{display:flex; gap:8px}
+.cbadge{padding:3px 9px; border-radius:999px; font-size:.64rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase}
+.cbadge-green{background:rgba(80,200,80,.15); border:1px solid rgba(80,200,80,.35); color:#7ee080}
+.cbadge-blue{background:rgba(0,200,224,.1); border:1px solid rgba(0,200,224,.3); color:var(--cyan)}
+
+.kpi-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:18px}
+.kpi{padding:12px 14px; border-radius:14px; background:rgba(0,0,0,.4); border:1px solid rgba(255,255,255,.06)}
+.kpi-label{font-family:"Share Tech Mono",monospace; font-size:.6rem; color:#6a9eaa; text-transform:uppercase; letter-spacing:.12em; margin-bottom:6px}
+.kpi-val{font-family:"Share Tech Mono",monospace; font-size:1.4rem; color:var(--cyan); line-height:1}
+.kpi-sub{font-size:.62rem; color:#507080; margin-top:4px; font-family:"Share Tech Mono",monospace}
+.kpi-val.amber{color:var(--amber)}
+.kpi-val.normal{color:#4ae08a}
+
+.signal-canvas{height:54px; border-radius:10px; background:rgba(0,0,0,.5); border:1px solid rgba(0,200,224,.1); overflow:hidden; position:relative; margin-bottom:14px}
+.signal-canvas canvas{position:absolute; inset:0; width:100%; height:100%}
+
+.status-bar{display:flex; align-items:center; gap:10px; padding:9px 13px; border-radius:10px; background:rgba(0,200,224,.06); border:1px solid rgba(0,200,224,.2)}
+.status-dot{width:7px; height:7px; border-radius:50%; background:#4ae08a; box-shadow:0 0 6px #4ae08a; animation:pulse-dot 2s ease-in-out infinite}
+@keyframes pulse-dot{0%,100%{opacity:1} 50%{opacity:.4}}
+.status-text{font-family:"Share Tech Mono",monospace; font-size:.68rem; color:#7ecfaa; letter-spacing:.08em}
+
+/* ── SECTIONS ─────────────────────────────────────────────────────── */
+section{padding:96px 0}
+.head{display:grid; gap:12px; margin-bottom:48px; max-width:700px}
+.head h2{margin:0; font-family:"Cormorant Garamond",serif; font-size:clamp(2rem,4vw,3.2rem); line-height:1.04}
+.head p{margin:0; color:var(--muted); font-size:1.04rem}
+
+/* divider */
+.divider{height:1px; background:linear-gradient(90deg, transparent, var(--cyan-line), transparent); margin:0 auto; max-width:var(--max); opacity:.6}
+
+/* ── WHAT IT IS ───────────────────────────────────────────────────── */
+.what-grid{display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:start}
+.panel{padding:28px; border-radius:var(--radius); border:1px solid var(--line); box-shadow:var(--shadow); background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02))}
+.panel-cyan{border-color:var(--cyan-line); background:linear-gradient(180deg, rgba(0,20,28,.6), rgba(0,10,18,.4))}
+
+.diff-list{display:grid; gap:14px; margin-top:0}
+.diff-item{display:flex; gap:14px; padding:16px 18px; border-radius:16px; border:1px solid rgba(255,255,255,.06); background:rgba(255,255,255,.025); align-items:flex-start}
+.diff-icon{font-size:1.3rem; flex-shrink:0; margin-top:2px}
+.diff-item h4{margin:0 0 5px; font-size:.88rem; text-transform:uppercase; letter-spacing:.08em; color:var(--cyan)}
+.diff-item p{margin:0; color:var(--muted); font-size:.9rem}
+
+/* ── MATH / HOW IT WORKS ─────────────────────────────────────────── */
+.pipeline{display:grid; gap:0}
+.pipe-step{display:grid; grid-template-columns:52px 1fr; gap:20px; align-items:stretch}
+.pipe-num{display:flex; flex-direction:column; align-items:center}
+.pipe-circle{width:40px; height:40px; border-radius:50%; background:rgba(0,200,224,.12); border:1px solid var(--cyan-line); display:flex; align-items:center; justify-content:center; font-family:Cinzel,serif; font-size:.9rem; color:var(--cyan); flex-shrink:0}
+.pipe-line{flex:1; width:1px; background:linear-gradient(180deg, var(--cyan-line), transparent); margin-inline:auto; min-height:28px}
+.pipe-content{padding:0 0 32px}
+.pipe-content h3{margin:6px 0 8px; font-family:"Cormorant Garamond",serif; font-size:1.5rem; color:var(--ivory)}
+.pipe-content p{margin:0; color:var(--muted); font-size:.96rem}
+.pipe-last .pipe-line{display:none}
+.pipe-last .pipe-content{padding-bottom:0}
+
+.math-box{margin-top:10px; padding:12px 16px; border-radius:12px; background:rgba(0,0,0,.5); border:1px solid rgba(0,200,224,.15); font-family:"Share Tech Mono",monospace; font-size:.84rem; color:var(--cyan); line-height:1.5}
+.math-note{font-family:Inter,sans-serif; color:var(--muted-2); font-size:.8rem; margin-top:6px}
+
+/* ── FEATURES GRID ────────────────────────────────────────────────── */
+.features-grid{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px}
+.feat{padding:18px 20px; border-radius:18px; border:1px solid rgba(255,255,255,.06); background:rgba(255,255,255,.025); transition:.2s ease}
+.feat:hover{transform:translateY(-3px); border-color:var(--cyan-line); background:rgba(0,20,28,.5)}
+.feat-mono{font-family:"Share Tech Mono",monospace; font-size:.72rem; color:var(--cyan); letter-spacing:.1em; margin-bottom:6px}
+.feat h4{margin:0 0 6px; font-size:.9rem; color:var(--ivory)}
+.feat p{margin:0; color:var(--muted); font-size:.82rem; line-height:1.45}
+
+/* ── STATS ────────────────────────────────────────────────────────── */
+.stats-row{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px}
+.stat{padding:22px; border-radius:22px; border:1px solid var(--line); background:rgba(255,255,255,.024); text-align:center}
+.stat-num{font-family:"Cormorant Garamond",serif; font-size:3rem; color:var(--cyan); line-height:1; display:block; margin-bottom:6px}
+.stat-label{font-size:.8rem; text-transform:uppercase; letter-spacing:.14em; color:var(--muted)}
+
+/* ── METHODOLOGY / PROTOCOL ───────────────────────────────────────── */
+.protocol-grid{display:grid; grid-template-columns:1fr 1fr; gap:28px}
+.protocol-block{padding:26px; border-radius:22px; border:1px solid var(--line); background:rgba(255,255,255,.025)}
+.protocol-block h3{margin:0 0 16px; font-family:Cinzel,serif; font-size:.82rem; letter-spacing:.18em; text-transform:uppercase; color:var(--gold)}
+.checklist{display:grid; gap:10px; padding:0; list-style:none; margin:0}
+.checklist li{display:flex; gap:12px; align-items:flex-start; color:var(--muted); font-size:.93rem; line-height:1.45}
+.check-icon{color:var(--cyan); flex-shrink:0; margin-top:1px; font-size:1rem}
+
+/* ── WHO IT'S FOR ─────────────────────────────────────────────────── */
+.audience-grid{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px}
+.audience-card{padding:26px 24px; border-radius:22px; border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.015)); transition:.2s ease}
+.audience-card:hover{transform:translateY(-3px); border-color:var(--line-strong)}
+.audience-card .icon{font-size:2.2rem; margin-bottom:14px}
+.audience-card h3{margin:0 0 10px; font-family:"Cormorant Garamond",serif; font-size:1.5rem}
+.audience-card p{margin:0; color:var(--muted); font-size:.93rem}
+
+/* ── IMPORTANT NOTE ───────────────────────────────────────────────── */
+.science-note{padding:26px 30px; border-radius:22px; border:1px solid rgba(214,179,74,.28); background:linear-gradient(180deg, rgba(214,179,74,.06), rgba(0,0,0,0)); margin-top:32px}
+.science-note p{margin:0; font-size:.98rem}
+.science-note strong{color:var(--gold)}
+
+/* ── BETA SIGNUP ──────────────────────────────────────────────────── */
+.signup-section{padding:96px 0}
+.signup-box{
+  padding:52px 48px; border-radius:36px;
+  border:1px solid var(--cyan-line);
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0,200,224,.08), transparent 55%),
+    linear-gradient(180deg, rgba(0,20,28,.7), rgba(0,10,18,.5));
+  box-shadow:0 0 80px rgba(0,200,224,.08), var(--shadow);
+  text-align:center;
+}
+.signup-box h2{margin:12px 0 16px; font-family:"Cormorant Garamond",serif; font-size:clamp(2.2rem,4vw,3.6rem); line-height:1}
+.signup-box .sub{font-family:"Cormorant Garamond",serif; font-size:1.36rem; color:var(--muted); margin:0 auto 28px; max-width:52ch; line-height:1.4}
+.signup-form{display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-bottom:20px}
+.signup-input{
+  flex:1; min-width:240px; max-width:360px;
+  background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+  color:var(--ivory); border-radius:999px; padding:14px 22px;
+  font:inherit; font-size:.96rem; outline:none;
+  transition:border-color .2s ease;
+}
+.signup-input:focus{border-color:var(--cyan-line)}
+.signup-input::placeholder{color:#7a8890}
+.signup-legal{color:var(--muted-2); font-size:.82rem; max-width:50ch; margin:0 auto}
+.signup-msg{display:none; padding:12px 18px; border-radius:12px; font-size:.9rem; margin-top:14px}
+.signup-msg.success{background:rgba(80,200,80,.12); border:1px solid rgba(80,200,80,.3); color:#9de0a0}
+.signup-msg.error{background:rgba(200,60,60,.12); border:1px solid rgba(200,60,60,.3); color:#e09090}
+
+.beta-perks{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin:40px 0 0; text-align:left}
+.perk{padding:20px; border-radius:18px; border:1px solid rgba(255,255,255,.07); background:rgba(255,255,255,.025)}
+.perk h4{margin:0 0 8px; color:var(--cyan); font-size:.84rem; text-transform:uppercase; letter-spacing:.1em}
+.perk p{margin:0; color:var(--muted); font-size:.88rem}
+
+/* ── FOOTER ───────────────────────────────────────────────────────── */
+footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
+.footer-grid{display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; padding-top:26px; border-top:1px solid rgba(255,255,255,.06)}
+.footer-brand{font-family:Cinzel,serif; color:var(--gold); font-size:.84rem; letter-spacing:.14em; text-transform:uppercase; display:block; margin-bottom:8px}
+
+/* ── REVEAL ───────────────────────────────────────────────────────── */
+.reveal{opacity:0; transform:translateY(18px); transition:opacity .65s ease, transform .65s ease}
+.reveal.visible{opacity:1; transform:none}
+
+/* ── LOGO MARK ────────────────────────────────────────────────────── */
+.logo-mark{
+  display:inline-block;
+  margin-bottom:20px;
+}
+.logo-mark img{
+  width:340px; max-width:90vw; height:auto; display:block;
+  filter:drop-shadow(0 0 28px rgba(0,200,224,.35));
+}
+/* Hide old text elements — logo image replaces them */
+.logo-mark-itc,.logo-mark-sub,.logo-mark-project{display:none}
+
+/* ── COMPARISON TABLE ─────────────────────────────────────────────── */
+.compare-table{width:100%; border-collapse:collapse; margin-top:8px}
+.compare-table th{padding:12px 16px; text-align:left; font-size:.72rem; text-transform:uppercase; letter-spacing:.14em; color:var(--muted-2); border-bottom:1px solid rgba(255,255,255,.07)}
+.compare-table td{padding:13px 16px; font-size:.92rem; border-bottom:1px solid rgba(255,255,255,.04); vertical-align:top}
+.compare-table tr:last-child td{border-bottom:none}
+.compare-table td:first-child{color:var(--ivory); font-weight:600}
+.compare-table .old{color:#c86060}
+.compare-table .new{color:#4ae080}
+.compare-table .new::before{content:"✓ "; opacity:.7}
+.compare-table .old::before{content:"✗ "; opacity:.7}
+
+/* ── RESPONSIVE ───────────────────────────────────────────────────── */
+@media(max-width:1100px){
+  .what-grid,.protocol-grid{grid-template-columns:1fr}
+  .hero-signal{display:none}
+  .hero-content{max-width:100%}
+}
+@media(max-width:860px){
+  .features-grid{grid-template-columns:1fr 1fr}
+  .stats-row,.beta-perks,.audience-grid{grid-template-columns:1fr}
+  section{padding:72px 0}
+  .signup-box{padding:36px 24px}
+}
+@media(max-width:640px){
+  .wrap{width:min(calc(100% - 24px), var(--max))}
+  .features-grid{grid-template-columns:1fr}
+  .kpi-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ──────────────────────────────────────────────────────────── -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div style="display:flex; align-items:center; gap:14px">
+      <a href="/itc-threshold" style="display:block; line-height:0">
+        <img src="ITC-NameCom-Official_Logo.png" alt="ITC Threshold Project" style="height:44px; width:auto; filter:drop-shadow(0 0 8px rgba(0,200,224,.4))" />
+      </a>
+      <div>
+        <a class="brand" href="/" style="font-size:.76rem">The American Paranormal</a>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#what-it-is">What It Is</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#who">Who It's For</a>
+      <a href="#protocol">Field Protocol</a>
+      <a href="#signup">Beta Access</a>
+    </nav>
+    <a class="btn btn-cyan" href="#signup">Free Beta Signup</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ── HERO ─────────────────────────────────────────────────────────── -->
+<section class="hero" id="top">
+  <div class="hero-bg"><div class="scan-line"></div></div>
+  <div class="wrap">
+    <div class="hero-content reveal">
+
+      <div class="logo-mark">
+        <img src="ITC-NameCom-Official_Logo.png" alt="The ITC Threshold Project — Statistical Defensibility for the Noetic Frontier" />
+      </div>
+
+      <span class="eyebrow eyebrow-cyan">Free Beta Program · The American Paranormal</span>
+      <h1 class="hero-title">
+        <span class="word-itc">ITC NAMECOM FieldOps</span>
+        <span class="word-threshold">Statistical Field</span>
+        <span class="word-project">Monitoring Software</span>
+      </h1>
+
+      <p class="hero-lede">
+        A rigorous, locally-executed anomaly monitoring instrument for paranormal field investigators.
+        Real Mahalanobis distance scoring. Real chi-squared statistics. A 16-feature signal model.
+        Runs entirely on your machine — no cloud, no subscription, no bullshit.
+      </p>
+
+      <div class="hero-cta">
+        <a class="btn btn-cyan" href="#signup">Join the Free Beta</a>
+        <a class="btn btn-ghost" href="#how-it-works">See How It Works</a>
+        <a class="btn" style="background:rgba(255,255,255,.04); border:1px solid rgba(214,179,74,.28); color:var(--gold)" href="/">← Back to Main Site</a>
+      </div>
+
+      <div class="science-note" style="margin-top:0; max-width:64ch">
+        <p><strong>Important:</strong> This instrument measures statistical deviation from a calibrated environmental baseline. It does not establish source, agency, identity, or cause. Interpretation happens after measurement, using context and corroboration.</p>
+      </div>
+    </div>
+
+    <!-- Simulated Console Widget -->
+    <div class="hero-signal reveal">
+      <div class="console-header">
+        <span class="console-title">ITC NAMECOM FieldOps</span>
+        <div class="console-badges">
+          <span class="cbadge cbadge-blue">LOCAL ONLY</span>
+          <span class="cbadge cbadge-green">LIVE</span>
+        </div>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi">
+          <div class="kpi-label">Anomaly Score</div>
+          <div class="kpi-val" id="scoreVal">0.842</div>
+          <div class="kpi-sub">elevated</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">p-Estimate</div>
+          <div class="kpi-val amber" id="pVal">1.2e-04</div>
+          <div class="kpi-sub">empirical</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">CUSUM</div>
+          <div class="kpi-val" id="cusumVal">0.176</div>
+          <div class="kpi-sub">bounded</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Entropy H</div>
+          <div class="kpi-val normal" id="entropyVal">0.913</div>
+          <div class="kpi-sub">bits/symbol</div>
+        </div>
+      </div>
+
+      <div class="signal-canvas">
+        <canvas id="signalCanvas"></canvas>
+      </div>
+
+      <div class="status-bar">
+        <div class="status-dot"></div>
+        <span class="status-text" id="statusText">SIGNAL WITHIN NORMAL RANGE · MONITORING</span>
+      </div>
+
+      <div style="margin-top:12px; padding:10px 14px; border-radius:10px; border:1px solid rgba(255,255,255,.05); background:rgba(0,0,0,.3)">
+        <div style="font-family:'Share Tech Mono',monospace; font-size:.6rem; color:#507880; letter-spacing:.08em; margin-bottom:8px">PROCESS STATUS</div>
+        <div style="display:grid; gap:5px; font-family:'Share Tech Mono',monospace; font-size:.65rem">
+          <div style="display:flex; justify-content:space-between; color:#7ec8aa">
+            <span>Input Stream</span><span style="color:#4ae080">● receiving</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; color:#7ec8aa">
+            <span>Baseline Calibration</span><span style="color:#4ae080">● complete</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; color:#7ec8aa">
+            <span>Windowed Analysis</span><span style="color:#00c8e0">● active</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; color:#7ec8aa">
+            <span>Anomaly Scoring</span><span style="color:#00c8e0">● active</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; color:#7ec8aa">
+            <span>GUARD</span><span style="color:#4ae080">● READY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── WHAT IT IS ─────────────────────────────────────────────────── -->
+<section id="what-it-is">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow eyebrow-cyan">What It Is</span>
+      <h2>A Field Instrument Built for Serious Investigators</h2>
+      <p>Not another spirit box. Not another EVP recorder. A statistically rigorous measurement tool designed around how real anomaly detection actually works.</p>
+    </div>
+
+    <div class="what-grid">
+      <div class="reveal">
+        <div class="diff-list">
+          <div class="diff-item">
+            <div class="diff-icon">📡</div>
+            <div>
+              <h4>Local Anomaly Monitoring</h4>
+              <p>Runs entirely on your machine. No cloud processing, no data leaving your device. Your investigation data is yours.</p>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-icon">📐</div>
+            <div>
+              <h4>Real Statistical Analysis</h4>
+              <p>Mahalanobis distance scoring across 16 signal features. Chi-squared significance testing. CUSUM persistence detection. Not scaled bar graphs — actual math.</p>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-icon">🔒</div>
+            <div>
+              <h4>Contamination Control</h4>
+              <p>Every operator interaction triggers a 3-second scoring freeze. Any qualified event in your record cannot be attributed to you touching the computer.</p>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-icon">📋</div>
+            <div>
+              <h4>Auditable Session Records</h4>
+              <p>SHA-256 seed commitment at session start proves your session was not fabricated. JSON, CSV, HTML, and methods document exports for every session.</p>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-icon">🔁</div>
+            <div>
+              <h4>Live vs. Control Protocol</h4>
+              <p>Built-in session typing — LIVE vs. CONTROL — locked irrevocably at first scoring window. The methodological foundation for meaningful comparison.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="panel panel-cyan">
+          <h3 style="margin:0 0 18px; font-family:'Cormorant Garamond',serif; font-size:1.6rem">How It's Different</h3>
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Capability</th>
+                <th>Older Approaches</th>
+                <th>NAMECOM FieldOps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Statistical scoring</td>
+                <td class="old">Scaled display only</td>
+                <td class="new">Mahalanobis distance + chi-squared p-value</td>
+              </tr>
+              <tr>
+                <td>Baseline model</td>
+                <td class="old">None or implicit</td>
+                <td class="new">Explicit 60-sec calibration, frozen baseline</td>
+              </tr>
+              <tr>
+                <td>Operator contamination</td>
+                <td class="old">Not controlled</td>
+                <td class="new">3-sec guard freeze on every UI interaction</td>
+              </tr>
+              <tr>
+                <td>Session integrity</td>
+                <td class="old">No verification</td>
+                <td class="new">SHA-256 seed commitment at session start</td>
+              </tr>
+              <tr>
+                <td>Persistence detection</td>
+                <td class="old">Single-window triggers</td>
+                <td class="new">CUSUM accumulator — requires sustained deviation</td>
+              </tr>
+              <tr>
+                <td>Control methodology</td>
+                <td class="old">Rare or informal</td>
+                <td class="new">Explicit LIVE/CONTROL session typing, locked</td>
+              </tr>
+              <tr>
+                <td>Export / review</td>
+                <td class="old">Screenshots</td>
+                <td class="new">JSON, CSV, HTML, methods doc — all events</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── HOW IT WORKS ───────────────────────────────────────────────── -->
+<section id="how-it-works">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow eyebrow-cyan">How It Works</span>
+      <h2>The Signal Pipeline</h2>
+      <p>Six stages from input to event record. Each stage is mathematically defined and auditable.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start">
+      <div class="pipeline reveal">
+        <div class="pipe-step">
+          <div class="pipe-num"><div class="pipe-circle">1</div><div class="pipe-line"></div></div>
+          <div class="pipe-content">
+            <h3>Input Stream</h3>
+            <p>Microphone captures real acoustic air-pressure fluctuations, or a synthetic noise source for pipeline testing. Sampled at 44.1kHz, processed in 500ms windows.</p>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-num"><div class="pipe-circle">2</div><div class="pipe-line"></div></div>
+          <div class="pipe-content">
+            <h3>Baseline Calibration</h3>
+            <p>Instrument collects 120 windows (60 seconds) of signal data. Computes mean and variance — or full 16×16 covariance matrix — of the undisturbed environment. Frozen. Never modified during a live session.</p>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-num"><div class="pipe-circle">3</div><div class="pipe-line"></div></div>
+          <div class="pipe-content">
+            <h3>Feature Extraction</h3>
+            <p>Each 500ms window produces a 16-dimensional feature vector: entropy, variance, drift, runs, autocorrelation, jitter, spectral flux, RMS amplitude, DC bias, tail weight, burst density, silence fraction, phase coherence, roughness, kurtosis, and spectral novelty.</p>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-num"><div class="pipe-circle">4</div><div class="pipe-line"></div></div>
+          <div class="pipe-content">
+            <h3>Anomaly Scoring</h3>
+            <p>Mahalanobis distance measures how far each window is from the calibrated baseline.</p>
+            <div class="math-box">D² = (x − μ)ᵀ Σ⁻¹ (x − μ)<br>score = √(D²/k), k = 16</div>
+            <p class="math-note">Under the null hypothesis, D² follows χ²₁₆. The p-value is the chi-squared survival probability.</p>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-num"><div class="pipe-circle">5</div><div class="pipe-line"></div></div>
+          <div class="pipe-content">
+            <h3>CUSUM Persistence</h3>
+            <p>A single anomalous window proves nothing. The CUSUM accumulator rewards sustained deviation across multiple windows while decaying in the absence of new evidence.</p>
+            <div class="math-box">Cₜ = max(0, Cₜ₋₁ + eₜ − 0.72)</div>
+            <p class="math-note">Isolated spikes cannot qualify. Consistent, repeated elevation is required.</p>
+          </div>
+        </div>
+        <div class="pipe-step pipe-last">
+          <div class="pipe-num"><div class="pipe-circle">6</div><div class="pipe-line"></div></div>
+          <div class="pipe-content">
+            <h3>Event Logging</h3>
+            <p>A qualified event requires: score ≥ threshold for 3 consecutive windows, CUSUM ≥ 3.0, 15+ seconds since the prior event, and no operator freeze active. Each record includes all 16 feature values, exact p-value, CUSUM, timestamp, and session type.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:grid; gap:20px">
+        <div class="reveal">
+          <div class="head" style="margin-bottom:20px">
+            <span class="eyebrow eyebrow-cyan" style="font-size:.7rem">The 16 Signal Features</span>
+            <h2 style="font-size:1.8rem">What the Instrument Measures</h2>
+          </div>
+          <div class="features-grid" style="grid-template-columns:1fr 1fr">
+            <div class="feat"><div class="feat-mono">entropy</div><h4>Shannon Entropy</h4><p>Frequency distribution randomness. Persistent low entropy in broadband noise is anomalous.</p></div>
+            <div class="feat"><div class="feat-mono">drift</div><h4>Mean Drift</h4><p>Signal stationarity within the window. Sustained drift indicates non-stationarity.</p></div>
+            <div class="feat"><div class="feat-mono">variance</div><h4>Amplitude Variance</h4><p>Spread of signal amplitude values within the 500ms window.</p></div>
+            <div class="feat"><div class="feat-mono">runs</div><h4>Zero-Crossing Rate</h4><p>Fraction of sign flips. Low runs = smooth DC-like signal, anomalous in noise.</p></div>
+            <div class="feat"><div class="feat-mono">autocorr</div><h4>Autocorrelation</h4><p>Lag-1 self-similarity. High autocorrelation suggests persistent periodic structure.</p></div>
+            <div class="feat"><div class="feat-mono">jitter</div><h4>Timing Jitter</h4><p>Irregularity of oscillation rhythm across sub-blocks within the window.</p></div>
+            <div class="feat"><div class="feat-mono">flux</div><h4>Spectral Flux</h4><p>Rate of change of frequency content between consecutive windows.</p></div>
+            <div class="feat"><div class="feat-mono">kurtosis</div><h4>Kurtosis</h4><p>Tail weight of amplitude distribution. Gaussian noise ≈ 0; impulsive noise is high.</p></div>
+            <div class="feat"><div class="feat-mono">novelty</div><h4>Spectral Novelty</h4><p>Distance of current spectrum from rolling mean of recent windows.</p></div>
+            <div class="feat"><div class="feat-mono">phase</div><h4>Phase Coherence</h4><p>Regularity of zero-crossing intervals. Low = regular oscillation, high = chaotic phase.</p></div>
+            <div class="feat"><div class="feat-mono">tail</div><h4>Tail Fraction</h4><p>Samples exceeding 3σ. Measures heavy-tailed statistical outliers within the window.</p></div>
+            <div class="feat"><div class="feat-mono">burst</div><h4>Burst Density</h4><p>Fraction of samples near peak amplitude. Episodic high-amplitude events.</p></div>
+          </div>
+          <div class="science-note" style="margin-top:20px">
+            <p><strong>The statistics describe deviation.</strong> They do not by themselves identify the cause. The instrument marks candidate moments for review — so patterns can be studied with discipline and humility.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── STATS ──────────────────────────────────────────────────────── -->
+<section style="padding:72px 0">
+  <div class="wrap">
+    <div class="stats-row reveal">
+      <div class="stat">
+        <span class="stat-num">16</span>
+        <div class="stat-label">Signal Features<br>per 500ms Window</div>
+      </div>
+      <div class="stat">
+        <span class="stat-num">χ²</span>
+        <div class="stat-label">Real Chi-Squared<br>p-Values</div>
+      </div>
+      <div class="stat">
+        <span class="stat-num">0</span>
+        <div class="stat-label">Data Leaves<br>Your Machine</div>
+      </div>
+      <div class="stat">
+        <span class="stat-num">v4.0</span>
+        <div class="stat-label">Current Release<br>Beta Program</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── WHO IT'S FOR ───────────────────────────────────────────────── -->
+<section id="who">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow eyebrow-cyan">Who It's For</span>
+      <h2>Investigators Who Want Evidence, Not Theater</h2>
+      <p>Built for fieldwork that can stand up to scrutiny — yours and anyone else's.</p>
+    </div>
+
+    <div class="audience-grid reveal">
+      <div class="audience-card">
+        <div class="icon">🔬</div>
+        <h3>Research-Oriented Investigators</h3>
+        <p>You want a repeatable methodology with documented baselines. You care about the difference between LIVE and CONTROL sessions. You want exports that can be reviewed by others.</p>
+      </div>
+      <div class="audience-card">
+        <div class="icon">📹</div>
+        <h3>Content Creators & Teams</h3>
+        <p>You want a professional-grade instrument on screen that reflects real science. The console is visually compelling and the underlying data is genuine — not a light show with no meaning behind it.</p>
+      </div>
+      <div class="audience-card">
+        <div class="icon">🧪</div>
+        <h3>ITC Researchers</h3>
+        <p>You're familiar with the PEAR Lab, the SPR literature, and what rigorous parapsychological methodology actually looks like. This instrument was designed with that standard in mind.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:36px" class="reveal">
+      <div class="panel panel-cyan">
+        <h3 style="margin:0 0 12px; font-family:'Cormorant Garamond',serif; font-size:1.7rem">The Paranormal Working Hypothesis</h3>
+        <p style="color:var(--muted); margin:0 0 14px">Some investigators propose that consciousness, intention, or an unknown agency may modulate a noisy signal environment in measurable ways. This connects ITC methodology to the broader tradition of REG research — from the Princeton PEAR Lab's two decades of mind-matter interaction studies to Roger Nelson's Global Consciousness Project.</p>
+        <p style="color:var(--muted); margin:0">NAMECOM FieldOps is the measurement layer for this hypothesis. It marks candidate moments — statistically qualified deviations from baseline — for post-session review and comparison. The interpretation is yours. The instrument does not assume a cause.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── FIELD PROTOCOL ─────────────────────────────────────────────── -->
+<section id="protocol">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow eyebrow-cyan">Field Protocol</span>
+      <h2>The Correct Workflow for a Session</h2>
+      <p>Every live investigation should be paired with a matched control session. That comparison is where meaningful data lives.</p>
+    </div>
+
+    <div class="protocol-grid reveal">
+      <div class="protocol-block">
+        <h3>Before You Arrive</h3>
+        <ul class="checklist">
+          <li><span class="check-icon">✓</span> Charge laptop fully</li>
+          <li><span class="check-icon">✓</span> Test on synthetic source at home</li>
+          <li><span class="check-icon">✓</span> Plan one control session and one live session at the location</li>
+          <li><span class="check-icon">✓</span> Document environmental notes: HVAC, traffic, equipment in use</li>
+        </ul>
+      </div>
+
+      <div class="protocol-block">
+        <h3>Control Session (Run First)</h3>
+        <ul class="checklist">
+          <li><span class="check-icon">✓</span> Declare session type: CONTROL</li>
+          <li><span class="check-icon">✓</span> Select signal source: Audio (Mic)</li>
+          <li><span class="check-icon">✓</span> Calibrate 60 seconds. Do not speak or move.</li>
+          <li><span class="check-icon">✓</span> Start Live Watch. Leave the room or remain completely still for 20+ min.</li>
+          <li><span class="check-icon">✓</span> Stop and export. Note any anomalies.</li>
+        </ul>
+      </div>
+
+      <div class="protocol-block">
+        <h3>Live Session (Run Second)</h3>
+        <ul class="checklist">
+          <li><span class="check-icon">✓</span> Declare session type: LIVE</li>
+          <li><span class="check-icon">✓</span> Re-calibrate in the same position</li>
+          <li><span class="check-icon">✓</span> Start Live Watch</li>
+          <li><span class="check-icon">✓</span> Conduct your investigation. Use Mark Moment for key activities.</li>
+          <li><span class="check-icon">✓</span> Remain away from laptop — every touch triggers the contamination guard</li>
+          <li><span class="check-icon">✓</span> Stop and export. Note timestamps of all activities.</li>
+        </ul>
+      </div>
+
+      <div class="protocol-block">
+        <h3>After the Investigation</h3>
+        <ul class="checklist">
+          <li><span class="check-icon">✓</span> Compare live and control session statistics externally</li>
+          <li><span class="check-icon">✓</span> Verify qualified event p-values are lower in the live session than control</li>
+          <li><span class="check-icon">✓</span> Check the methods document for any drift warnings</li>
+          <li><span class="check-icon">✓</span> Archive all four export files: JSON, CSV, HTML, Methods</li>
+          <li><span class="check-icon">✓</span> The methods document is designed for independent technical review</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="science-note reveal" style="margin-top:32px">
+      <p><strong>The key principle:</strong> A single live session, however dramatic, proves nothing in isolation. What matters is whether the distribution of anomaly scores, event rates, and p-value distributions differs between live and control sessions conducted at the same location with the same equipment over equal durations. That comparison is what the session type lock is designed to protect.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── SYSTEM REQUIREMENTS ────────────────────────────────────────── -->
+<section style="padding:72px 0">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow eyebrow-cyan">System Requirements</span>
+      <h2>What You Need to Run It</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px" class="reveal">
+      <div class="panel" style="padding:24px">
+        <div style="font-family:'Share Tech Mono',monospace; font-size:.68rem; color:var(--cyan); letter-spacing:.12em; margin-bottom:14px">HARDWARE</div>
+        <div style="display:grid; gap:10px">
+          <div style="color:var(--muted); font-size:.92rem"><strong style="color:var(--ivory); display:block; margin-bottom:2px">Computer</strong>Windows, macOS, or Linux. 4GB RAM minimum.</div>
+          <div style="color:var(--muted); font-size:.92rem"><strong style="color:var(--ivory); display:block; margin-bottom:2px">Microphone</strong>Any USB or built-in mic. Condenser preferred for spectral resolution.</div>
+          <div style="color:var(--muted); font-size:.92rem"><strong style="color:var(--ivory); display:block; margin-bottom:2px">Browser</strong>Chrome or Firefox. Opens to localhost:8787.</div>
+        </div>
+      </div>
+      <div class="panel" style="padding:24px">
+        <div style="font-family:'Share Tech Mono',monospace; font-size:.68rem; color:var(--cyan); letter-spacing:.12em; margin-bottom:14px">SOFTWARE</div>
+        <div style="display:grid; gap:10px">
+          <div style="color:var(--muted); font-size:.92rem"><strong style="color:var(--ivory); display:block; margin-bottom:2px">Python</strong>3.10 or later. Virtual environment recommended.</div>
+          <div style="color:var(--muted); font-size:.92rem"><strong style="color:var(--ivory); display:block; margin-bottom:2px">Packages</strong>fastapi, uvicorn, numpy, scipy — all in requirements.txt</div>
+          <div style="color:var(--muted); font-size:.92rem"><strong style="color:var(--ivory); display:block; margin-bottom:2px">Optional</strong>sounddevice for microphone. libportaudio2 on Linux.</div>
+        </div>
+      </div>
+      <div class="panel" style="padding:24px">
+        <div style="font-family:'Share Tech Mono',monospace; font-size:.68rem; color:var(--cyan); letter-spacing:.12em; margin-bottom:14px">NETWORK</div>
+        <div style="display:grid; gap:10px">
+          <div style="color:var(--muted); font-size:.92rem"><strong style="color:var(--ivory); display:block; margin-bottom:2px">Local only</strong>App binds exclusively to 127.0.0.1. No outbound calls. Wi-Fi does not affect scoring.</div>
+          <div style="color:var(--muted); font-size:.92rem"><strong style="color:var(--ivory); display:block; margin-bottom:2px">Recommended</strong>Disable Wi-Fi during sessions for maximum signal cleanliness.</div>
+          <div style="color:var(--muted); font-size:.92rem"><strong style="color:var(--ivory); display:block; margin-bottom:2px">Your data</strong>Never leaves your machine. Ever.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── BETA SIGNUP ────────────────────────────────────────────────── -->
+<section class="signup-section" id="signup">
+  <div class="wrap">
+    <div class="signup-box reveal">
+      <div style="display:flex; justify-content:center; margin-bottom:18px">
+        <div class="logo-mark" style="margin-bottom:0">
+          <img src="ITC-NameCom-Official_Logo.png" alt="The ITC Threshold Project" />
+        </div>
+      </div>
+
+      <span class="eyebrow eyebrow-cyan" style="justify-content:center">Free Beta Program</span>
+      <h2>Join the Threshold Project Beta</h2>
+      <p class="sub">Get free access to ITC NAMECOM FieldOps, field protocol documentation, and updates as the software develops. No cost. No subscription. No data sent anywhere.</p>
+
+      <form id="betaForm" action="https://formspree.io/f/placeholder" method="POST" onsubmit="handleBetaSubmit(event)" style="display:contents">
+        <div class="signup-form">
+          <input class="signup-input" type="text" name="name" placeholder="Your name" required />
+          <input class="signup-input" type="email" name="email" placeholder="Your email address" required />
+          <button class="btn btn-cyan" type="submit" style="padding:14px 32px">Request Beta Access</button>
+        </div>
+        <input type="hidden" name="source" value="ITC Threshold Project Beta Signup" />
+        <input type="hidden" name="_subject" value="New ITC Threshold Project Beta Signup" />
+      </form>
+
+      <div id="betaMsg" class="signup-msg"></div>
+
+      <p class="signup-legal">Your email is used only to send beta access. No marketing lists. Unsubscribe any time. Built under The American Paranormal — the research branch of Dr. Stephen Dietrich-Kolokouris's work in ITC, consciousness research, and paranormal investigation.</p>
+
+      <div class="beta-perks">
+        <div class="perk">
+          <h4>Free Software Access</h4>
+          <p>Full v4.0 release including all 16 feature scoring, CUSUM persistence, SHA-256 session integrity, and four-format exports.</p>
+        </div>
+        <div class="perk">
+          <h4>Complete Documentation</h4>
+          <p>Full operator manual including ITC history, measurement science, noetic foundations, field protocol, and troubleshooting guide.</p>
+        </div>
+        <div class="perk">
+          <h4>Development Updates</h4>
+          <p>First access to new features as the roadmap advances: hardware RNG integration, SDR signal capture, EMF sensor modules, and more.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────────── -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">The American Paranormal</a>
+        <p style="margin:0; color:var(--muted-2); font-size:.84rem; max-width:36ch">ITC Threshold Project · A free beta program for paranormal investigators. Statistical field monitoring software built to research-grade standards.</p>
+      </div>
+      <div>
+        <div style="font-family:'Share Tech Mono',monospace; font-size:.62rem; color:var(--muted-2); letter-spacing:.12em; margin-bottom:12px">QUICK LINKS</div>
+        <div style="display:grid; gap:8px">
+          <a href="/" style="color:var(--muted); font-size:.88rem; transition:.15s ease">← Main Site</a>
+          <a href="#what-it-is" style="color:var(--muted); font-size:.88rem">What It Is</a>
+          <a href="#how-it-works" style="color:var(--muted); font-size:.88rem">How It Works</a>
+          <a href="#signup" style="color:var(--cyan); font-size:.88rem">Join the Beta</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Share Tech Mono',monospace; font-size:.62rem; color:var(--muted-2); letter-spacing:.12em; margin-bottom:12px">LEGAL</div>
+        <p style="color:var(--muted-2); font-size:.82rem; margin:0; max-width:28ch">This instrument measures statistical deviation from a calibrated environmental baseline. It does not establish source, agency, identity, or cause. All sessions are locally recorded. No data leaves your machine.</p>
+      </div>
+    </div>
+    <p style="margin:28px 0 0; color:var(--muted-2); font-size:.8rem">© 2026 Stephen Dietrich-Kolokouris, PhD · The American Paranormal · ITC NAMECOM FieldOps v4.0</p>
+  </div>
+</footer>
+
+<script>
+// ── Scroll reveal ──────────────────────────────────────────────────
+const observer = new IntersectionObserver(entries => {
+  entries.forEach((e,i) => {
+    if(e.isIntersecting){
+      setTimeout(()=>e.target.classList.add('visible'), i*60);
+      observer.unobserve(e.target);
+    }
+  });
+}, {threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+// ── Animated signal waveform ──────────────────────────────────────
+const canvas = document.getElementById('signalCanvas');
+if(canvas){
+  const ctx = canvas.getContext('2d');
+  let phase = 0;
+  let noisePhase = 0;
+  let anomalyTimer = 0;
+  let isAnomaly = false;
+
+  function resize(){
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const waveHistory = [];
+  const MAX_HISTORY = 120;
+
+  function tick(){
+    noisePhase += 0.04;
+    phase += 0.08;
+    anomalyTimer--;
+    if(anomalyTimer <= 0){
+      isAnomaly = Math.random() < 0.08;
+      anomalyTimer = 20 + Math.floor(Math.random()*40);
+    }
+
+    const base = Math.sin(phase)*0.2 + Math.sin(phase*2.3)*0.12 + Math.sin(phase*0.7)*0.15;
+    const noise = (Math.random()-0.5)*0.18;
+    const anomalyPulse = isAnomaly ? (Math.random()-0.5)*0.5 : 0;
+    const val = base + noise + anomalyPulse;
+    waveHistory.push({v:val, a:isAnomaly});
+    if(waveHistory.length > MAX_HISTORY) waveHistory.shift();
+
+    draw();
+    // Update KPIs occasionally
+    if(Math.random()<0.05) updateKPIs(isAnomaly);
+    requestAnimationFrame(tick);
+  }
+
+  function draw(){
+    const W = canvas.width, H = canvas.height;
+    ctx.clearRect(0,0,W,H);
+
+    if(waveHistory.length < 2) return;
+    const step = W / (MAX_HISTORY - 1);
+    const mid = H/2;
+
+    // Grid lines
+    ctx.strokeStyle = 'rgba(0,200,224,0.06)';
+    ctx.lineWidth = 1;
+    [0.2,0.4,0.6,0.8].forEach(y=>{
+      ctx.beginPath(); ctx.moveTo(0,H*y); ctx.lineTo(W,H*y); ctx.stroke();
+    });
+
+    // Waveform
+    ctx.beginPath();
+    waveHistory.forEach((pt,i)=>{
+      const x = i*step;
+      const y = mid - pt.v * (H*0.38);
+      i===0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
+    });
+    ctx.strokeStyle = 'rgba(0,200,224,0.75)';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    // Anomaly highlight
+    const lastAnomaly = waveHistory.findLastIndex(p=>p.a);
+    if(lastAnomaly > 0){
+      const startX = lastAnomaly * step;
+      const grad = ctx.createLinearGradient(startX-20,0,startX+40,0);
+      grad.addColorStop(0,'rgba(232,160,32,0)');
+      grad.addColorStop(0.4,'rgba(232,160,32,0.15)');
+      grad.addColorStop(1,'rgba(232,160,32,0)');
+      ctx.fillStyle = grad;
+      ctx.fillRect(startX-20, 0, 60, H);
+    }
+  }
+
+  function updateKPIs(anomaly){
+    const score = anomaly
+      ? (0.7 + Math.random()*0.6).toFixed(3)
+      : (0.4 + Math.random()*0.4).toFixed(3);
+    const pExp = anomaly ? -(2 + Math.random()*2).toFixed(1) : -(0.5+Math.random()).toFixed(1);
+    const cusum = anomaly ? (Math.random()*3).toFixed(3) : (Math.random()*0.5).toFixed(3);
+    const entropy = (0.82 + Math.random()*0.1).toFixed(3);
+
+    document.getElementById('scoreVal').textContent = score;
+    const pEl = document.getElementById('pVal');
+    pEl.textContent = `${(Math.random()*9+1).toFixed(1)}e${Math.floor(pExp)}`;
+    pEl.className = 'kpi-val' + (anomaly ? ' amber' : '');
+    document.getElementById('cusumVal').textContent = cusum;
+    document.getElementById('entropyVal').textContent = entropy;
+
+    const statusEl = document.getElementById('statusText');
+    if(anomaly && parseFloat(cusum)>1.5){
+      statusEl.textContent = 'ELEVATED DEVIATION · PATTERN SHIFT DETECTED';
+      statusEl.style.color = '#e8a020';
+    } else {
+      statusEl.textContent = 'SIGNAL WITHIN NORMAL RANGE · MONITORING';
+      statusEl.style.color = '#7ecfaa';
+    }
+  }
+
+  tick();
+}
+
+// ── Beta signup form ──────────────────────────────────────────────
+function handleBetaSubmit(e){
+  e.preventDefault();
+  const form = e.target;
+  const msg = document.getElementById('betaMsg');
+
+  // If no real formspree endpoint is configured, show placeholder success
+  const action = form.action;
+  if(action.includes('placeholder')){
+    msg.style.display = 'block';
+    msg.className = 'signup-msg success';
+    msg.textContent = "You're on the list. We'll send your beta access link to that address.";
+    form.reset();
+    return;
+  }
+
+  fetch(form.action, {
+    method:'POST',
+    body: new FormData(form),
+    headers:{'Accept':'application/json'}
+  }).then(r=>{
+    msg.style.display='block';
+    if(r.ok){
+      msg.className='signup-msg success';
+      msg.textContent="You're on the list. We'll send your beta access link to that address.";
+      form.reset();
+    } else {
+      msg.className='signup-msg error';
+      msg.textContent='Something went wrong. Please try again or email us directly.';
+    }
+  }).catch(()=>{
+    msg.style.display='block';
+    msg.className='signup-msg error';
+    msg.textContent='Could not send. Please try again.';
+  });
+}
+</script>
+
+</body>
+</html>

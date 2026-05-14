@@ -166,7 +166,7 @@ h1{margin:14px 0 16px; font-family:"Cormorant Garamond",serif; font-size:clamp(3
 .meta-label{margin-bottom:8px; color:var(--muted-2); font-size:.68rem; text-transform:uppercase; letter-spacing:.16em}
 .quote-band{margin-top:24px; display:grid; grid-template-columns:auto 1fr auto; gap:16px; align-items:center; padding:20px 22px; border-radius:20px; border:1px solid var(--line); box-shadow:var(--shadow); background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02)), linear-gradient(90deg, rgba(100,22,28,.18), rgba(0,0,0,0))}
 .qmark{font-family:"Cormorant Garamond",serif; font-size:3rem; line-height:1; color:var(--gold)} .qsrc{font-size:.82rem; color:var(--muted); text-align:right}
-section{padding:96px 0}
+section{padding:96px 0; scroll-margin-top:var(--nav)}
 .head{display:grid; gap:12px; margin-bottom:28px; max-width:780px}
 .head h2{margin:0; font-family:"Cormorant Garamond",serif; font-size:clamp(2rem,4vw,3.35rem); line-height:1.02}
 .head p{margin:0; color:var(--muted); font-size:1.04rem}
@@ -337,6 +337,51 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
 .excerpt-tab.active{background:linear-gradient(180deg,#e3c160,#bf9428); color:#151108; border-color:transparent}
 .excerpt-panel{display:none}
 .excerpt-panel.active{display:block}
+
+/* ── ITC Threshold Project Section ─────────────────────────────────────── */
+:root{--cyan:#00c8e0}
+.itc-section{padding:96px 0; position:relative; overflow:hidden}
+.itc-section::before{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0,200,224,.06), transparent 60%),
+    radial-gradient(ellipse 40% 60% at 10% 50%, rgba(214,179,74,.04), transparent 55%);
+}
+.itc-grid{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center}
+.itc-logo-wrap{display:flex; justify-content:center; margin-bottom:28px}
+.itc-logo-wrap img{width:min(380px,90%); height:auto; filter:drop-shadow(0 0 32px rgba(0,200,224,.35))}
+.itc-body{position:relative; z-index:1}
+.eyebrow-cyan{color:var(--cyan)}
+.eyebrow-cyan::before{background:linear-gradient(90deg, transparent, var(--cyan))}
+.itc-body h2{margin:10px 0 16px; font-family:"Cormorant Garamond",serif; font-size:clamp(2rem,4vw,3.2rem); line-height:1.02}
+.itc-body p{color:var(--muted); font-size:1.02rem; max-width:56ch}
+.itc-pills{display:flex; flex-wrap:wrap; gap:10px; margin:20px 0 28px}
+.itc-pill{padding:7px 16px; border-radius:999px; border:1px solid rgba(0,200,224,.3); background:rgba(0,200,224,.08); color:#00c8e0; font-size:.78rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em}
+.itc-btn{display:inline-block; padding:14px 28px; border-radius:999px; font-size:.82rem; font-weight:800; text-transform:uppercase; letter-spacing:.08em; cursor:pointer; transition:transform .2s ease, box-shadow .2s ease; background:linear-gradient(180deg,#00d8f5,#0098b8); color:#03131a; box-shadow:0 10px 28px rgba(0,200,224,.3); border:none}
+.itc-btn:hover{transform:translateY(-2px); box-shadow:0 14px 36px rgba(0,200,224,.42)}
+.itc-btn-ghost{display:inline-block; padding:14px 22px; border-radius:999px; font-size:.82rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; border:1px solid rgba(0,200,224,.35); color:#00c8e0; background:transparent; transition:.2s ease}
+.itc-btn-ghost:hover{background:rgba(0,200,224,.1); transform:translateY(-2px)}
+
+/* Mini console widget */
+.itc-console{padding:24px; border-radius:22px; border:1px solid rgba(0,200,224,.25); background:linear-gradient(180deg, rgba(0,18,26,.85), rgba(0,10,18,.9)); box-shadow:0 0 50px rgba(0,200,224,.08)}
+.itc-console-header{display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid rgba(0,200,224,.12)}
+.itc-console-title{font-family:monospace; font-size:.7rem; color:var(--cyan); letter-spacing:.1em; text-transform:uppercase}
+.itc-cbadge{padding:3px 9px; border-radius:999px; font-size:.62rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; background:rgba(80,200,80,.12); border:1px solid rgba(80,200,80,.3); color:#7ee080}
+.itc-kpi-row{display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:10px; margin-bottom:16px}
+.itc-kpi{padding:10px 12px; border-radius:12px; background:rgba(0,0,0,.45); border:1px solid rgba(255,255,255,.05)}
+.itc-kpi-label{font-family:monospace; font-size:.58rem; color:#507888; text-transform:uppercase; letter-spacing:.1em; margin-bottom:5px}
+.itc-kpi-val{font-family:monospace; font-size:1.22rem; color:var(--cyan); line-height:1}
+.itc-kpi-val.amber{color:#e8a020}
+.itc-kpi-val.green{color:#4ae080}
+.itc-wave{height:48px; border-radius:10px; background:rgba(0,0,0,.5); border:1px solid rgba(0,200,224,.1); overflow:hidden; position:relative; margin-bottom:14px}
+.itc-wave canvas{position:absolute; inset:0; width:100%; height:100%}
+.itc-status{display:flex; align-items:center; gap:10px; padding:8px 12px; border-radius:10px; background:rgba(0,200,224,.06); border:1px solid rgba(0,200,224,.18)}
+.itc-status-dot{width:6px; height:6px; border-radius:50%; background:#4ae080; box-shadow:0 0 6px #4ae080; animation:itc-pulse 2s ease-in-out infinite}
+@keyframes itc-pulse{0%,100%{opacity:1} 50%{opacity:.3}}
+.itc-status-text{font-family:monospace; font-size:.65rem; color:#7ecfaa; letter-spacing:.07em}
+.itc-divider{height:1px; background:linear-gradient(90deg, transparent, rgba(0,200,224,.22), transparent); margin:0 auto; max-width:var(--max); opacity:.7}
+@media(max-width:1100px){.itc-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.itc-kpi-row{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -356,6 +401,7 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
       <a href="#collaboration">Cindy Kaza</a>
       <a href="#other-books">Other Books</a>
       <a href="#glossary">Glossary</a>
+      <a href="itc-threshold.html" style="color:#00c8e0; font-weight:700">ITC Project ↗</a>
     </nav>
     <a class="btn btn-primary nav-buy" href="https://a.co/d/0gmGH7Vk" target="_blank" rel="noopener noreferrer">Buy Now</a>
   </div>
@@ -669,7 +715,7 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
 
       <div class="author-grid">
         <div class="panel portrait-panel reveal">
-          <img src="SDK_Headshot.png" alt="Headshot of Stephen Dietrich-Kolokouris, PhD">
+          <img src="SDK_Headshot.png" alt="Headshot of Stephen Dietrich-Kolokouris, PhD" loading="lazy">
           <div class="caption">
             <strong>Stephen Dietrich-Kolokouris, PhD</strong>
             <span>Historian, author, and investigator</span>
@@ -708,7 +754,7 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
 
       <div class="collab">
         <div class="panel reveal">
-          <img src="CK001.jpg" alt="Portrait of Cindy Kaza">
+          <img src="CK001.jpg" alt="Portrait of Cindy Kaza" loading="lazy">
           <div class="caption">
             <strong>Cindy Kaza</strong>
             <span>Psychic medium, clairvoyant, and featured collaborator</span>
@@ -900,12 +946,92 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
       </div>
     </div>
   </section>
+
+  <!-- ── ITC THRESHOLD PROJECT ──────────────────────────────────────────── -->
+  <div class="itc-divider"></div>
+
+  <section class="itc-section" id="itc-project">
+    <div class="wrap">
+
+      <div class="itc-grid">
+
+        <!-- Left: logo + console widget -->
+        <div class="reveal">
+          <div class="itc-logo-wrap">
+            <img src="ITC-NameCom-Official_Logo.png" alt="The ITC Threshold Project — Statistical Defensibility for the Noetic Frontier" loading="lazy" />
+          </div>
+
+          <div class="itc-console">
+            <div class="itc-console-header">
+              <span class="itc-console-title">ITC NAMECOM FieldOps · Live Monitor</span>
+              <span class="itc-cbadge">● ACTIVE</span>
+            </div>
+            <div class="itc-kpi-row">
+              <div class="itc-kpi">
+                <div class="itc-kpi-label">Score</div>
+                <div class="itc-kpi-val" id="itcScore">0.842</div>
+              </div>
+              <div class="itc-kpi">
+                <div class="itc-kpi-label">p-value</div>
+                <div class="itc-kpi-val amber" id="itcP">1.2e-04</div>
+              </div>
+              <div class="itc-kpi">
+                <div class="itc-kpi-label">CUSUM</div>
+                <div class="itc-kpi-val" id="itcCusum">0.176</div>
+              </div>
+              <div class="itc-kpi">
+                <div class="itc-kpi-label">Entropy</div>
+                <div class="itc-kpi-val green" id="itcEntropy">0.913</div>
+              </div>
+            </div>
+            <div class="itc-wave">
+              <canvas id="itcCanvas"></canvas>
+            </div>
+            <div class="itc-status">
+              <div class="itc-status-dot"></div>
+              <span class="itc-status-text" id="itcStatus">SIGNAL WITHIN NORMAL RANGE · MONITORING</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: copy + CTA -->
+        <div class="itc-body reveal">
+          <span class="eyebrow eyebrow-cyan">From The American Paranormal</span>
+          <h2>The ITC Threshold Project</h2>
+          <p style="font-family:'Cormorant Garamond',serif; font-size:1.28rem; color:#e8dfd0; margin:0 0 16px; line-height:1.48; font-style:italic">Statistical defensibility for the noetic frontier.</p>
+          <p>ITC NAMECOM FieldOps is a rigorous, locally-executed field monitoring instrument built for paranormal investigators who want their data to mean something. Real Mahalanobis distance scoring. Real chi-squared p-values. A 16-feature signal model. Operator contamination control. SHA-256 session integrity. Everything runs on your machine — no cloud, no subscription.</p>
+          <p style="margin-top:14px">This is the research infrastructure behind the work described in <em>The American Paranormal</em> — brought forward as an open beta for investigators ready to operate at a higher methodological standard.</p>
+
+          <div class="itc-pills">
+            <span class="itc-pill">16 Signal Features</span>
+            <span class="itc-pill">χ² Statistics</span>
+            <span class="itc-pill">CUSUM Persistence</span>
+            <span class="itc-pill">Local Only</span>
+            <span class="itc-pill">Free Beta</span>
+          </div>
+
+          <div style="display:flex; flex-wrap:wrap; gap:14px; align-items:center">
+            <a class="itc-btn" href="itc-threshold.html">Join the Free Beta →</a>
+            <a class="itc-btn-ghost" href="itc-threshold.html#how-it-works">See the Math</a>
+          </div>
+
+          <div style="margin-top:28px; padding:20px 22px; border-radius:18px; border:1px solid rgba(214,179,74,.2); background:rgba(214,179,74,.04)">
+            <p style="margin:0; font-size:.9rem; color:var(--muted)"><strong style="color:var(--gold)">Important:</strong> This instrument measures statistical deviation from a calibrated environmental baseline. It does not establish source, agency, identity, or cause. Interpretation happens after measurement — using context, corroboration, and the judgment of the investigator.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="itc-divider"></div>
 </main>
 
 <footer>
   <div class="wrap footer-grid">
     <div>© 2026 Stephen Dietrich-Kolokouris. All rights reserved.</div>
     <div>Official website for <em>The American Paranormal</em>.</div>
+    <div><a href="itc-threshold.html" style="color:#00c8e0; font-size:.88rem">ITC Threshold Project →</a></div>
   </div>
 </footer>
 
@@ -1197,6 +1323,55 @@ if(navToggle && navLinks){
     });
   });
 }
+
+// ── ITC Threshold mini console ─────────────────────────────────────────────
+(function(){
+  const canvas = document.getElementById('itcCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let phase = 0, anomTimer = 0, isAnom = false;
+  const hist = [], MAX = 100;
+
+  function resize(){ canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; }
+  resize(); window.addEventListener('resize', resize);
+
+  function tick(){
+    phase += 0.09; anomTimer--;
+    if(anomTimer <= 0){ isAnom = Math.random() < 0.09; anomTimer = 18 + Math.floor(Math.random()*35); }
+    const v = Math.sin(phase)*.18 + Math.sin(phase*2.4)*.1 + (Math.random()-.5)*.15 + (isAnom?(Math.random()-.5)*.45:0);
+    hist.push({v, a:isAnom}); if(hist.length>MAX) hist.shift();
+    draw(); if(Math.random()<.04) updateKPIs(); requestAnimationFrame(tick);
+  }
+
+  function draw(){
+    const W=canvas.width, H=canvas.height; ctx.clearRect(0,0,W,H);
+    if(hist.length<2) return;
+    const step=W/(MAX-1), mid=H/2;
+    ctx.beginPath();
+    hist.forEach((p,i)=>{ const x=i*step, y=mid-p.v*(H*.38); i===0?ctx.moveTo(x,y):ctx.lineTo(x,y); });
+    ctx.strokeStyle='rgba(0,200,224,.7)'; ctx.lineWidth=1.5; ctx.stroke();
+    const la=hist.findLastIndex(p=>p.a);
+    if(la>0){ const sx=la*step, g=ctx.createLinearGradient(sx-16,0,sx+36,0);
+      g.addColorStop(0,'rgba(232,160,32,0)'); g.addColorStop(.4,'rgba(232,160,32,.12)'); g.addColorStop(1,'rgba(232,160,32,0)');
+      ctx.fillStyle=g; ctx.fillRect(sx-16,0,52,H); }
+  }
+
+  function updateKPIs(){
+    const sc = isAnom?(0.65+Math.random()*.55).toFixed(3):(0.38+Math.random()*.36).toFixed(3);
+    const pe = `${(Math.random()*9+1).toFixed(1)}e-0${isAnom?Math.floor(3+Math.random()*2):1}`;
+    const cu = isAnom?(Math.random()*2.8).toFixed(3):(Math.random()*.4).toFixed(3);
+    const en = (0.83+Math.random()*.09).toFixed(3);
+    document.getElementById('itcScore').textContent = sc;
+    const pEl = document.getElementById('itcP'); pEl.textContent = pe; pEl.className='itc-kpi-val'+(isAnom?' amber':'');
+    document.getElementById('itcCusum').textContent = cu;
+    document.getElementById('itcEntropy').textContent = en;
+    const st = document.getElementById('itcStatus');
+    if(isAnom && parseFloat(cu)>1.2){ st.textContent='ELEVATED DEVIATION · PATTERN SHIFT DETECTED'; st.style.color='#e8a020'; }
+    else { st.textContent='SIGNAL WITHIN NORMAL RANGE · MONITORING'; st.style.color='#7ecfaa'; }
+  }
+  tick();
+})();
+
 
 // ── Email form ─────────────────────────────────────────────────────────────
 function handleEmailSubmit(e){
