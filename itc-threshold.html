@@ -8,12 +8,12 @@
 <meta name="description" content="The ITC Threshold Project — a free beta program for paranormal investigators. ITC NAMECOM FieldOps is a rigorous, local anomaly-monitoring and entropy stream analysis tool for controlled paranormal field investigation. Sign up for free beta access." />
 <meta name="author" content="Stephen Dietrich-Kolokouris, PhD" />
 <meta name="robots" content="index,follow" />
-<link rel="canonical" href="https://www.theamericanparanormal.com/itc-threshold" />
+<link rel="canonical" href="https://theamericanparanormal.com/itc-threshold.html" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="The ITC Threshold Project | Free Beta Access" />
 <meta property="og:description" content="Rigorous, statistically-grounded ITC field monitoring software. Free beta access for serious paranormal investigators." />
-<meta property="og:url" content="https://www.theamericanparanormal.com/itc-threshold" />
+<meta property="og:url" content="https://theamericanparanormal.com/itc-threshold.html" />
 <meta property="og:image" content="https://www.theamericanparanormal.com/ITC-NameCom-Official_Logo.png" />
 <meta property="og:image:alt" content="The ITC Threshold Project — Statistical Defensibility for the Noetic Frontier" />
 
@@ -37,9 +37,9 @@
   --max:1240px;
   --nav:82px;
   /* ITC accent palette */
-  --cyan:#00c8e0;
-  --cyan-dim:rgba(0,200,224,.18);
-  --cyan-line:rgba(0,200,224,.28);
+  --cyan:#c4a375;
+  --cyan-dim:rgba(196,163,117,.18);
+  --cyan-line:rgba(196,163,117,.28);
   --red-dim:rgba(200,40,40,.18);
   --amber:#e8a020;
   --amber-dim:rgba(232,160,32,.18);
@@ -51,7 +51,7 @@ body{
   margin:0; font-family:Inter,system-ui,sans-serif; color:var(--ivory);
   line-height:1.6; overflow-x:hidden;
   background:
-    radial-gradient(circle at 18% 8%, rgba(0,200,224,.06), transparent 28%),
+    radial-gradient(circle at 18% 8%, rgba(196,163,117,.06), transparent 28%),
     radial-gradient(circle at 84% 14%, rgba(100,22,28,.18), transparent 24%),
     radial-gradient(circle at 50% 70%, rgba(214,179,74,.05), transparent 35%),
     linear-gradient(180deg,#0c0c0d 0%, #101013 48%, #0b0b0c 100%);
@@ -59,7 +59,7 @@ body{
 
 body::before{
   content:""; position:fixed; inset:0; pointer-events:none; opacity:.10;
-  background:repeating-linear-gradient(90deg, rgba(0,200,224,.012) 0, rgba(0,200,224,.012) 1px, transparent 1px, transparent 112px);
+  background:repeating-linear-gradient(90deg, rgba(196,163,117,.012) 0, rgba(196,163,117,.012) 1px, transparent 1px, transparent 112px);
   mask-image:linear-gradient(to bottom, rgba(0,0,0,.82), rgba(0,0,0,.05));
 }
 
@@ -77,7 +77,7 @@ img,video{display:block; max-width:100%}
 .btn{display:inline-block; padding:14px 22px; border-radius:999px; font-size:.82rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; border:none; cursor:pointer; transition:transform .2s ease, background .2s ease, box-shadow .2s ease}
 .btn:hover{transform:translateY(-2px)}
 .btn-primary{background:linear-gradient(180deg,#e3c160,#bf9428); color:#151108; box-shadow:0 10px 26px rgba(214,179,74,.24)}
-.btn-cyan{background:linear-gradient(180deg,#00d8f5,#0098b8); color:#04141a; box-shadow:0 10px 26px rgba(0,200,224,.28); font-weight:800}
+.btn-cyan{background:linear-gradient(180deg,#c4a375,#9c8058); color:#04141a; box-shadow:0 10px 26px rgba(196,163,117,.28); font-weight:800}
 .btn-ghost{background:transparent; border:1px solid var(--cyan-line); color:var(--cyan)}
 .btn-ghost:hover{background:var(--cyan-dim)}
 
@@ -94,14 +94,14 @@ img,video{display:block; max-width:100%}
 .hero-bg::after{
   content:""; position:absolute; inset:0;
   background:
-    radial-gradient(ellipse 70% 60% at 60% 40%, rgba(0,200,224,.07), transparent 60%),
+    radial-gradient(ellipse 70% 60% at 60% 40%, rgba(196,163,117,.07), transparent 60%),
     radial-gradient(ellipse 50% 50% at 20% 80%, rgba(214,179,74,.06), transparent 55%);
 }
 
 /* Scanning line animation */
 .scan-line{
   position:absolute; left:0; right:0; height:1px;
-  background:linear-gradient(90deg, transparent 0%, rgba(0,200,224,.4) 40%, rgba(0,200,224,.6) 50%, rgba(0,200,224,.4) 60%, transparent 100%);
+  background:linear-gradient(90deg, transparent 0%, rgba(196,163,117,.4) 40%, rgba(196,163,117,.6) 50%, rgba(196,163,117,.4) 60%, transparent 100%);
   animation:scan 6s linear infinite; opacity:.5;
 }
 @keyframes scan{0%{top:-2px} 100%{top:100%}}
@@ -122,15 +122,15 @@ img,video{display:block; max-width:100%}
   padding:24px; border-radius:24px;
   border:1px solid var(--cyan-line);
   background:linear-gradient(180deg, rgba(0,20,28,.82), rgba(0,10,18,.9));
-  box-shadow:0 0 60px rgba(0,200,224,.1), inset 0 0 40px rgba(0,0,0,.4);
+  box-shadow:0 0 60px rgba(196,163,117,.1), inset 0 0 40px rgba(0,0,0,.4);
   z-index:1;
 }
-.console-header{display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; padding-bottom:12px; border-bottom:1px solid rgba(0,200,224,.15)}
+.console-header{display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; padding-bottom:12px; border-bottom:1px solid rgba(196,163,117,.15)}
 .console-title{font-family:"Share Tech Mono",monospace; font-size:.72rem; color:var(--cyan); letter-spacing:.12em; text-transform:uppercase}
 .console-badges{display:flex; gap:8px}
 .cbadge{padding:3px 9px; border-radius:999px; font-size:.64rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase}
-.cbadge-green{background:rgba(80,200,80,.15); border:1px solid rgba(80,200,80,.35); color:#7ee080}
-.cbadge-blue{background:rgba(0,200,224,.1); border:1px solid rgba(0,200,224,.3); color:var(--cyan)}
+.cbadge-green{background:rgba(80,200,80,.15); border:1px solid rgba(80,200,80,.35); color:#c4a375}
+.cbadge-blue{background:rgba(196,163,117,.1); border:1px solid rgba(196,163,117,.3); color:var(--cyan)}
 
 .kpi-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:18px}
 .kpi{padding:12px 14px; border-radius:14px; background:rgba(0,0,0,.4); border:1px solid rgba(255,255,255,.06)}
@@ -140,10 +140,10 @@ img,video{display:block; max-width:100%}
 .kpi-val.amber{color:var(--amber)}
 .kpi-val.normal{color:#4ae08a}
 
-.signal-canvas{height:54px; border-radius:10px; background:rgba(0,0,0,.5); border:1px solid rgba(0,200,224,.1); overflow:hidden; position:relative; margin-bottom:14px}
+.signal-canvas{height:54px; border-radius:10px; background:rgba(0,0,0,.5); border:1px solid rgba(196,163,117,.1); overflow:hidden; position:relative; margin-bottom:14px}
 .signal-canvas canvas{position:absolute; inset:0; width:100%; height:100%}
 
-.status-bar{display:flex; align-items:center; gap:10px; padding:9px 13px; border-radius:10px; background:rgba(0,200,224,.06); border:1px solid rgba(0,200,224,.2)}
+.status-bar{display:flex; align-items:center; gap:10px; padding:9px 13px; border-radius:10px; background:rgba(196,163,117,.06); border:1px solid rgba(196,163,117,.2)}
 .status-dot{width:7px; height:7px; border-radius:50%; background:#4ae08a; box-shadow:0 0 6px #4ae08a; animation:pulse-dot 2s ease-in-out infinite}
 @keyframes pulse-dot{0%,100%{opacity:1} 50%{opacity:.4}}
 .status-text{font-family:"Share Tech Mono",monospace; font-size:.68rem; color:#7ecfaa; letter-spacing:.08em}
@@ -172,7 +172,7 @@ section{padding:96px 0; scroll-margin-top:var(--nav)}
 .pipeline{display:grid; gap:0}
 .pipe-step{display:grid; grid-template-columns:52px 1fr; gap:20px; align-items:stretch}
 .pipe-num{display:flex; flex-direction:column; align-items:center}
-.pipe-circle{width:40px; height:40px; border-radius:50%; background:rgba(0,200,224,.12); border:1px solid var(--cyan-line); display:flex; align-items:center; justify-content:center; font-family:Cinzel,serif; font-size:.9rem; color:var(--cyan); flex-shrink:0}
+.pipe-circle{width:40px; height:40px; border-radius:50%; background:rgba(196,163,117,.12); border:1px solid var(--cyan-line); display:flex; align-items:center; justify-content:center; font-family:Cinzel,serif; font-size:.9rem; color:var(--cyan); flex-shrink:0}
 .pipe-line{flex:1; width:1px; background:linear-gradient(180deg, var(--cyan-line), transparent); margin-inline:auto; min-height:28px}
 .pipe-content{padding:0 0 32px}
 .pipe-content h3{margin:6px 0 8px; font-family:"Cormorant Garamond",serif; font-size:1.5rem; color:var(--ivory)}
@@ -180,7 +180,7 @@ section{padding:96px 0; scroll-margin-top:var(--nav)}
 .pipe-last .pipe-line{display:none}
 .pipe-last .pipe-content{padding-bottom:0}
 
-.math-box{margin-top:10px; padding:12px 16px; border-radius:12px; background:rgba(0,0,0,.5); border:1px solid rgba(0,200,224,.15); font-family:"Share Tech Mono",monospace; font-size:.84rem; color:var(--cyan); line-height:1.5}
+.math-box{margin-top:10px; padding:12px 16px; border-radius:12px; background:rgba(0,0,0,.5); border:1px solid rgba(196,163,117,.15); font-family:"Share Tech Mono",monospace; font-size:.84rem; color:var(--cyan); line-height:1.5}
 .math-note{font-family:Inter,sans-serif; color:var(--muted-2); font-size:.8rem; margin-top:6px}
 
 /* ── FEATURES GRID ────────────────────────────────────────────────── */
@@ -224,9 +224,9 @@ section{padding:96px 0; scroll-margin-top:var(--nav)}
   padding:52px 48px; border-radius:36px;
   border:1px solid var(--cyan-line);
   background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0,200,224,.08), transparent 55%),
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(196,163,117,.08), transparent 55%),
     linear-gradient(180deg, rgba(0,20,28,.7), rgba(0,10,18,.5));
-  box-shadow:0 0 80px rgba(0,200,224,.08), var(--shadow);
+  box-shadow:0 0 80px rgba(196,163,117,.08), var(--shadow);
   text-align:center;
 }
 .signup-box h2{margin:12px 0 16px; font-family:"Cormorant Garamond",serif; font-size:clamp(2.2rem,4vw,3.6rem); line-height:1}
@@ -267,7 +267,7 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
 }
 .logo-mark img{
   width:340px; max-width:90vw; height:auto; display:block;
-  filter:drop-shadow(0 0 28px rgba(0,200,224,.35));
+  filter:drop-shadow(0 0 28px rgba(196,163,117,.35));
 }
 /* Hide old text elements — logo image replaces them */
 .logo-mark-itc,.logo-mark-sub,.logo-mark-project{display:none}
@@ -279,7 +279,7 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
 .compare-table tr:last-child td{border-bottom:none}
 .compare-table td:first-child{color:var(--ivory); font-weight:600}
 .compare-table .old{color:#c86060}
-.compare-table .new{color:#4ae080}
+.compare-table .new{color:#c4a375}
 .compare-table .new::before{content:"✓ "; opacity:.7}
 .compare-table .old::before{content:"✗ "; opacity:.7}
 
@@ -303,7 +303,7 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
   .nav-links{
     display:none; position:absolute; top:var(--nav); left:0; right:0;
     flex-direction:column; background:rgba(11,11,12,.97);
-    backdrop-filter:blur(20px); border-bottom:1px solid rgba(0,200,224,.15);
+    backdrop-filter:blur(20px); border-bottom:1px solid rgba(196,163,117,.15);
     padding:16px 20px; gap:0; z-index:59;
   }
   .nav-links.open{display:flex}
@@ -354,6 +354,20 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
   .nav > .wrap > .nav-inner > .btn-cyan{display:inline-block}
 }
 </style>
+
+<style>
+:root{--bg:#151513;--ivory:#eee6d7;--gold:#c4a375;--muted:#c0b8a9;--muted-2:#aaa18f;--line:#444137;--line-strong:#807057;--shadow:none;--radius:0px;--cyan:#c4a375}
+body{background:#151513}body::before,.hero-bg,.scan-line{display:none}
+.nav{background:#151513}.nav img,.logo-mark img,.signup-logo img{filter:grayscale(1) sepia(.5)!important}
+.hero-title{font-family:Georgia,serif;line-height:1.12;font-weight:400}.hero-title .word-itc{font-family:Georgia,serif;letter-spacing:.03em;font-weight:400}
+.hero-signal,.panel,.panel-cyan,.feature-card,.step,.science-note,.signup-box,.req-card,.kpi,.wave-wrap,.cbadge,.pill,.field,.status-bar,details{border-radius:0!important;box-shadow:none!important;background:#1c1c19}
+.btn,.btn-cyan,.btn-primary{border-radius:2px;box-shadow:none;background:#8e332d;color:#fff5e5}
+.btn-ghost{background:none;border:1px solid #827159;color:var(--ivory)}
+.hero-signal{background:#1a1b16;border-color:#65543e}.head h2{font-family:Georgia,serif;font-weight:400;letter-spacing:-.02em}
+.reveal{opacity:1;transform:none}.status-dot{box-shadow:none;animation:none;background:var(--gold)}
+:focus-visible{outline:2px solid #c4a375;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
 </head>
 <body>
 
@@ -361,10 +375,10 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
 <header class="nav">
   <div class="wrap nav-inner">
     <div style="display:flex; align-items:center; gap:14px; flex-shrink:0">
-      <a href="/itc-threshold" style="display:block; line-height:0">
-        <img src="ITC-NameCom-Official_Logo.png" alt="ITC Threshold Project" style="height:44px; width:auto; filter:drop-shadow(0 0 8px rgba(0,200,224,.4))" loading="eager" />
+      <a href="itc-threshold.html" style="display:block; line-height:0">
+        <img src="ITC-NameCom-Official_Logo.png" alt="ITC Threshold Project" style="height:44px; width:auto; filter:drop-shadow(0 0 8px rgba(196,163,117,.4))" loading="eager" />
       </a>
-      <a class="brand" href="/" style="font-size:.76rem">The American Paranormal</a>
+      <a class="brand" href="index.html" style="font-size:.76rem">The American Paranormal</a>
     </div>
     <nav class="nav-links" id="navLinks">
       <a href="#what-it-is">What It Is</a>
@@ -372,7 +386,7 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
       <a href="#who">Who It's For</a>
       <a href="#protocol">Field Protocol</a>
       <a href="#signup">Beta Access</a>
-      <a href="/" style="color:var(--gold)">← Main Site</a>
+      <a href="index.html" style="color:var(--gold)">← Main Site</a>
     </nav>
     <div style="display:flex; align-items:center; gap:12px; flex-shrink:0">
       <a class="btn btn-cyan" href="#signup" style="white-space:nowrap">Free Beta Signup</a>
@@ -411,7 +425,7 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
       <div class="hero-cta">
         <a class="btn btn-cyan" href="#signup">Join the Free Beta</a>
         <a class="btn btn-ghost" href="#how-it-works">See How It Works</a>
-        <a class="btn" style="background:rgba(255,255,255,.04); border:1px solid rgba(214,179,74,.28); color:var(--gold)" href="/">← Back to Main Site</a>
+        <a class="btn" style="background:rgba(255,255,255,.04); border:1px solid rgba(214,179,74,.28); color:var(--gold)" href="index.html">← Back to Main Site</a>
       </div>
 
       <div class="science-note" style="margin-top:0; max-width:64ch">
@@ -465,19 +479,19 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
         <div style="font-family:'Share Tech Mono',monospace; font-size:.6rem; color:#507880; letter-spacing:.08em; margin-bottom:8px">PROCESS STATUS</div>
         <div style="display:grid; gap:5px; font-family:'Share Tech Mono',monospace; font-size:.65rem">
           <div style="display:flex; justify-content:space-between; color:#7ec8aa">
-            <span>Input Stream</span><span style="color:#4ae080">● receiving</span>
+            <span>Input Stream</span><span style="color:#c4a375">● receiving</span>
           </div>
           <div style="display:flex; justify-content:space-between; color:#7ec8aa">
-            <span>Baseline Calibration</span><span style="color:#4ae080">● complete</span>
+            <span>Baseline Calibration</span><span style="color:#c4a375">● complete</span>
           </div>
           <div style="display:flex; justify-content:space-between; color:#7ec8aa">
-            <span>Windowed Analysis</span><span style="color:#00c8e0">● active</span>
+            <span>Windowed Analysis</span><span style="color:#c4a375">● active</span>
           </div>
           <div style="display:flex; justify-content:space-between; color:#7ec8aa">
-            <span>Anomaly Scoring</span><span style="color:#00c8e0">● active</span>
+            <span>Anomaly Scoring</span><span style="color:#c4a375">● active</span>
           </div>
           <div style="display:flex; justify-content:space-between; color:#7ec8aa">
-            <span>GUARD</span><span style="color:#4ae080">● READY</span>
+            <span>GUARD</span><span style="color:#c4a375">● READY</span>
           </div>
         </div>
       </div>
@@ -899,13 +913,13 @@ footer{padding:34px 0 56px; color:#8f856f; font-size:.9rem}
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <a class="footer-brand" href="/">The American Paranormal</a>
+        <a class="footer-brand" href="index.html">The American Paranormal</a>
         <p style="margin:0; color:var(--muted-2); font-size:.84rem; max-width:36ch">ITC Threshold Project · A free beta program for paranormal investigators. Statistical field monitoring software built to research-grade standards.</p>
       </div>
       <div>
         <div style="font-family:'Share Tech Mono',monospace; font-size:.62rem; color:var(--muted-2); letter-spacing:.12em; margin-bottom:12px">QUICK LINKS</div>
         <div style="display:grid; gap:8px">
-          <a href="/" style="color:var(--muted); font-size:.88rem; transition:.15s ease">← Main Site</a>
+          <a href="index.html" style="color:var(--muted); font-size:.88rem; transition:.15s ease">← Main Site</a>
           <a href="#what-it-is" style="color:var(--muted); font-size:.88rem">What It Is</a>
           <a href="#how-it-works" style="color:var(--muted); font-size:.88rem">How It Works</a>
           <a href="#signup" style="color:var(--cyan); font-size:.88rem">Join the Beta</a>
@@ -982,7 +996,7 @@ if(canvas){
     const mid = H/2;
 
     // Grid lines
-    ctx.strokeStyle = 'rgba(0,200,224,0.06)';
+    ctx.strokeStyle = 'rgba(196,163,117,0.06)';
     ctx.lineWidth = 1;
     [0.2,0.4,0.6,0.8].forEach(y=>{
       ctx.beginPath(); ctx.moveTo(0,H*y); ctx.lineTo(W,H*y); ctx.stroke();
@@ -995,7 +1009,7 @@ if(canvas){
       const y = mid - pt.v * (H*0.38);
       i===0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
     });
-    ctx.strokeStyle = 'rgba(0,200,224,0.75)';
+    ctx.strokeStyle = 'rgba(196,163,117,0.75)';
     ctx.lineWidth = 1.5;
     ctx.stroke();
 
