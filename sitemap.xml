@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://www.theamericanparanormal.com/</loc>
-    <lastmod>2026-04-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://www.theamericanparanormal.com/The_American_Paranormal_Cover_600dpi.png</image:loc>
-      <image:title>The American Paranormal — Cover</image:title>
-    </image:image>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url><loc>https://theamericanparanormal.com/</loc><lastmod>2026-10-03</lastmod><image:image><image:loc>https://theamericanparanormal.com/assets/editorial/american-paranormal-cover.jpg</image:loc><image:title>The American Paranormal book cover</image:title></image:image></url>
+<url><loc>https://theamericanparanormal.com/guides/</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://theamericanparanormal.com/guides/history-of-spiritualism-in-america.html</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://theamericanparanormal.com/guides/evidence-for-life-after-death.html</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://theamericanparanormal.com/guides/what-is-instrumental-transcommunication.html</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://theamericanparanormal.com/guides/how-to-analyze-evp-recordings.html</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://theamericanparanormal.com/guides/best-books-about-consciousness-after-death.html</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://theamericanparanormal.com/itc-threshold.html</loc></url>
 </urlset>

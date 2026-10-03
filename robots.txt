@@ -23,4 +23,4 @@ Disallow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://www.theamericanparanormal.com/sitemap.xml
+Sitemap: https://theamericanparanormal.com/sitemap.xml
